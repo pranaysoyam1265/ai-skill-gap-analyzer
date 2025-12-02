@@ -1,0 +1,75 @@
+{
+  "userFlows": [
+    {
+      "name": "Resume Upload",
+      "steps": [
+        {"id": 1, "action": "User selects file", "type": "input", "component": "app/resume/page.tsx"},
+        {"id": 2, "action": "Validate file type and size", "type": "validation", "component": "handleFileUpload"},
+        {"id": 3, "action": "Check user authentication", "type": "auth", "service": "Supabase Auth"},
+        {"id": 4, "action": "Upload to Supabase Storage", "type": "api", "service": "uploadResumeToStorage"},
+        {"id": 5, "action": "Save resume record to DB", "type": "api", "service": "saveResumeRecord"},
+        {"id": 6, "action": "POST /api/resumes/upload to FastAPI", "type": "api", "endpoint": "FastAPI"},
+        {"id": 7, "action": "Backend processes resume (10-30s)", "type": "processing", "service": "ML Pipeline"},
+        {"id": 8, "action": "Update DB with analysis results", "type": "api", "service": "updateResumeWithAnalysis"},
+        {"id": 9, "action": "Update Zustand store", "type": "state", "store": "resume-store"},
+        {"id": 10, "action": "Persist to localStorage", "type": "persistence", "store": "resume-store"},
+        {"id": 11, "action": "Show success toast", "type": "ui", "component": "toast"},
+        {"id": 12, "action": "Redirect to dashboard", "type": "navigation", "route": "/dashboard"}
+      ],
+      "decisions": [
+        {"id": 2, "condition": "Is file valid?", "yes": 3, "no": "error"},
+        {"id": 3, "condition": "Is user authenticated?", "yes": 4, "no": "error"}
+      ],
+      "errorPaths": [
+        {"step": 2, "error": "Invalid file type/size", "action": "Show toast error"},
+        {"step": 3, "error": "User not authenticated", "action": "Redirect to login"},
+        {"step": 6, "error": "API error", "action": "Show error, fallback to mock"}
+      ]
+    },
+    {
+      "name": "Gap Analysis",
+      "steps": [
+        {"id": 1, "action": "User navigates to gap analysis", "type": "navigation", "route": "/gap-analysis"},
+        {"id": 2, "action": "Load active resume from store", "type": "state", "store": "resume-store"},
+        {"id": 3, "action": "Get candidate_id from resume", "type": "data", "field": "candidateId"},
+        {"id": 4, "action": "GET /api/candidates/{id}/skill-gaps", "type": "api", "endpoint": "FastAPI"},
+        {"id": 5, "action": "GET /api/candidates/{id}/recommendations", "type": "api", "endpoint": "FastAPI"},
+        {"id": 6, "action": "Parse gap response", "type": "processing", "component": "gap-analysis/page.tsx"},
+        {"id": 7, "action": "Parse recommendations response", "type": "processing", "component": "gap-analysis/page.tsx"},
+        {"id": 8, "action": "Render skill gaps by category", "type": "ui", "component": "GapAnalysisPage"},
+        {"id": 9, "action": "Render course recommendations", "type": "ui", "component": "CourseCards"}
+      ],
+      "decisions": [
+        {"id": 2, "condition": "Has active resume?", "yes": 3, "no": "empty-state"}
+      ]
+    },
+    {
+      "name": "Authentication",
+      "steps": [
+        {"id": 1, "action": "User visits auth page", "type": "navigation", "route": "/auth"},
+        {"id": 2, "action": "User selects sign up or sign in", "type": "input", "component": "auth/page.tsx"},
+        {"id": 3, "action": "Fill form (email, password)", "type": "input", "component": "AuthForm"},
+        {"id": 4, "action": "Validate email format", "type": "validation", "component": "handleSubmit"},
+        {"id": 5, "action": "Supabase createUser or signIn", "type": "api", "service": "Supabase Auth"},
+        {"id": 6, "action": "Create session", "type": "auth", "service": "Supabase"},
+        {"id": 7, "action": "Store JWT in cookies", "type": "persistence", "service": "Middleware"},
+        {"id": 8, "action": "Redirect to dashboard", "type": "navigation", "route": "/dashboard"}
+      ]
+    }
+  ],
+  "dataFlows": [
+    {
+      "name": "Resume Upload Data Flow",
+      "source": "File Input",
+      "destination": "Zustand Store",
+      "steps": [
+        "File → Supabase Storage → storagePath",
+        "File → FastAPI → candidate_id, skills, gaps",
+        "storagePath + candidate_id → Supabase DB → ResumeRecord",
+        "ResumeRecord → Transform → Resume interface",
+        "Resume → Zustand store → localStorage"
+      ]
+    }
+  ]
+}
+

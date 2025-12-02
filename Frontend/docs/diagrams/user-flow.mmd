@@ -1,0 +1,92 @@
+graph TB
+    Start([User visits app]) --> Auth{Authenticated?}
+    Auth -->|No| LoginPage[Login/Signup Page]
+    Auth -->|Yes| Dashboard[Dashboard]
+    
+    LoginPage --> SignUp[Sign Up Form]
+    LoginPage --> SignIn[Sign In Form]
+    
+    SignUp --> ValidateEmail{Valid Email?}
+    ValidateEmail -->|No| Error1[Show Error]
+    ValidateEmail -->|Yes| CreateUser[Supabase createUser]
+    CreateUser --> EmailSent[Email Verification Sent]
+    EmailSent --> ConfirmEmail[User Confirms Email]
+    ConfirmEmail --> AutoLogin[Auto Login]
+    AutoLogin --> Dashboard
+    
+    SignIn --> ValidateCreds{Valid Creds?}
+    ValidateCreds -->|No| Error2[Show Error]
+    ValidateCreds -->|Yes| SupabaseSignIn[Supabase signIn]
+    SupabaseSignIn --> SessionCreated[Session Created]
+    SessionCreated --> Dashboard
+    
+    Dashboard --> UploadResume[Upload Resume Button]
+    UploadResume --> ResumePage[Resume Upload Page]
+    
+    ResumePage --> FileSelect[File Selection]
+    FileSelect --> ValidateFile{Valid File?}
+    ValidateFile -->|No| Error3[Toast Error]
+    ValidateFile -->|Yes| CheckAuth{User Auth?}
+    
+    CheckAuth -->|No| Error4[Toast: Sign In Required]
+    CheckAuth -->|Yes| UploadStorage[Upload to Supabase Storage]
+    
+    UploadStorage --> SaveRecord[Save Record to DB]
+    SaveRecord --> AnalyzeFastAPI[POST /api/resumes/upload]
+    
+    AnalyzeFastAPI --> Process[Backend Processing<br/>~10-30s]
+    Process --> Gemini[Gemini Normalization]
+    Gemini --> Spacy[spaCy Extraction]
+    Spacy --> ProfEst[Proficiency Estimation]
+    
+    ProfEst --> Response[Response: candidate_id, skills, gaps]
+    Response --> UpdateDB[Update DB with Analysis]
+    UpdateDB --> UpdateZustand[Update Zustand Store]
+    UpdateZustand --> PersistLocal[Persist to localStorage]
+    PersistLocal --> SuccessToast[Success Toast]
+    SuccessToast --> RedirectDashboard[Redirect to Dashboard]
+    
+    Dashboard --> ViewGaps[View Skill Gaps Button]
+    ViewGaps --> GapPage[Gap Analysis Page]
+    
+    GapPage --> LoadResume[Load Active Resume]
+    LoadResume --> GetCandidateId[Get candidate_id]
+    GetCandidateId --> ParallelCalls[Parallel API Calls]
+    
+    ParallelCalls --> GapAPI[GET /api/candidates/id/skill-gaps]
+    ParallelCalls --> RecAPI[GET /api/candidates/id/recommendations]
+    
+    GapAPI --> GapResponse[Gap Response]
+    RecAPI --> RecResponse[Recommendations Response]
+    
+    GapResponse --> RenderGaps[Render Skill Gaps]
+    RecResponse --> RenderCourses[Render Course Cards]
+    
+    Dashboard --> CoursesNav[Navigation: Courses]
+    CoursesNav --> CoursesPage[Courses Page]
+    
+    CoursesPage --> Filters[Apply Filters]
+    Filters --> CourseAPI[GET /api/courses?filters]
+    CourseAPI --> CourseList[Display Courses]
+    CourseList --> ClickCourse[Click Course]
+    ClickCourse --> ExternalLink[Open External URL]
+    
+    Dashboard --> ProfileNav[Profile]
+    ProfileNav --> ProfilePage[Profile Page]
+    ProfilePage --> ResumeList[List Resumes]
+    ResumeList --> DeleteResume[Delete Resume]
+    DeleteResume --> Confirm{Confirm?}
+    Confirm -->|No| Cancel[Cancel]
+    Confirm -->|Yes| DeleteStorage[Delete from Storage]
+    DeleteStorage --> DeleteDB[Delete from DB]
+    DeleteDB --> UpdateStore[Update Zustand]
+    UpdateStore --> RefreshUI[Refresh UI]
+    
+    style Error1 fill:#ff6b6b
+    style Error2 fill:#ff6b6b
+    style Error3 fill:#ff6b6b
+    style Error4 fill:#ff6b6b
+    style Process fill:#ffe66d
+    style Response fill:#51cf66
+    style SuccessToast fill:#51cf66
+

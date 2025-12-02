@@ -1,0 +1,41 @@
+graph LR
+    subgraph Frontend["Frontend (Next.js)"]
+        UI[User Interface]
+        Zustand[Zustand Store]
+        LocalStorage[localStorage]
+    end
+    
+    subgraph Supabase["Supabase"]
+        Auth[Auth Service]
+        Storage[Storage Bucket]
+        DB[(PostgreSQL)]
+    end
+    
+    subgraph Backend["FastAPI Backend"]
+        API[API Server]
+        ML[ML Models]
+        MatchingEngine[Matching Engine]
+        Postgres[(PostgreSQL)]
+    end
+    
+    UI -->|1. Upload File| Zustand
+    Zustand -->|2. Persist| LocalStorage
+    UI -->|3. Upload File| Storage
+    UI -->|4. Save Metadata| DB
+    UI -->|5. Send File| API
+    API -->|6. Process| ML
+    ML -->|7. Extract Skills| MatchingEngine
+    MatchingEngine -->|8. Query| Postgres
+    Postgres -->|9. Return Data| MatchingEngine
+    MatchingEngine -->|10. Return Response| API
+    API -->|11. JSON Response| UI
+    UI -->|12. Update| Zustand
+    Zustand -->|13. Persist| LocalStorage
+    
+    UI -->|Auth| Auth
+    Auth -->|JWT Token| UI
+    
+    style Frontend fill:#4dabf7
+    style Supabase fill:#51cf66
+    style Backend fill:#ffd43b
+

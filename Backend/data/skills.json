@@ -1,0 +1,8198 @@
+{
+  "skill_aliases": {
+    "JavaScript": ["javascript", "js", "ecmascript", "es6", "es2015", "es2020", "es2021", "nodejs js", "vanilla js"],
+    "Java": ["java", "jdk", "java se", "java ee", "core java", "java 8", "java 11", "java 17", "j2ee", "java programming"],
+    "TypeScript": ["typescript", "ts", "type script"],
+    "C++": ["c++", "cpp", "cplusplus", "c plus plus"],
+    "C#": ["c#", "csharp", "c sharp", ".net"],
+    "C": ["c", "c language", "ansi c", "c programming"],
+    "Ruby": ["ruby", "rb", "ruby programming"],
+    "PHP": ["php", "php7", "php8", "php 7", "php 8"],
+    "Swift": ["swift", "swift 5", "swiftui", "ios swift"],
+    "Kotlin": ["kotlin", "kotlin programming"],
+    "Go": ["go", "golang", "go language", "go lang"],
+    "Rust": ["rust", "rust-lang", "rust programming"],
+    "Scala": ["scala", "scala programming"],
+    "R": ["r", "r programming", "r language", "r statistical"],
+    "MATLAB": ["matlab", "mat lab"],
+    "Perl": ["perl", "perl programming"],
+    "Shell": ["shell", "bash", "sh", "bash scripting", "shell scripting"],
+    "PowerShell": ["powershell", "ps1", "power shell"],
+    "Dart": ["dart", "flutter dart"],
+    "Objective-C": ["objective-c", "objc", "objective c"],
+    "Groovy": ["groovy"],
+    "Lua": ["lua"],
+    "Haskell": ["haskell"],
+    "Elixir": ["elixir"],
+    "Clojure": ["clojure"],
+    "F#": ["f#", "fsharp", "f sharp"],
+    "VB.NET": ["vb.net", "visual basic", "vb .net"],
+    "SQL": ["sql", "t-sql", "pl/sql", "plsql", "structured query language"],
+    "Assembly": ["assembly", "asm", "assembler", "x86 assembly"],
+    "Fortran": ["fortran"],
+    "COBOL": ["cobol"],
+    "Ada": ["ada"],
+    "Prolog": ["prolog"],
+    "Lisp": ["lisp", "common lisp"],
+    "Scheme": ["scheme"],
+    "Erlang": ["erlang"],
+    "OCaml": ["ocaml", "objective caml"],
+    "Julia": ["julia"],
+    "Nim": ["nim"],
+    "Crystal": ["crystal"],
+    "Zig": ["zig"],
+    "V": ["v", "vlang"],
+    "D": ["d", "dlang"],
+    
+    "React": ["react", "reactjs", "react.js", "react js", "react native"],
+    "Angular": ["angular", "angularjs", "angular.js", "angular 2+", "ng", "angular 2", "angular 4"],
+    "Vue": ["vue", "vuejs", "vue.js", "vue js"],
+    "Svelte": ["svelte", "sveltejs"],
+    "Next.js": ["next", "nextjs", "next.js", "next js"],
+    "Nuxt.js": ["nuxt", "nuxtjs", "nuxt.js"],
+    "Django": ["django", "django rest framework", "drf"],
+    "Flask": ["flask", "flask-restful", "flask api"],
+    "FastAPI": ["fastapi", "fast api"],
+    "Spring": ["spring", "spring boot", "spring framework", "spring mvc"],
+    "Express": ["express", "expressjs", "express.js"],
+    "Node.js": ["node", "node.js", "nodejs", "node js"],
+    "ASP.NET": ["asp.net", "aspnet", "asp .net"],
+    "Ruby on Rails": ["ruby on rails", "rails", "ror"],
+    "Laravel": ["laravel"],
+    "Symfony": ["symfony"],
+    ".NET": [".net", "dotnet", ".net core", ".net framework"],
+    "jQuery": ["jquery", "jquery.js"],
+    "Bootstrap": ["bootstrap", "bootstrap css"],
+    "Tailwind CSS": ["tailwind", "tailwind css", "tailwindcss"],
+    "Material-UI": ["material-ui", "mui", "material ui"],
+    "Redux": ["redux", "redux toolkit", "react redux"],
+    "GraphQL": ["graphql", "graph ql", "gql"],
+    "REST API": ["rest", "rest api", "restful", "restful api"],
+    "WebSocket": ["websocket", "web socket", "ws"],
+    "gRPC": ["grpc", "grpc-web"],
+    "Backbone.js": ["backbone", "backbonejs", "backbone.js"],
+    "Ember.js": ["ember", "emberjs", "ember.js"],
+    "Meteor": ["meteor", "meteorjs"],
+    "Gatsby": ["gatsby", "gatsbyjs"],
+    "Remix": ["remix", "remix.run"],
+    "Solid.js": ["solid", "solidjs", "solid.js"],
+    "Alpine.js": ["alpine", "alpinejs", "alpine.js"],
+    "Preact": ["preact"],
+    "Lit": ["lit", "lit-element"],
+    "Stencil": ["stencil", "stenciljs"],
+    "Astro": ["astro", "astro.build"],
+    "Qwik": ["qwik"],
+    "Deno": ["deno"],
+    "Bun": ["bun", "bun.sh"],
+    
+    "PyTorch": ["pytorch", "torch", "py torch"],
+    "TensorFlow": ["tensorflow", "tf", "tensorflow 2"],
+    "Keras": ["keras", "tf.keras"],
+    "Scikit-learn": ["scikit-learn", "sklearn", "scikit"],
+    "Pandas": ["pandas", "pandas dataframe"],
+    "NumPy": ["numpy", "numeric python"],
+    "OpenCV": ["opencv", "cv2", "open cv"],
+    "Hugging Face": ["hugging face", "huggingface", "transformers"],
+    "LangChain": ["langchain", "lang chain"],
+    "LLaMA": ["llama", "meta llama"],
+    "BERT": ["bert", "bidirectional encoder"],
+    "GPT": ["gpt", "gpt-3", "gpt-4", "generative pretrained transformer"],
+    "Matplotlib": ["matplotlib", "pyplot"],
+    "Seaborn": ["seaborn"],
+    "Plotly": ["plotly"],
+    "SciPy": ["scipy", "scientific python"],
+    "Statsmodels": ["statsmodels"],
+    "XGBoost": ["xgboost", "extreme gradient boosting"],
+    "LightGBM": ["lightgbm", "light gbm"],
+    "CatBoost": ["catboost", "cat boost"],
+    "NLTK": ["nltk", "natural language toolkit"],
+    "spaCy": ["spacy", "spacy nlp"],
+    "Gensim": ["gensim"],
+    "FastText": ["fasttext", "fast text"],
+    "Word2Vec": ["word2vec", "word 2 vec"],
+    "GloVe": ["glove", "global vectors"],
+    "ELMo": ["elmo"],
+    "T5": ["t5", "text-to-text transfer transformer"],
+    "RoBERTa": ["roberta"],
+    "ALBERT": ["albert"],
+    "DistilBERT": ["distilbert"],
+    "XLNet": ["xlnet"],
+    "ELECTRA": ["electra"],
+    "Stable Diffusion": ["stable diffusion"],
+    "DALL-E": ["dall-e", "dall e"],
+    "Midjourney": ["midjourney"],
+    "Whisper": ["whisper", "openai whisper"],
+    "Claude": ["claude", "anthropic claude"],
+    "Gemini": ["gemini", "google gemini"],
+    "PaLM": ["palm", "pathways language model"],
+    "YOLO": ["yolo", "you only look once"],
+    "Mask R-CNN": ["mask r-cnn", "mask rcnn"],
+    "ResNet": ["resnet", "residual network"],
+    "VGG": ["vgg", "vgg16", "vgg19"],
+    "Inception": ["inception"],
+    "MobileNet": ["mobilenet"],
+    "EfficientNet": ["efficientnet"],
+    "U-Net": ["u-net", "unet"],
+    "GAN": ["gan", "generative adversarial network"],
+    "VAE": ["vae", "variational autoencoder"],
+    "Diffusion Models": ["diffusion models"],
+    "Reinforcement Learning": ["reinforcement learning", "rl"],
+    "Q-Learning": ["q-learning", "q learning"],
+    "DQN": ["dqn", "deep q network"],
+    "PPO": ["ppo", "proximal policy optimization"],
+    "A3C": ["a3c", "asynchronous advantage actor-critic"],
+    "DDPG": ["ddpg", "deep deterministic policy gradient"],
+    "SAC": ["sac", "soft actor-critic"],
+    "AlphaGo": ["alphago"],
+    "OpenAI Gym": ["openai gym", "gym"],
+    "Ray": ["ray", "ray rllib"],
+    "MLflow": ["mlflow", "ml flow"],
+    "Weights & Biases": ["wandb", "weights and biases"],
+    "TensorBoard": ["tensorboard", "tensor board"],
+    "Kubeflow": ["kubeflow", "kube flow"],
+    "Airflow": ["airflow", "apache airflow"],
+    "Prefect": ["prefect"],
+    "Dagster": ["dagster"],
+    "Metaflow": ["metaflow"],
+    "DVC": ["dvc", "data version control"],
+    "Great Expectations": ["great expectations"],
+    "Evidently": ["evidently"],
+    "Seldon": ["seldon", "seldon core"],
+    "BentoML": ["bentoml", "bento ml"],
+    "Cortex": ["cortex"],
+    
+    "AWS": ["aws", "amazon web services", "amazon aws"],
+    "Azure": ["azure", "microsoft azure", "ms azure"],
+    "Google Cloud": ["gcp", "google cloud", "google cloud platform"],
+    "Heroku": ["heroku"],
+    "DigitalOcean": ["digitalocean", "digital ocean"],
+    "EC2": ["ec2", "aws ec2", "amazon ec2"],
+    "S3": ["s3", "aws s3", "amazon s3"],
+    "Lambda": ["lambda", "aws lambda", "lambda functions"],
+    "CloudFormation": ["cloudformation", "cloud formation"],
+    "Azure Functions": ["azure functions"],
+    "Cloud Functions": ["cloud functions", "google cloud functions"],
+    "ECS": ["ecs", "elastic container service"],
+    "EKS": ["eks", "elastic kubernetes service"],
+    "AKS": ["aks", "azure kubernetes service"],
+    "GKE": ["gke", "google kubernetes engine"],
+    "RDS": ["rds", "relational database service"],
+    "DynamoDB": ["dynamodb", "amazon dynamodb"],
+    "CloudWatch": ["cloudwatch", "cloud watch"],
+    "Azure Monitor": ["azure monitor"],
+    "Stackdriver": ["stackdriver", "google stackdriver"],
+    "Route 53": ["route 53", "route53"],
+    "CloudFront": ["cloudfront", "cloud front"],
+    "API Gateway": ["api gateway", "aws api gateway"],
+    "SNS": ["sns", "simple notification service"],
+    "SQS": ["sqs", "simple queue service"],
+    "Kinesis": ["kinesis", "amazon kinesis"],
+    "EventBridge": ["eventbridge", "event bridge"],
+    "Step Functions": ["step functions"],
+    "Glue": ["glue", "aws glue"],
+    "EMR": ["emr", "elastic mapreduce"],
+    "Athena": ["athena", "aws athena"],
+    "Redshift": ["redshift", "amazon redshift"],
+    "BigQuery": ["bigquery", "big query"],
+    "Snowflake": ["snowflake"],
+    "Databricks": ["databricks"],
+    "Cloudera": ["cloudera"],
+    "Hortonworks": ["hortonworks"],
+    "Cloud Storage": ["cloud storage", "google cloud storage"],
+    "Blob Storage": ["blob storage", "azure blob"],
+    "VPC": ["vpc", "virtual private cloud"],
+    "IAM": ["iam", "identity and access management"],
+    "KMS": ["kms", "key management service"],
+    "Secrets Manager": ["secrets manager"],
+    "Parameter Store": ["parameter store"],
+    "Cloud Build": ["cloud build"],
+    "CodeBuild": ["codebuild", "code build"],
+    "CodeDeploy": ["codedeploy", "code deploy"],
+    "CodePipeline": ["codepipeline", "code pipeline"],
+    
+    "Docker": ["docker", "docker-compose", "dockerfile"],
+    "Kubernetes": ["kubernetes", "k8s", "kube"],
+    "Jenkins": ["jenkins", "jenkins ci/cd"],
+    "Git": ["git", "github", "gitlab", "version control"],
+    "Terraform": ["terraform", "terraform iac"],
+    "Ansible": ["ansible", "ansible automation"],
+    "CI/CD": ["ci/cd", "cicd", "continuous integration", "continuous deployment"],
+    "GitHub Actions": ["github actions", "gh actions"],
+    "GitLab CI": ["gitlab ci", "gitlab ci/cd"],
+    "CircleCI": ["circleci", "circle ci"],
+    "Travis CI": ["travis ci", "travisci"],
+    "Bamboo": ["bamboo", "atlassian bamboo"],
+    "TeamCity": ["teamcity", "team city"],
+    "Azure DevOps": ["azure devops", "azure pipelines"],
+    "Bitbucket": ["bitbucket", "bitbucket pipelines"],
+    "ArgoCD": ["argocd", "argo cd"],
+    "Flux": ["flux", "fluxcd"],
+    "Helm": ["helm", "helm charts"],
+    "Kustomize": ["kustomize"],
+    "Istio": ["istio"],
+    "Linkerd": ["linkerd"],
+    "Consul": ["consul", "hashicorp consul"],
+    "Vault": ["vault", "hashicorp vault"],
+    "Nomad": ["nomad", "hashicorp nomad"],
+    "Packer": ["packer", "hashicorp packer"],
+    "Chef": ["chef", "chef infra"],
+    "Puppet": ["puppet"],
+    "SaltStack": ["saltstack", "salt"],
+    "Pulumi": ["pulumi"],
+    "CloudFormation": ["cloudformation"],
+    "ARM Templates": ["arm templates", "azure resource manager"],
+    "Vagrant": ["vagrant"],
+    "Prometheus": ["prometheus"],
+    "Grafana": ["grafana"],
+    "Datadog": ["datadog", "data dog"],
+    "New Relic": ["new relic", "newrelic"],
+    "Splunk": ["splunk"],
+    "ELK Stack": ["elk", "elasticsearch logstash kibana"],
+    "Fluentd": ["fluentd"],
+    "Logstash": ["logstash"],
+    "Kibana": ["kibana"],
+    "Jaeger": ["jaeger"],
+    "Zipkin": ["zipkin"],
+    "OpenTelemetry": ["opentelemetry", "otel"],
+    "Sentry": ["sentry"],
+    "PagerDuty": ["pagerduty", "pager duty"],
+    "OpsGenie": ["opsgenie", "ops genie"],
+    "Nagios": ["nagios"],
+    "Zabbix": ["zabbix"],
+    "Selenium": ["selenium", "selenium webdriver"],
+    "Cypress": ["cypress", "cypress.io"],
+    "Playwright": ["playwright"],
+    "Puppeteer": ["puppeteer"],
+    "JUnit": ["junit", "junit 5"],
+    "Jest": ["jest", "jestjs"],
+    "Mocha": ["mocha", "mochajs"],
+    "Chai": ["chai", "chaijs"],
+    "Jasmine": ["jasmine"],
+    "PyTest": ["pytest", "py.test"],
+    "RSpec": ["rspec"],
+    "Cucumber": ["cucumber", "cucumber bdd"],
+    "Postman": ["postman"],
+    "Insomnia": ["insomnia"],
+    "SoapUI": ["soapui", "soap ui"],
+    "JMeter": ["jmeter", "apache jmeter"],
+    "Gatling": ["gatling"],
+    "Locust": ["locust"],
+    "K6": ["k6", "grafana k6"],
+    
+    "PostgreSQL": ["postgresql", "postgres", "psql"],
+    "MongoDB": ["mongodb", "mongo", "mongo db"],
+    "MySQL": ["mysql", "my sql"],
+    "Redis": ["redis", "redis cache"],
+    "Cassandra": ["cassandra", "apache cassandra"],
+    "Oracle": ["oracle", "oracle database"],
+    "SQL Server": ["sql server", "mssql", "ms sql"],
+    "SQLite": ["sqlite", "sqlite3"],
+    "DynamoDB": ["dynamodb", "amazon dynamodb"],
+    "Elasticsearch": ["elasticsearch", "elastic search"],
+    "Neo4j": ["neo4j"],
+    "MariaDB": ["mariadb", "maria db"],
+    "CouchDB": ["couchdb", "couch db"],
+    "InfluxDB": ["influxdb", "influx db"],
+    "TimescaleDB": ["timescaledb", "timescale db"],
+    "ClickHouse": ["clickhouse", "click house"],
+    "ScyllaDB": ["scylladb", "scylla db"],
+    "ArangoDB": ["arangodb", "arango db"],
+    "RethinkDB": ["rethinkdb", "rethink db"],
+    "OrientDB": ["orientdb", "orient db"],
+    "CockroachDB": ["cockroachdb", "cockroach db"],
+    "TiDB": ["tidb"],
+    "YugabyteDB": ["yugabytedb", "yugabyte db"],
+    "FaunaDB": ["faunadb", "fauna db"],
+    "Firebase": ["firebase", "firebase realtime database"],
+    "Firestore": ["firestore", "cloud firestore"],
+    "Supabase": ["supabase"],
+    "PlanetScale": ["planetscale", "planet scale"],
+    "Prisma": ["prisma", "prisma orm"],
+    "Sequelize": ["sequelize"],
+    "TypeORM": ["typeorm", "type orm"],
+    "Mongoose": ["mongoose", "mongoose odm"],
+    "SQLAlchemy": ["sqlalchemy", "sql alchemy"],
+    "Hibernate": ["hibernate"],
+    "Entity Framework": ["entity framework", "ef core"],
+    "GORM": ["gorm", "go orm"],
+    "ActiveRecord": ["activerecord", "active record"],
+    "Doctrine": ["doctrine"],
+    "Eloquent": ["eloquent", "laravel eloquent"],
+    
+    "HTML": ["html", "html5"],
+    "CSS": ["css", "css3"],
+    "Sass": ["sass", "scss"],
+    "Less": ["less"],
+    "PostCSS": ["postcss", "post css"],
+    "Styled Components": ["styled components", "styled-components"],
+    "CSS Modules": ["css modules"],
+    "Emotion": ["emotion", "emotion css"],
+    "Webpack": ["webpack"],
+    "Babel": ["babel", "babeljs"],
+    "npm": ["npm", "node package manager"],
+    "Yarn": ["yarn"],
+    "pnpm": ["pnpm"],
+    "Vite": ["vite"],
+    "Rollup": ["rollup", "rollupjs"],
+    "Parcel": ["parcel", "parceljs"],
+    "Gulp": ["gulp", "gulpjs"],
+    "Grunt": ["grunt", "gruntjs"],
+    "ESLint": ["eslint", "es lint"],
+    "Prettier": ["prettier"],
+    "TSLint": ["tslint"],
+    "Stylelint": ["stylelint", "style lint"],
+    "Husky": ["husky"],
+    "Lint-staged": ["lint-staged"],
+    "Commitizen": ["commitizen"],
+    "Semantic Release": ["semantic-release", "semantic release"],
+    "Renovate": ["renovate"],
+    "Dependabot": ["dependabot", "depend abot"],
+    "Storybook": ["storybook"],
+    "Chromatic": ["chromatic"],
+    "Percy": ["percy"],
+    "Nx": ["nx", "nx monorepo"],
+    "Turborepo": ["turborepo", "turbo repo"],
+    "Lerna": ["lerna"],
+    "Rush": ["rush", "rushjs"],
+    "pnpm Workspaces": ["pnpm workspaces"],
+    "Yarn Workspaces": ["yarn workspaces"],
+    
+    "Machine Learning": ["machine learning", "ml"],
+    "Deep Learning": ["deep learning", "dl"],
+    "Natural Language Processing": ["nlp", "natural language processing"],
+    "Computer Vision": ["computer vision", "cv", "image processing"],
+    "Data Science": ["data science", "ds", "data analysis"],
+    "Artificial Intelligence": ["ai", "artificial intelligence"],
+    "Neural Networks": ["neural networks", "nn"],
+    "Generative AI": ["generative ai", "gen ai"],
+    "Time Series Analysis": ["time series", "time series analysis"],
+    "Anomaly Detection": ["anomaly detection"],
+    "Clustering": ["clustering", "cluster analysis"],
+    "Classification": ["classification", "supervised learning"],
+    "Regression": ["regression", "regression analysis"],
+    "Dimensionality Reduction": ["dimensionality reduction", "pca"],
+    "Feature Engineering": ["feature engineering"],
+    "Model Selection": ["model selection", "hyperparameter tuning"],
+    "Cross-Validation": ["cross-validation", "cross validation"],
+    "Ensemble Methods": ["ensemble methods", "ensemble learning"],
+    "Random Forest": ["random forest", "random forests"],
+    "Decision Trees": ["decision trees", "decision tree"],
+    "SVM": ["svm", "support vector machine"],
+    "Naive Bayes": ["naive bayes", "bayes classifier"],
+    "KNN": ["knn", "k-nearest neighbors"],
+    "Logistic Regression": ["logistic regression"],
+    "Linear Regression": ["linear regression"],
+    "Gradient Boosting": ["gradient boosting"],
+    "AdaBoost": ["adaboost"],
+    "Bayesian Optimization": ["bayesian optimization"],
+    "Grid Search": ["grid search"],
+    "Random Search": ["random search"],
+    "AutoML": ["automl", "automated machine learning"],
+    "Transfer Learning": ["transfer learning"],
+    "Few-Shot Learning": ["few-shot learning"],
+    "Zero-Shot Learning": ["zero-shot learning"],
+    "Meta-Learning": ["meta-learning", "learning to learn"],
+    "Federated Learning": ["federated learning"],
+    "Active Learning": ["active learning"],
+    "Online Learning": ["online learning"],
+    "Semi-Supervised Learning": ["semi-supervised learning"],
+    "Self-Supervised Learning": ["self-supervised learning"],
+    "Unsupervised Learning": ["unsupervised learning"],
+    "Supervised Learning": ["supervised learning"],
+    "Retrieval-Augmented Generation": ["rag", "retrieval-augmented generation"],
+    "Prompt Engineering": ["prompt engineering", "prompt design"],
+    "Fine-Tuning": ["fine-tuning", "model fine-tuning"],
+    "LoRA": ["lora", "low-rank adaptation"],
+    "PEFT": ["peft", "parameter-efficient fine-tuning"],
+    "Quantization": ["quantization", "model quantization"],
+    "Model Compression": ["model compression"],
+    "Knowledge Distillation": ["knowledge distillation"],
+    "Neural Architecture Search": ["nas", "neural architecture search"],
+    "Hyperparameter Optimization": ["hyperparameter optimization", "hpo"],
+    "Optuna": ["optuna"],
+    "Ray Tune": ["ray tune"],
+    
+    "Agile": ["agile", "agile methodology"],
+    "Scrum": ["scrum", "scrum master"],
+    "Kanban": ["kanban", "kanban board"],
+    "DevOps": ["devops", "dev ops", "devsecops"],
+    "Waterfall": ["waterfall", "waterfall model"],
+    "Lean": ["lean", "lean methodology"],
+    "Six Sigma": ["six sigma", "6 sigma"],
+    "TDD": ["tdd", "test-driven development"],
+    "BDD": ["bdd", "behavior-driven development"],
+    "XP": ["xp", "extreme programming"],
+    "SAFe": ["safe", "scaled agile framework"],
+    "LeSS": ["less", "large-scale scrum"],
+    "Crystal": ["crystal methodology"],
+    "DSDM": ["dsdm", "dynamic systems development method"],
+    "FDD": ["fdd", "feature-driven development"],
+    "ASD": ["asd", "adaptive software development"],
+    "Pair Programming": ["pair programming"],
+    "Mob Programming": ["mob programming"],
+    "Code Review": ["code review", "peer review"],
+    "Sprint Planning": ["sprint planning"],
+    "Daily Standup": ["daily standup", "daily scrum"],
+    "Retrospective": ["retrospective", "sprint retrospective"],
+    "Sprint Review": ["sprint review"],
+    "Backlog Grooming": ["backlog grooming", "backlog refinement"],
+    "Story Mapping": ["story mapping", "user story mapping"],
+    "Epic": ["epic", "user epic"],
+    "User Story": ["user story"],
+    "Acceptance Criteria": ["acceptance criteria"],
+    "Definition of Done": ["definition of done", "dod"],
+    "Velocity": ["velocity", "team velocity"],
+    "Burndown Chart": ["burndown chart"],
+    "Burnup Chart": ["burnup chart"],
+    "Cumulative Flow Diagram": ["cumulative flow diagram", "cfd"],
+    "Lead Time": ["lead time"],
+    "Cycle Time": ["cycle time"],
+    "Throughput": ["throughput"],
+    "WIP Limit": ["wip limit", "work in progress limit"],
+    
+    "Linux": ["linux", "unix", "linux administration"],
+    "Windows": ["windows", "microsoft windows"],
+    "macOS": ["macos", "mac os", "osx"],
+    "Ubuntu": ["ubuntu"],
+    "CentOS": ["centos", "cent os"],
+    "Debian": ["debian"],
+    "Red Hat": ["red hat", "rhel"],
+    "Fedora": ["fedora"],
+    "Arch Linux": ["arch linux", "arch"],
+    "Kali Linux": ["kali linux", "kali"],
+    "Alpine Linux": ["alpine linux", "alpine"],
+    "SUSE": ["suse", "opensuse"],
+    "FreeBSD": ["freebsd", "free bsd"],
+    "OpenBSD": ["openbsd", "open bsd"],
+    "NetBSD": ["netbsd", "net bsd"],
+    "Solaris": ["solaris", "oracle solaris"],
+    
+    "VS Code": ["vs code", "visual studio code", "vscode"],
+    "IntelliJ": ["intellij", "intellij idea"],
+    "PyCharm": ["pycharm", "py charm"],
+    "WebStorm": ["webstorm", "web storm"],
+    "PhpStorm": ["phpstorm", "php storm"],
+    "RubyMine": ["rubymine", "ruby mine"],
+    "GoLand": ["goland", "go land"],
+    "CLion": ["clion"],
+    "DataGrip": ["datagrip", "data grip"],
+    "Rider": ["rider", "jetbrains rider"],
+    "Eclipse": ["eclipse"],
+    "NetBeans": ["netbeans", "net beans"],
+    "Vim": ["vim", "vi"],
+    "Neovim": ["neovim", "nvim"],
+    "Emacs": ["emacs"],
+    "Sublime Text": ["sublime", "sublime text"],
+    "Atom": ["atom", "atom editor"],
+    "Notepad++": ["notepad++", "notepad plus plus"],
+    "Brackets": ["brackets"],
+    "Visual Studio": ["visual studio", "vs"],
+    "Xcode": ["xcode", "x code"],
+    "Android Studio": ["android studio"],
+    "Jupyter": ["jupyter", "jupyter notebook"],
+    "JupyterLab": ["jupyterlab", "jupyter lab"],
+    "Google Colab": ["google colab", "colab"],
+    "Kaggle": ["kaggle"],
+    "RStudio": ["rstudio", "r studio"],
+    "Spyder": ["spyder"],
+    
+    "Jira": ["jira", "atlassian jira"],
+    "Confluence": ["confluence", "atlassian confluence"],
+    "Slack": ["slack"],
+    "Microsoft Teams": ["microsoft teams", "teams", "ms teams"],
+    "Discord": ["discord"],
+    "Zoom": ["zoom"],
+    "Google Meet": ["google meet", "meet"],
+    "Trello": ["trello"],
+    "Asana": ["asana"],
+    "Monday.com": ["monday", "monday.com"],
+    "ClickUp": ["clickup", "click up"],
+    "Notion": ["notion"],
+    "Linear": ["linear"],
+    "Shortcut": ["shortcut", "clubhouse"],
+    "Basecamp": ["basecamp"],
+    "Wrike": ["wrike"],
+    "Smartsheet": ["smartsheet"],
+    "Airtable": ["airtable", "air table"],
+    "Miro": ["miro"],
+    "Figma": ["figma"],
+    "Sketch": ["sketch"],
+    "Adobe XD": ["adobe xd", "xd"],
+    "InVision": ["invision"],
+    "Zeplin": ["zeplin"],
+    "Abstract": ["abstract"],
+    "Framer": ["framer"],
+    "Principle": ["principle"],
+    "ProtoPie": ["protopie", "proto pie"],
+    "Axure": ["axure", "axure rp"],
+    "Balsamiq": ["balsamiq"],
+    
+    "Leadership": ["leadership", "team leadership"],
+    "Project Management": ["project management", "pm"],
+    "Communication": ["communication", "communication skills"],
+    "Problem Solving": ["problem solving", "critical thinking"],
+    "Time Management": ["time management"],
+    "Teamwork": ["teamwork", "collaboration"],
+    "Analytical Skills": ["analytical skills", "analysis"],
+    "Creativity": ["creativity", "creative thinking"],
+    "Adaptability": ["adaptability", "flexibility"],
+    "Emotional Intelligence": ["emotional intelligence", "eq"],
+    "Conflict Resolution": ["conflict resolution"],
+    "Negotiation": ["negotiation", "negotiation skills"],
+    "Presentation Skills": ["presentation skills", "public speaking"],
+    "Strategic Thinking": ["strategic thinking", "strategic planning"],
+    "Decision Making": ["decision making"],
+    "Mentoring": ["mentoring", "coaching"],
+    "Stakeholder Management": ["stakeholder management"],
+    "Change Management": ["change management"],
+    "Risk Management": ["risk management"],
+    "Budget Management": ["budget management", "financial management"],
+    "Resource Planning": ["resource planning"],
+    "Performance Management": ["performance management"],
+    "Recruitment": ["recruitment", "hiring"],
+    "Onboarding": ["onboarding"],
+    "Training": ["training", "training and development"],
+    "Business Analysis": ["business analysis", "ba"],
+    "Requirements Gathering": ["requirements gathering"],
+    "Documentation": ["documentation", "technical writing"],
+    "Customer Service": ["customer service", "customer support"],
+    "Sales": ["sales", "business development"],
+    "Marketing": ["marketing", "digital marketing"],
+    "SEO": ["seo", "search engine optimization"],
+    "SEM": ["sem", "search engine marketing"],
+    "Content Marketing": ["content marketing"],
+    "Social Media Marketing": ["social media marketing", "smm"],
+    "Email Marketing": ["email marketing"],
+    "Growth Hacking": ["growth hacking"],
+    "Product Management": ["product management", "product owner"],
+    "Product Strategy": ["product strategy"],
+    "Product Roadmap": ["product roadmap"],
+    "User Research": ["user research", "ux research"],
+    "UX Design": ["ux design", "user experience design"],
+    "UI Design": ["ui design", "user interface design"],
+    "Wireframing": ["wireframing"],
+    "Prototyping": ["prototyping"],
+    "Usability Testing": ["usability testing"],
+    "A/B Testing": ["a/b testing", "split testing"],
+    "Conversion Rate Optimization": ["cro", "conversion rate optimization"],
+    "Web Analytics": ["web analytics", "analytics"],
+    "Google Analytics": ["google analytics", "ga"],
+    "Mixpanel": ["mixpanel"],
+    "Amplitude": ["amplitude"],
+    "Segment": ["segment"],
+    "Tableau": ["tableau"],
+    "Power BI": ["power bi", "powerbi"],
+    "Looker": ["looker"],
+    "Metabase": ["metabase"],
+    "Superset": ["superset", "apache superset"],
+    "Redash": ["redash"],
+    "Data Visualization": ["data visualization", "dataviz"],
+    "ETL": ["etl", "extract transform load"],
+    "Data Warehousing": ["data warehousing"],
+    "Data Pipeline": ["data pipeline", "data engineering"],
+    "Apache Spark": ["apache spark", "spark"],
+    "Apache Kafka": ["apache kafka", "kafka"],
+    "Apache Flink": ["apache flink", "flink"],
+    "Apache Beam": ["apache beam", "beam"],
+    "Apache NiFi": ["apache nifi", "nifi"],
+    "dbt": ["dbt", "data build tool"],
+    "Talend": ["talend"],
+    "Informatica": ["informatica"],
+    "Pentaho": ["pentaho"],
+    "SSIS": ["ssis", "sql server integration services"],
+    
+    "Cybersecurity": ["cybersecurity", "cyber security", "information security"],
+    "Penetration Testing": ["penetration testing", "pentesting", "pen testing"],
+    "Ethical Hacking": ["ethical hacking", "white hat hacking"],
+    "Network Security": ["network security"],
+    "Application Security": ["application security", "appsec"],
+    "Cloud Security": ["cloud security"],
+    "SIEM": ["siem", "security information and event management"],
+    "IDS": ["ids", "intrusion detection system"],
+    "IPS": ["ips", "intrusion prevention system"],
+    "Firewall": ["firewall"],
+    "VPN": ["vpn", "virtual private network"],
+    "WAF": ["waf", "web application firewall"],
+    "DDoS Protection": ["ddos protection", "ddos mitigation"],
+    "Malware Analysis": ["malware analysis"],
+    "Forensics": ["forensics", "digital forensics"],
+    "Incident Response": ["incident response", "ir"],
+    "Threat Intelligence": ["threat intelligence"],
+    "Vulnerability Assessment": ["vulnerability assessment"],
+    "Security Audit": ["security audit"],
+    "Compliance": ["compliance", "regulatory compliance"],
+    "GDPR": ["gdpr", "general data protection regulation"],
+    "HIPAA": ["hipaa"],
+    "PCI DSS": ["pci dss", "pci compliance"],
+    "ISO 27001": ["iso 27001", "iso27001"],
+    "SOC 2": ["soc 2", "soc2"],
+    "NIST": ["nist", "nist framework"],
+    "OWASP": ["owasp", "owasp top 10"],
+    "Burp Suite": ["burp suite", "burp"],
+    "Metasploit": ["metasploit"],
+    "Nmap": ["nmap"],
+    "Wireshark": ["wireshark"],
+    "Kali Tools": ["kali tools"],
+    "Snort": ["snort"],
+    "Suricata": ["suricata"],
+    "Zeek": ["zeek", "bro ids"],
+    "Cryptography": ["cryptography", "encryption"],
+    "PKI": ["pki", "public key infrastructure"],
+    "SSL/TLS": ["ssl", "tls", "ssl/tls"],
+    "OAuth": ["oauth", "oauth 2.0"],
+    "JWT": ["jwt", "json web token"],
+    "SAML": ["saml"],
+    "LDAP": ["ldap"],
+    "Active Directory": ["active directory", "ad"],
+    "Okta": ["okta"],
+    "Auth0": ["auth0"],
+    "Keycloak": ["keycloak"],
+    
+    "Blockchain": ["blockchain"],
+    "Ethereum": ["ethereum", "eth"],
+    "Bitcoin": ["bitcoin", "btc"],
+    "Solidity": ["solidity"],
+    "Smart Contracts": ["smart contracts"],
+    "Web3": ["web3", "web3.js"],
+    "DeFi": ["defi", "decentralized finance"],
+    "NFT": ["nft", "non-fungible token"],
+    "IPFS": ["ipfs", "interplanetary file system"],
+    "Hyperledger": ["hyperledger"],
+    "Truffle": ["truffle", "truffle suite"],
+    "Hardhat": ["hardhat"],
+    "Ganache": ["ganache"],
+    "MetaMask": ["metamask", "meta mask"],
+    "The Graph": ["the graph"],
+    "Chainlink": ["chainlink"],
+    "Polygon": ["polygon", "matic"],
+    "Solana": ["solana"],
+    "Avalanche": ["avalanche", "avax"],
+    "Polkadot": ["polkadot", "dot"],
+    "Cardano": ["cardano", "ada"],
+    
+    "IoT": ["iot", "internet of things"],
+    "Arduino": ["arduino"],
+    "Raspberry Pi": ["raspberry pi", "raspi"],
+    "ESP32": ["esp32"],
+    "MQTT": ["mqtt"],
+    "CoAP": ["coap"],
+    "Zigbee": ["zigbee"],
+    "LoRa": ["lora", "lorawan"],
+    "BLE": ["ble", "bluetooth low energy"],
+    "Edge Computing": ["edge computing"],
+    "Embedded Systems": ["embedded systems"],
+    "RTOS": ["rtos", "real-time operating system"],
+    "FreeRTOS": ["freertos", "free rtos"],
+    "Zephyr": ["zephyr", "zephyr rtos"],
+    
+    "AR": ["ar", "augmented reality"],
+    "VR": ["vr", "virtual reality"],
+    "Unity": ["unity", "unity3d"],
+    "Unreal Engine": ["unreal engine", "unreal"],
+    "ARKit": ["arkit", "apple arkit"],
+    "ARCore": ["arcore", "google arcore"],
+    "Vuforia": ["vuforia"],
+    "Three.js": ["three.js", "threejs"],
+    "WebGL": ["webgl", "web gl"],
+    "OpenGL": ["opengl", "open gl"],
+    "Vulkan": ["vulkan"],
+    "DirectX": ["directx", "direct x"],
+    "Blender": ["blender", "blender3d"],
+    "Maya": ["maya", "autodesk maya"],
+    "3ds Max": ["3ds max", "3dsmax"],
+    "Cinema 4D": ["cinema 4d", "c4d"],
+    "Substance Painter": ["substance painter"],
+    "ZBrush": ["zbrush", "z brush"],
+    
+    "Quantum Computing": ["quantum computing"],
+    "Qiskit": ["qiskit"],
+    "Cirq": ["cirq"],
+    "Q#": ["q#", "q sharp"],
+    "Quantum ML": ["quantum ml", "quantum machine learning"],
+    
+    "5G": ["5g", "5g network"],
+    "SDN": ["sdn", "software-defined networking"],
+    "NFV": ["nfv", "network functions virtualization"],
+    "VLAN": ["vlan", "virtual lan"],
+    "BGP": ["bgp", "border gateway protocol"],
+    "OSPF": ["ospf", "open shortest path first"],
+    "TCP/IP": ["tcp/ip", "tcp ip"],
+    "DNS": ["dns", "domain name system"],
+    "DHCP": ["dhcp", "dynamic host configuration protocol"],
+    "HTTP/HTTPS": ["http", "https", "http/https"],
+    "FTP": ["ftp", "file transfer protocol"],
+    "SSH": ["ssh", "secure shell"],
+    "Telnet": ["telnet"],
+    "SNMP": ["snmp", "simple network management protocol"],
+    "Load Balancing": ["load balancing"],
+    "CDN": ["cdn", "content delivery network"],
+    "Cloudflare": ["cloudflare"],
+    "Akamai": ["akamai"],
+    "Fastly": ["fastly"],
+    
+    "Microservices": ["microservices", "microservice architecture"],
+    "Monolith": ["monolith", "monolithic architecture"],
+    "Service Mesh": ["service mesh"],
+    "Event-Driven Architecture": ["event-driven architecture", "eda"],
+    "CQRS": ["cqrs", "command query responsibility segregation"],
+    "Event Sourcing": ["event sourcing"],
+    "DDD": ["ddd", "domain-driven design"],
+    "Clean Architecture": ["clean architecture"],
+    "Hexagonal Architecture": ["hexagonal architecture", "ports and adapters"],
+    "Onion Architecture": ["onion architecture"],
+    "Serverless": ["serverless", "serverless architecture"],
+    "JAMstack": ["jamstack", "jam stack"],
+    "Backend for Frontend": ["bff", "backend for frontend"],
+    "API-First": ["api-first", "api first"],
+    "Contract Testing": ["contract testing"],
+    "Pact": ["pact", "pact broker"],
+    "OpenAPI": ["openapi", "open api", "swagger"],
+    "AsyncAPI": ["asyncapi", "async api"],
+    "gRPC": ["grpc"],
+    "Protobuf": ["protobuf", "protocol buffers"],
+    "Thrift": ["thrift", "apache thrift"],
+    "MessagePack": ["messagepack", "msgpack"],
+    "YAML": ["yaml"],
+    "TOML": ["toml"],
+    "XML": ["xml"],
+    "JSON": ["json"],
+    "CSV": ["csv", "comma-separated values"],
+    "Parquet": ["parquet", "apache parquet"],
+    "Avro": ["avro", "apache avro"],
+    "ORC": ["orc", "optimized row columnar"],
+    
+    "Maven": ["maven", "apache maven"],
+    "Gradle": ["gradle"],
+    "Ant": ["ant", "apache ant"],
+    "Make": ["make", "makefile"],
+    "CMake": ["cmake"],
+    "Bazel": ["bazel"],
+    "SBT": ["sbt", "scala build tool"],
+    "Cargo": ["cargo", "rust cargo"],
+    "Composer": ["composer", "php composer"],
+    "Bundler": ["bundler", "ruby bundler"],
+    "pip": ["pip", "python pip"],
+    "Poetry": ["poetry", "python poetry"],
+    "Pipenv": ["pipenv"],
+    "Conda": ["conda", "anaconda"],
+    "NuGet": ["nuget", "nu get"],
+    "CocoaPods": ["cocoapods", "cocoa pods"],
+    "Carthage": ["carthage"],
+    "Swift Package Manager": ["swift package manager", "spm"],
+    "RubyGems": ["rubygems", "ruby gems"],
+    "CPAN": ["cpan"],
+    "CRAN": ["cran"],
+    "Go Modules": ["go modules", "go mod"],
+    
+    "Adobe Photoshop": ["photoshop", "adobe photoshop"],
+    "Adobe Illustrator": ["illustrator", "adobe illustrator"],
+    "Adobe After Effects": ["after effects", "adobe after effects"],
+    "Adobe Premiere": ["premiere", "adobe premiere"],
+    "Final Cut Pro": ["final cut pro", "fcp"],
+    "DaVinci Resolve": ["davinci resolve"],
+    "GIMP": ["gimp"],
+    "Inkscape": ["inkscape"],
+    "Canva": ["canva"],
+    "Affinity Designer": ["affinity designer"],
+    "Affinity Photo": ["affinity photo"],
+    
+    "Excel": ["excel", "microsoft excel"],
+    "Word": ["word", "microsoft word"],
+    "PowerPoint": ["powerpoint", "microsoft powerpoint"],
+    "Google Sheets": ["google sheets"],
+    "Google Docs": ["google docs"],
+    "Google Slides": ["google slides"],
+    "LibreOffice": ["libreoffice"],
+    "OpenOffice": ["openoffice"],
+    
+    "SAP": ["sap", "sap erp"],
+    "Salesforce": ["salesforce", "sfdc"],
+    "HubSpot": ["hubspot", "hub spot"],
+    "Marketo": ["marketo"],
+    "Pardot": ["pardot"],
+    "Mailchimp": ["mailchimp", "mail chimp"],
+    "Zendesk": ["zendesk", "zen desk"],
+    "Freshdesk": ["freshdesk", "fresh desk"],
+    "Intercom": ["intercom"],
+    "Drift": ["drift"],
+    "ServiceNow": ["servicenow", "service now"],
+    "Workday": ["workday"],
+    "Oracle ERP": ["oracle erp"],
+    "NetSuite": ["netsuite", "net suite"],
+    "Dynamics 365": ["dynamics 365", "d365"],
+    "Zoho": ["zoho"],
+    "QuickBooks": ["quickbooks", "quick books"],
+    "Xero": ["xero"],
+    "Stripe": ["stripe"],
+    "PayPal": ["paypal", "pay pal"],
+    "Square": ["square"],
+    "Shopify": ["shopify"],
+    "WooCommerce": ["woocommerce", "woo commerce"],
+    "Magento": ["magento"],
+    "WordPress": ["wordpress", "word press"],
+    "Drupal": ["drupal"],
+    "Joomla": ["joomla"],
+    "Contentful": ["contentful"],
+    "Sanity": ["sanity", "sanity.io"],
+    "Strapi": ["strapi"],
+    "Ghost": ["ghost", "ghost cms"],
+    "Webflow": ["webflow", "web flow"],
+    "Bubble": ["bubble", "bubble.io"],
+    "Zapier": ["zapier"],
+    "Make": ["make", "integromat"],
+    "IFTTT": ["ifttt"],
+    "n8n": ["n8n"],
+    "Apache Airflow": ["apache airflow", "airflow"],
+  
+    "Python": [
+      "py",
+      "python3",
+      "python2.7",
+      "python",
+      "python 3.x"
+    ],
+    "JavaScript": [
+      "javascript",
+      "js",
+      "ecmascript",
+      "es6",
+      "es2015",
+      "nodejs js"
+    ],
+    "Java": [
+      "jdk",
+      "java",
+      "java ee",
+      "java se",
+      "java 8",
+      "java 11"
+    ],
+    "TypeScript": [
+      "typescript",
+      "ts"
+    ],
+    "C++": [
+      "c++",
+      "cpp",
+      "cplusplus"
+    ],
+    "C#": [
+      "c#",
+      "csharp",
+      "c sharp"
+    ],
+    "C": [
+      "'c'",
+      "c language",
+      "c",
+      "c++",
+      "ansi c",
+      "c#"
+    ],
+    "Ruby": [
+      "rb",
+      "ruby"
+    ],
+    "PHP": [
+      "php",
+      "php8",
+      "php7"
+    ],
+    "Swift": [
+      "swift",
+      "swift 5"
+    ],
+    "Kotlin": [
+      "kotlin"
+    ],
+    "Go": [
+      "go",
+      "golang",
+      "go language",
+      "go lang"
+    ],
+    "Rust": [
+      "rust",
+      "rust-lang"
+    ],
+    "Scala": [
+      "scala"
+    ],
+    "R": [
+      "r",
+      "r programming",
+      "r language"
+    ],
+     "Python": [
+       "python",
+       "py",
+       "python3",
+       "python 3",
+       "python 3.x",
+       "python programming",
+       "python2",
+       "python 2.7"
+      ],
+    "MATLAB": [
+      "matlab"
+    ],
+    "Perl": [
+      "perl"
+    ],
+    "Shell": [
+      "bash",
+      "shell",
+      "sh",
+      "bash scripting",
+      "shell scripting"
+    ],
+    "PowerShell": [
+      "powershell",
+      "ps1"
+    ],
+    "React": [
+      "react",
+      "reactjs",
+      "react.js",
+      "react js"
+    ],
+    "Angular": [
+      "angularjs",
+      "angular 2+",
+      "angular",
+      "angular.js"
+    ],
+    "Vue": [
+      "vue",
+      "vuejs",
+      "vue.js",
+      "vue js"
+    ],
+    "Svelte": [
+      "svelte"
+    ],
+    "Next.js": [
+      "nextjs",
+      "next.js",
+      "next js"
+    ],
+    "Nuxt.js": [
+      "nuxtjs",
+      "nuxt.js"
+    ],
+    "Django": [
+      "django rest framework",
+      "django",
+      "drf"
+    ],
+    "Flask": [
+      "flask-restful",
+      "flask"
+    ],
+    "FastAPI": [
+      "fastapi",
+      "fast api"
+    ],
+    "Spring": [
+      "spring",
+      "spring boot",
+      "spring framework"
+    ],
+    "Express": [
+      "express",
+      "expressjs",
+      "express.js"
+    ],
+    "Node.js": [
+      "node.js",
+      "nodejs",
+      "node js"
+    ],
+    "ASP.NET": [
+      "asp.net",
+      "aspnet",
+      "asp net"
+    ],
+    "Ruby on Rails": [
+      "ruby on rails",
+      "ror",
+      "rails"
+    ],
+    "Laravel": [
+      "laravel"
+    ],
+    "Symfony": [
+      "symfony"
+    ],
+    "PostgreSQL": [
+      "postgres",
+      "psql",
+      "postgresql"
+    ],
+    "MySQL": [
+      "mysql",
+      "my sql"
+    ],
+    "MongoDB": [
+      "mongodb",
+      "mongo"
+    ],
+    "Redis": [
+      "redis"
+    ],
+    "Cassandra": [
+      "cassandra",
+      "apache cassandra"
+    ],
+    "Oracle": [
+      "oracle database",
+      "oracle",
+      "oracle db"
+    ],
+    "SQL Server": [
+      "sql server",
+      "mssql",
+      "ms sql"
+    ],
+    "SQLite": [
+      "sqlite3",
+      "sqlite"
+    ],
+    "DynamoDB": [
+      "amazon dynamodb",
+      "dynamodb"
+    ],
+    "Elasticsearch": [
+      "elasticsearch",
+      "elastic search"
+    ],
+    "Neo4j": [
+      "neo4j"
+    ],
+    "AWS": [
+      "aws",
+      "amazon web services",
+      "amazon aws"
+    ],
+    "Azure": [
+      "azure",
+      "microsoft azure",
+      "ms azure"
+    ],
+    "GCP": [
+      "gcp",
+      "google cloud",
+      "google cloud platform"
+    ],
+    "Heroku": [
+      "heroku"
+    ],
+    "DigitalOcean": [
+      "digitalocean",
+      "digital ocean"
+    ],
+    "EC2": [
+      "aws ec2",
+      "ec2",
+      "amazon ec2"
+    ],
+    "S3": [
+      "s3)",
+      "s3",
+      "amazon s3",
+      "aws s3"
+    ],
+    "Lambda": [
+      "amazon lambda",
+      "lambda",
+      "aws lambda",
+      "lambda)"
+    ],
+    "RDS": [
+      "rds)",
+      "aws rds",
+      "rds",
+      "amazon rds"
+    ],
+    "CloudFront": [
+      "aws cloudfront",
+      "cloudfront"
+    ],
+    "Docker": [
+      "docker container",
+      "docker"
+    ],
+    "Kubernetes": [
+      "kubernetes",
+      "k8s",
+      "k8"
+    ],
+    "Jenkins": [
+      "jenkins"
+    ],
+    "GitLab CI": [
+      "gitlab ci",
+      "gitlab ci/cd"
+    ],
+    "GitHub Actions": [
+      "github actions",
+      "gh actions"
+    ],
+    "CircleCI": [
+      "circleci",
+      "circle ci"
+    ],
+    "Terraform": [
+      "terraform"
+    ],
+    "Ansible": [
+      "ansible"
+    ],
+    "Chef": [
+      "chef"
+    ],
+    "Puppet": [
+      "puppet"
+    ],
+    "Git": [
+      "git",
+      "git scm"
+    ],
+    "GitHub": [
+      "github"
+    ],
+    "GitLab": [
+      "gitlab"
+    ],
+    "Bitbucket": [
+      "bitbucket"
+    ],
+    "SVN": [
+      "subversion",
+      "svn"
+    ],
+    "TensorFlow": [
+      "tensorflow",
+      "tf"
+    ],
+    "PyTorch": [
+      "pytorch",
+      "torch"
+    ],
+    "Keras": [
+      "keras"
+    ],
+    "scikit-learn": [
+      "scikit-learn",
+      "sklearn",
+      "scikit learn"
+    ],
+    "Pandas": [
+      "pandas"
+    ],
+    "NumPy": [
+      "numpy",
+      "np"
+    ],
+    "spaCy": [
+      "spacy"
+    ],
+    "NLTK": [
+      "nltk",
+      "natural language toolkit"
+    ],
+    "Hugging Face": [
+      "huggingface",
+      "hugging face",
+      "transformers"
+    ],
+    "Jest": [
+      "jest"
+    ],
+    "Mocha": [
+      "mocha"
+    ],
+    "Pytest": [
+      "pytest",
+      "py.test"
+    ],
+    "JUnit": [
+      "junit"
+    ],
+    "Selenium": [
+      "selenium"
+    ],
+    "Cypress": [
+      "cypress"
+    ],
+    "Agile": [
+      "agile methodology",
+      "agile"
+    ],
+    "Scrum": [
+      "scrum"
+    ],
+    "Kanban": [
+      "kanban"
+    ],
+    "DevOps": [
+      "devops",
+      "dev ops"
+    ],
+    "CI/CD": [
+      "continuous integration",
+      "cicd",
+      "ci/cd"
+    ],
+    "TDD": [
+      "test driven development",
+      "tdd)",
+      "tdd"
+    ],
+    "Microservices": [
+      "micro services",
+      "microservices"
+    ],
+    "REST": [
+      "rest api",
+      "restful",
+      "rest"
+    ],
+    "GraphQL": [
+      "graphql",
+      "graph ql"
+    ],
+    "VS Code": [
+      "vscode",
+      "vs code",
+      "visual studio code"
+    ],
+    "IntelliJ": [
+      "intellij",
+      "intellij idea"
+    ],
+    "Eclipse": [
+      "eclipse"
+    ],
+    "Postman": [
+      "postman"
+    ],
+    "Jira": [
+      "jira"
+    ],
+    "Confluence": [
+      "confluence"
+    ],
+    "Slack": [
+      "slack"
+    ],
+    "VBScript": [
+      "vbscript"
+    ],
+    "Clarion": [
+      "clarion"
+    ],
+    "QTP": [
+      "qtp"
+    ],
+    "PHYTHON": [
+      "phython"
+    ],
+    "Objective-C": [
+      "objective c",
+      "objective-c",
+      "objectivec"
+    ],
+    "Cloud foundry": [
+      "cloud foundry"
+    ],
+    "PL/SQL": [
+      "pl / sql",
+      "pl sql",
+      "pl/ sql",
+      "pl/sql"
+    ],
+    "JSON": [
+      "json"
+    ],
+    "Struts": [
+      "struts"
+    ],
+    "SQL-Server": [
+      "sql server",
+      "sql-server",
+      "sqlserver"
+    ],
+    "PHP 4/5": [
+      "php 4/5"
+    ],
+    "Java 1.5/1.6/1.7/1.8": [
+      "java 1.5/1.6/1.7/1.8",
+      "java 15/16/17/18"
+    ],
+    "CSS 3 and CSS": [
+      "css 3 and css"
+    ],
+    ".NET C#": [
+      ".net c#",
+      "net c#"
+    ],
+    "UNIX Shell": [
+      "unix shell"
+    ],
+    "Predix": [
+      "predix"
+    ],
+    "C++ and Java": [
+      "c++ and java"
+    ],
+    "RESTFul": [
+      "restful"
+    ],
+    "Java 8.0/7.0/6.0/5.0": [
+      "java 8.0/7.0/6.0/5.0",
+      "java 80/70/60/50"
+    ],
+    ".Net VB Script": [
+      ".net vb script",
+      "net vb script"
+    ],
+    "JPA": [
+      "jpa"
+    ],
+    "JAVA7/8": [
+      "java7-8",
+      "java7/8",
+      "java78"
+    ],
+    "ADO.Net": [
+      "ado.net",
+      "adonet"
+    ],
+    "HTML5": [
+      "html5"
+    ],
+    "VS COBOL-II": [
+      "vs cobol-ii",
+      "vs cobolii"
+    ],
+    "CockroachDB": [
+      "cockroachdb"
+    ],
+    "Tomcat": [
+      "tomcat"
+    ],
+    "PERL": [
+      "perl"
+    ],
+    "Oracle R11i and R12 finance modules": [
+      "oracle r11i and r12 finance modules"
+    ],
+    "Servlet": [
+      "servlet"
+    ],
+    "Javascript": [
+      "javascript"
+    ],
+    "COBOL": [
+      "cobol"
+    ],
+    "XML": [
+      "xml"
+    ],
+    "Pig Latin": [
+      "pig latin"
+    ],
+    "UNIX/Linux shell": [
+      "unix/linux shell"
+    ],
+    "Visual Basic": [
+      "visual basic"
+    ],
+    "Bash": [
+      "bash"
+    ],
+    "Angular Js": [
+      "angular js",
+      "angular.js",
+      "angularjs"
+    ],
+    "HTML4/5": [
+      "html4/5"
+    ],
+    "JSP": [
+      "jsp"
+    ],
+    "Java Version": [
+      "java version"
+    ],
+    "VB Script": [
+      "vb script"
+    ],
+    "Java Servlets": [
+      "java servlets"
+    ],
+    "Java Script": [
+      "java script"
+    ],
+    "JMS": [
+      "jms"
+    ],
+    "Messaging": [
+      "messaging"
+    ],
+    "Test-Driven Development": [
+      "test driven development",
+      "test-driven development",
+      "testdriven development"
+    ],
+    "PL/SQL and NoSQL.": [
+      "pl/sql and nosql",
+      "pl/sql and nosql."
+    ],
+    "Java8/J2EE": [
+      "java8/j2ee"
+    ],
+    "PL/I": [
+      "pl/i"
+    ],
+    "Agile Methodology –SCRUM": [
+      "agile methodology –scrum"
+    ],
+    "Dynamo DB Cloud Technologies: AWS (SNS/SQS": [
+      "dynamo db cloud technologies: aws (sns/sqs"
+    ],
+    "Java Mail": [
+      "java mail"
+    ],
+    "Java/J2EE": [
+      "java / j2ee",
+      "java-j2ee",
+      "java/ j2ee",
+      "java/j2ee",
+      "javaj2ee"
+    ],
+    "Solr": [
+      "solr"
+    ],
+    "Uniface": [
+      "uniface"
+    ],
+    "Shell Scripts": [
+      "shell scripts"
+    ],
+    "Core Java APIs": [
+      "core java apis"
+    ],
+    "ETL": [
+      "etl"
+    ],
+    "HDFS": [
+      "hdfs"
+    ],
+    "ASP": [
+      "asp"
+    ],
+    "JNDI": [
+      "jndi"
+    ],
+    "Groovy/Grails": [
+      "groovy/grails"
+    ],
+    "GWT": [
+      "gwt"
+    ],
+    "Groovy": [
+      "groovy"
+    ],
+    "Web Services": [
+      "web services",
+      "web services)"
+    ],
+    "JSP/JSF": [
+      "jsp/jsf"
+    ],
+    "Toad": [
+      "toad"
+    ],
+    "IBATIS": [
+      "ibatis"
+    ],
+    "UNIX Shell Script": [
+      "unix shell script"
+    ],
+    ".Net": [
+      ".net",
+      "net"
+    ],
+    "JCL": [
+      "jcl"
+    ],
+    "Sqoop": [
+      "sqoop"
+    ],
+    "Dropbox Core API": [
+      "dropbox core api"
+    ],
+    "Ruby scripting": [
+      "ruby scripting"
+    ],
+    "JDBC": [
+      "jdbc",
+      "jdbc)"
+    ],
+    "SQL Query": [
+      "sql query"
+    ],
+    "MySql": [
+      "mysql"
+    ],
+    "PERL scripting": [
+      "perl scripting"
+    ],
+    "UNIX Shell Scripting": [
+      "unix shell scripting"
+    ],
+    "Shell Scripting": [
+      "shell scripting"
+    ],
+    "Design Patterns": [
+      "design patterns"
+    ],
+    "UML": [
+      "uml"
+    ],
+    "EMR) Methodologies: Test case driven methodology": [
+      "emr) methodologies: test case driven methodology"
+    ],
+    "R-programming": [
+      "r-programming",
+      "rprogramming"
+    ],
+    "1.8)": [
+      "1.8)",
+      "18)"
+    ],
+    "Developer": [
+      "developer"
+    ],
+    "REST web services": [
+      "rest web services"
+    ],
+    "Camel": [
+      "camel"
+    ],
+    "Ant": [
+      "ant"
+    ],
+    "IMS DC/DB": [
+      "ims dc/db"
+    ],
+    "KUBERNETES": [
+      "kubernetes"
+    ],
+    "Java 1.5/1.6/1.7/8": [
+      "java 1.5/1.6/1.7/8",
+      "java 15/16/17/8"
+    ],
+    "CSS2/3": [
+      "css2/3"
+    ],
+    "Magic Draw UML": [
+      "magic draw uml"
+    ],
+    "JSF": [
+      "jsf"
+    ],
+    "GIT": [
+      "git"
+    ],
+    "JNotify": [
+      "jnotify"
+    ],
+    "C/C++": [
+      "c c++",
+      "c/c++"
+    ],
+    "Tibco flow": [
+      "tibco flow"
+    ],
+    "JSTL": [
+      "jstl"
+    ],
+    "Servlets": [
+      "servlets",
+      "servlets)"
+    ],
+    "AZURE": [
+      "azure"
+    ],
+    "Java J2SE 1.6/1.7": [
+      "java j2se 1.6/1.7",
+      "java j2se 16/17"
+    ],
+    "HQL": [
+      "hql"
+    ],
+    "Java using generics": [
+      "java using generics"
+    ],
+    "NoSQL": [
+      "nosql"
+    ],
+    "UNIX": [
+      "unix"
+    ],
+    "Basic SQL": [
+      "basic sql"
+    ],
+    "OpenStack": [
+      "openstack"
+    ],
+    "Angular 2/4": [
+      "angular 2/4"
+    ],
+    "SQL": [
+      "sql"
+    ],
+    "Pig": [
+      "pig"
+    ],
+    "ColdFusion": [
+      "coldfusion"
+    ],
+    "Appian": [
+      "appian"
+    ],
+    "Lightbend Reactive": [
+      "lightbend reactive"
+    ],
+    "Play": [
+      "play"
+    ],
+    "Spring MVC": [
+      "spring (mvc",
+      "spring mvc"
+    ],
+    "ActiveX": [
+      "activex"
+    ],
+    "Java/Scala/Ruby": [
+      "java/scala/ruby"
+    ],
+    "Confluent": [
+      "confluent"
+    ],
+    "Oracle PL/SQL": [
+      "oracle pl/sql"
+    ],
+    "Stash": [
+      "stash"
+    ],
+    "and C+": [
+      "and c+"
+    ],
+    "IBM RAD 7.5.x": [
+      "ibm rad 7.5.x",
+      "ibm rad 75x"
+    ],
+    "MFC": [
+      "mfc"
+    ],
+    "Linux": [
+      "linux"
+    ],
+    "CSS": [
+      "css"
+    ],
+    "SAP": [
+      "sap"
+    ],
+    "T-SQL": [
+      "t-sql",
+      "tsql"
+    ],
+    "webMethods flow": [
+      "webmethods flow"
+    ],
+    "Hbase": [
+      "hbase"
+    ],
+    "Microsoft Dot Net": [
+      "microsoft dot net"
+    ],
+    "ASP.net": [
+      "asp net",
+      "asp. net",
+      "asp.net",
+      "aspnet"
+    ],
+    "UNIX programming": [
+      "unix programming"
+    ],
+    "J2ee": [
+      "j2ee"
+    ],
+    "Swift/ Objective-C": [
+      "swift/ objective-c",
+      "swift/ objectivec"
+    ],
+    "Extjs": [
+      "extjs"
+    ],
+    "Sencha Tools & Platforms: MyEclipse": [
+      "sencha tools & platforms: myeclipse"
+    ],
+    "VB.NET": [
+      "vb.net",
+      "vbnet"
+    ],
+    "SAP ABAP": [
+      "sap abap"
+    ],
+    "jQuery": [
+      "jquery"
+    ],
+    "RMI": [
+      "rmi"
+    ],
+    "Shell & Perl Scripting": [
+      "shell & perl scripting"
+    ],
+    "Sympfony2 Databases: ORACLE 9i/10g/11g/12c": [
+      "sympfony2 databases: oracle 9i/10g/11g/12c"
+    ],
+    "Rally": [
+      "rally"
+    ],
+    "XSLT": [
+      "xslt"
+    ],
+    "SCOBOL": [
+      "scobol"
+    ],
+    "JS": [
+      "js"
+    ],
+    "CICS": [
+      "cics"
+    ],
+    "XPath": [
+      "xpath"
+    ],
+    "Java Beans": [
+      "java beans"
+    ],
+    "NetBeans": [
+      "netbeans"
+    ],
+    "OAuth": [
+      "oauth"
+    ],
+    "SQL AND .NET": [
+      "sql and .net",
+      "sql and net"
+    ],
+    "PowerBuilder": [
+      "powerbuilder"
+    ],
+    "VC++": [
+      "vc++"
+    ],
+    "JAVA(1.7": [
+      "java(1.7",
+      "java(17"
+    ],
+    "CSS3": [
+      "css3"
+    ],
+    "Core Java": [
+      "core java"
+    ],
+    "Akka": [
+      "akka"
+    ],
+    "Apex": [
+      "apex"
+    ],
+    "Multithreading": [
+      "multithreading"
+    ],
+    "JBoss": [
+      "jboss"
+    ],
+    "Extreme Programming": [
+      "extreme programming"
+    ],
+    "ActionScript": [
+      "actionscript"
+    ],
+    "Spark": [
+      "spark"
+    ],
+    "XSL": [
+      "xsl"
+    ],
+    "React Js": [
+      "react js",
+      "react.js",
+      "reactjs"
+    ],
+    "EJB": [
+      "ejb"
+    ],
+    "SOAP": [
+      "soap"
+    ],
+    "HTML": [
+      "html"
+    ],
+    "VB Scripting": [
+      "vb scripting"
+    ],
+    "SQL & PL/SQL": [
+      "sql & pl/sql"
+    ],
+    "DHTML": [
+      "dhtml"
+    ],
+    "XHTML": [
+      "xhtml"
+    ],
+    "PLSQL": [
+      "plsql"
+    ],
+    "Ezytreive": [
+      "ezytreive"
+    ],
+    "ABAP": [
+      "abap"
+    ],
+    "Unix/Windows Shell Scripting": [
+      "unix/windows shell scripting"
+    ],
+    "Oracle WebLogic 10.x": [
+      "oracle weblogic 10.x",
+      "oracle weblogic 10x"
+    ],
+    "REXX": [
+      "rexx"
+    ],
+    "DTD": [
+      "dtd"
+    ],
+    "WSDL": [
+      "wsdl"
+    ],
+    "JAVAEE": [
+      "javaee"
+    ],
+    "SQL and PL/SQL": [
+      "sql and pl/sql"
+    ],
+    "PL/SQL Frameworks & Libraries: Spring 3.x": [
+      "pl/sql frameworks & libraries: spring 3.x",
+      "pl/sql frameworks & libraries: spring 3x"
+    ],
+    "MONGODB": [
+      "mongodb"
+    ],
+    "Microsoft VB": [
+      "microsoft vb"
+    ],
+    "VB": [
+      "vb"
+    ],
+    "Hive": [
+      "hive"
+    ],
+    "JSPs": [
+      "jsps"
+    ],
+    "Sitemesh": [
+      "sitemesh"
+    ],
+    "WebSphere Portal": [
+      "websphere portal"
+    ],
+    "Shell Script": [
+      "shell script"
+    ],
+    "COBOL85": [
+      "cobol85"
+    ],
+    "Hibernate": [
+      "hibernate"
+    ],
+    "MVC": [
+      "mvc"
+    ],
+    "Spring Restful Service": [
+      "spring restful service"
+    ],
+    "SOA": [
+      "soa"
+    ],
+    "Mockito": [
+      "mockito"
+    ],
+    "J2EE (JMS": [
+      "j2ee (jms"
+    ],
+    "Spring Framework 4.x (Dependency Injection": [
+      "spring framework 4.x (dependency injection",
+      "spring framework 4x (dependency injection"
+    ],
+    "Titanium": [
+      "titanium"
+    ],
+    "SPRING CLOUD": [
+      "spring cloud"
+    ],
+    "YII": [
+      "yii"
+    ],
+    "Spring with Hibernate)": [
+      "spring with hibernate)"
+    ],
+    "JD Edwards": [
+      "jd edwards"
+    ],
+    "handlebar.js": [
+      "handlebar.js",
+      "handlebarjs"
+    ],
+    "Java 2D)": [
+      "java 2d)"
+    ],
+    "LESS": [
+      "less"
+    ],
+    "DI": [
+      "di"
+    ],
+    "Junit": [
+      "junit"
+    ],
+    "Spring IOC": [
+      "spring (ioc",
+      "spring ioc"
+    ],
+    "Spring boot": [
+      "spring (boot",
+      "spring boot"
+    ],
+    "Context": [
+      "context"
+    ],
+    "Filters": [
+      "filters"
+    ],
+    "Spring 4.x/3.x/2.5": [
+      "spring 4.x/3.x/2.5",
+      "spring 4x/3x/25"
+    ],
+    "CDI": [
+      "cdi"
+    ],
+    "Spring 2.x": [
+      "spring 2.x",
+      "spring 2x"
+    ],
+    "Swings": [
+      "swings"
+    ],
+    "APACHE CXF": [
+      "apache cxf"
+    ],
+    "Global Pay Plus": [
+      "global pay plus"
+    ],
+    "XSD schemas": [
+      "xsd schemas"
+    ],
+    "JSF 1.2/2.0": [
+      "jsf 1.2/2.0",
+      "jsf 12/20"
+    ],
+    "Facets": [
+      "facets"
+    ],
+    "Code Igniter": [
+      "code igniter"
+    ],
+    "ASP.net MVC": [
+      "asp.net mvc",
+      "aspnet mvc"
+    ],
+    "JBehave": [
+      "jbehave"
+    ],
+    "Drool": [
+      "drool"
+    ],
+    "D3Js": [
+      "d3js"
+    ],
+    "Slim": [
+      "slim"
+    ],
+    "Factory Pattern": [
+      "factory pattern"
+    ],
+    "Backbone)": [
+      "backbone)"
+    ],
+    "RC": [
+      "rc"
+    ],
+    "Ribbon": [
+      "ribbon"
+    ],
+    "Drools Rules Engine": [
+      "drools rules engine"
+    ],
+    "VueJS": [
+      "vuejs"
+    ],
+    "Spring 3.*/4": [
+      "spring 3*/4",
+      "spring 3.*/4"
+    ],
+    "Ext Js": [
+      "ext js",
+      "ext.js",
+      "extjs"
+    ],
+    "Apache Sling": [
+      "apache sling"
+    ],
+    "Spring Roo": [
+      "spring roo"
+    ],
+    "Mate": [
+      "mate"
+    ],
+    "ElasticSearch": [
+      "elasticsearch"
+    ],
+    "CodeIgniter": [
+      "codeigniter"
+    ],
+    "onBase 16.0 -Hyland Software": [
+      "onbase 16.0 -hyland software",
+      "onbase 160 hyland software"
+    ],
+    "OGNL": [
+      "ognl"
+    ],
+    "Spring-Security": [
+      "spring security",
+      "spring-security",
+      "springsecurity"
+    ],
+    "Log4J": [
+      "log4j"
+    ],
+    "Struts 2.x": [
+      "struts 2.x",
+      "struts 2x"
+    ],
+    "Zulu)": [
+      "zulu)"
+    ],
+    "Spring4/3": [
+      "spring4/3"
+    ],
+    "PMB": [
+      "pmb"
+    ],
+    "ASPECTJ": [
+      "aspectj"
+    ],
+    "Core": [
+      "core"
+    ],
+    "Thymeleaf": [
+      "thymeleaf"
+    ],
+    "AngularJS 1.0/1.5/2.0/4.0": [
+      "angularjs 1.0/1.5/2.0/4.0",
+      "angularjs 10/15/20/40"
+    ],
+    "SoapUI": [
+      "soapui"
+    ],
+    "ReactJS": [
+      "reactjs"
+    ],
+    "Spine.js": [
+      "spine.js",
+      "spinejs"
+    ],
+    "Knockout.js": [
+      "knockout js",
+      "knockout.js",
+      "knockoutjs"
+    ],
+    "Web Flow": [
+      "web flow",
+      "web flow)"
+    ],
+    "ATG Merchandising": [
+      "atg merchandising"
+    ],
+    "Google Web Toolkit": [
+      "google web toolkit"
+    ],
+    "Ionic": [
+      "ionic"
+    ],
+    "Express.js": [
+      "express js",
+      "express.js",
+      "expressjs"
+    ],
+    "D3.js": [
+      "d3.js",
+      "d3js"
+    ],
+    "Spring 3.x": [
+      "spring 3.x",
+      "spring 3x"
+    ],
+    "with Hibernate)": [
+      "with hibernate)"
+    ],
+    "Codeignitor": [
+      "codeignitor"
+    ],
+    "TestNG": [
+      "testng"
+    ],
+    "Cucumber": [
+      "cucumber"
+    ],
+    "Netflix": [
+      "netflix"
+    ],
+    "IOS SDK": [
+      "ios sdk"
+    ],
+    "JAAS": [
+      "jaas"
+    ],
+    "Springboot": [
+      "springboot"
+    ],
+    "Rich-Faces": [
+      "rich-faces",
+      "richfaces"
+    ],
+    "Spring JMS": [
+      "spring jms",
+      "spring-jms",
+      "springjms"
+    ],
+    "ATG Commerce": [
+      "atg commerce"
+    ],
+    "Spring-AOP": [
+      "spring aop",
+      "spring-aop",
+      "springaop"
+    ],
+    "MyBatis": [
+      "mybatis"
+    ],
+    "Adobe Flash": [
+      "adobe flash"
+    ],
+    "Spring DAO": [
+      "spring dao"
+    ],
+    "Batch": [
+      "batch",
+      "batch)"
+    ],
+    "JFC (SWING": [
+      "jfc (swing"
+    ],
+    "BackBoneJs": [
+      "backbonejs"
+    ],
+    "JAX-WS": [
+      "jax-ws",
+      "jaxws"
+    ],
+    "Cayenne": [
+      "cayenne"
+    ],
+    "Page Object Model": [
+      "page object model"
+    ],
+    "Oracle Fusion Middleware (Oracle JDeveloper": [
+      "oracle fusion middleware (oracle jdeveloper"
+    ],
+    "SAML": [
+      "saml"
+    ],
+    "Spring 2.5/3.0": [
+      "spring 2.5/3.0",
+      "spring 25/30"
+    ],
+    "MyFaces": [
+      "myfaces"
+    ],
+    "Seam": [
+      "seam"
+    ],
+    "Android SDK": [
+      "android sdk"
+    ],
+    "Pencil": [
+      "pencil"
+    ],
+    "MVC 5.0/4.0": [
+      "mvc 5.0/4.0",
+      "mvc 50/40"
+    ],
+    "Cache": [
+      "cache"
+    ],
+    "Appium": [
+      "appium"
+    ],
+    "Cairngorm architecture": [
+      "cairngorm architecture"
+    ],
+    "Jasmine": [
+      "jasmine"
+    ],
+    "Apache Infinispan Cache": [
+      "apache infinispan cache"
+    ],
+    "Backbone JS": [
+      "backbone js",
+      "backbone.js",
+      "backbonejs"
+    ],
+    "Netflix OSS": [
+      "netflix oss"
+    ],
+    "Java Swing": [
+      "java swing"
+    ],
+    "Hibernate 3.x": [
+      "hibernate 3.x",
+      "hibernate 3x"
+    ],
+    "Spring Batch": [
+      "spring batch"
+    ],
+    "CakePHP": [
+      "cakephp"
+    ],
+    "Spring (Dependency Injection": [
+      "spring (dependency injection"
+    ],
+    "Apigee": [
+      "apigee"
+    ],
+    "Hibernate 4.x/3.x": [
+      "hibernate 4.x/3.x",
+      "hibernate 4x/3x"
+    ],
+    "ASP.NET 2.0/3.5/4.5": [
+      "asp.net 2.0/3.5/4.5",
+      "aspnet 20/35/45"
+    ],
+    "Hadoop/ Big Data": [
+      "hadoop/ big data"
+    ],
+    "JReport": [
+      "jreport"
+    ],
+    "Hibernate 3.x/4.x": [
+      "hibernate 3.x/4.x",
+      "hibernate 3x/4x"
+    ],
+    "XML DOM": [
+      "xml dom"
+    ],
+    "Finacle": [
+      "finacle"
+    ],
+    "Meteor JS": [
+      "meteor js"
+    ],
+    "Spring RESTful Web-Services": [
+      "spring restful web-services",
+      "spring restful webservices"
+    ],
+    "React.js/Redux": [
+      "react.js/redux",
+      "reactjs/redux"
+    ],
+    "Spring Data": [
+      "spring data"
+    ],
+    "Hibernate 4.0/3.0": [
+      "hibernate 4.0/3.0",
+      "hibernate 40/30"
+    ],
+    "DOJO": [
+      "dojo"
+    ],
+    "Polymer.JS": [
+      "polymer.js",
+      "polymerjs"
+    ],
+    "Spring Framework (IOC": [
+      "spring framework (ioc"
+    ],
+    "Apache tiles": [
+      "apache tiles"
+    ],
+    "ILOG": [
+      "ilog"
+    ],
+    "BPM": [
+      "bpm",
+      "bpm)"
+    ],
+    "PDFJS": [
+      "pdfjs"
+    ],
+    ".NET Framework": [
+      ".net framework",
+      "net framework"
+    ],
+    "Prime faces": [
+      "prime faces",
+      "prime-faces",
+      "primefaces"
+    ],
+    "Oracle BAM": [
+      "oracle bam"
+    ],
+    "Spring HATEOAS": [
+      "spring hateoas"
+    ],
+    "Jasper reports": [
+      "jasper reports"
+    ],
+    "JTA": [
+      "jta",
+      "jta)"
+    ],
+    "JavaBeans": [
+      "javabeans"
+    ],
+    "Rails 2.X": [
+      "rails 2.x",
+      "rails 2x"
+    ],
+    "Spring 2.0/3.0": [
+      "spring 2.0/3.0",
+      "spring 20/30"
+    ],
+    "Hibernate 2.0/3.0": [
+      "hibernate 2.0/3.0",
+      "hibernate 20/30"
+    ],
+    "JBoss SEAM": [
+      "jboss seam"
+    ],
+    "RichFaces": [
+      "richfaces"
+    ],
+    "Spring WS": [
+      "spring ws"
+    ],
+    "ATG Multisite": [
+      "atg multisite"
+    ],
+    "AOP": [
+      "aop"
+    ],
+    "Lucidchart": [
+      "lucidchart"
+    ],
+    "JavaScript Frameworks (Angular": [
+      "javascript frameworks (angular"
+    ],
+    "JPA/Hibernate": [
+      "jpa/hibernate"
+    ],
+    "WPF": [
+      "wpf"
+    ],
+    "Apache Wicket": [
+      "apache wicket"
+    ],
+    "Boot": [
+      "boot"
+    ],
+    "ORM": [
+      "orm",
+      "orm)"
+    ],
+    "Zend": [
+      "zend"
+    ],
+    "PugJS": [
+      "pugjs"
+    ],
+    "Maven": [
+      "maven"
+    ],
+    "IoC": [
+      "ioc",
+      "ioc)"
+    ],
+    "Selenium web driver": [
+      "selenium web driver"
+    ],
+    "Data": [
+      "data",
+      "data)"
+    ],
+    "JAX-RS": [
+      "jax-rs",
+      "jaxrs"
+    ],
+    "Adobe": [
+      "adobe"
+    ],
+    "Spock": [
+      "spock"
+    ],
+    "OAUTH2": [
+      "oauth2"
+    ],
+    "Struts 1.x/2.x": [
+      "struts 1.x/2.x",
+      "struts 1x/2x"
+    ],
+    "XML Schema": [
+      "xml schema"
+    ],
+    "EJB2.0/3.0": [
+      "ejb2.0/3.0",
+      "ejb20/30"
+    ],
+    "MXML": [
+      "mxml"
+    ],
+    "Struts 1.x/2.0": [
+      "struts 1.x/2.0",
+      "struts 1x/20"
+    ],
+    "Drools": [
+      "drools"
+    ],
+    "Bower": [
+      "bower"
+    ],
+    "SDLC": [
+      "sdlc"
+    ],
+    "Jackrabbit": [
+      "jackrabbit"
+    ],
+    "Alloy JS": [
+      "alloy js"
+    ],
+    "Endeca": [
+      "endeca"
+    ],
+    "Apache struts": [
+      "apache struts"
+    ],
+    "Oracle ADF": [
+      "oracle adf"
+    ],
+    "Tiles": [
+      "tiles"
+    ],
+    "HMAC": [
+      "hmac"
+    ],
+    "Apache Solr": [
+      "apache solr"
+    ],
+    "Spring Integration": [
+      "spring integration"
+    ],
+    "Spring Web Flow": [
+      "spring web flow"
+    ],
+    "Ember.js": [
+      "ember js",
+      "ember.js",
+      "emberjs"
+    ],
+    "AXIS-2": [
+      "axis-2",
+      "axis2"
+    ],
+    "Apache camel": [
+      "apache camel"
+    ],
+    "Nodejs": [
+      "nodejs"
+    ],
+    "Spring 4.x/3.x/2.x": [
+      "spring 4.x/3.x/2.x",
+      "spring 4x/3x/2x"
+    ],
+    "Adobe Flex": [
+      "adobe flex"
+    ],
+    "Struts 1/": [
+      "struts 1/"
+    ],
+    "Struts2": [
+      "struts2"
+    ],
+    "Spring JDBC": [
+      "spring jdbc"
+    ],
+    "Ext GWT": [
+      "ext gwt"
+    ],
+    "Apache ActiveMQ": [
+      "apache activemq"
+    ],
+    "Spring JPA": [
+      "spring jpa"
+    ],
+    "Selenium WebDriver": [
+      "selenium webdriver"
+    ],
+    "Pdf.js": [
+      "pdf.js",
+      "pdfjs"
+    ],
+    "Action Script": [
+      "action script"
+    ],
+    "Ploymer.js": [
+      "ploymer.js",
+      "ploymerjs"
+    ],
+    "Struts 2.0/1.1": [
+      "struts 2.0/1.1",
+      "struts 20/11"
+    ],
+    "Apache Kafka": [
+      "apache kafka"
+    ],
+    "Bootstrap": [
+      "bootstrap"
+    ],
+    "Cloud": [
+      "cloud",
+      "cloud)"
+    ],
+    "Bootstrap.js": [
+      "bootstrap.js",
+      "bootstrapjs"
+    ],
+    "Require.js": [
+      "require js",
+      "require.js",
+      "requirejs"
+    ],
+    "DAO": [
+      "dao"
+    ],
+    "JAXB": [
+      "jaxb"
+    ],
+    "Eureka": [
+      "eureka"
+    ],
+    "Spring Core": [
+      "spring (core",
+      "spring core"
+    ],
+    "UDFs": [
+      "udfs"
+    ],
+    "Eclipse RCP": [
+      "eclipse rcp"
+    ],
+    "Angular-CLI": [
+      "angular-cli",
+      "angularcli"
+    ],
+    "Underscore.js": [
+      "underscore.js",
+      "underscorejs"
+    ],
+    "Spring 3.x/2.x": [
+      "spring 3.x/2.x",
+      "spring 3x/2x"
+    ],
+    "AXIS": [
+      "axis"
+    ],
+    "Spring Context": [
+      "spring context"
+    ],
+    "Integration": [
+      "integration"
+    ],
+    "Angular2": [
+      "angular2"
+    ],
+    "JSF 1.1/1.2/2.0": [
+      "jsf 1.1/1.2/2.0",
+      "jsf 11/12/20"
+    ],
+    "Apache Axis": [
+      "apache axis"
+    ],
+    "Power Mockito": [
+      "power mockito"
+    ],
+    "AJAX": [
+      "ajax"
+    ],
+    "Smarty Template Engine": [
+      "smarty template engine"
+    ],
+    "AngularJS": [
+      "angularjs"
+    ],
+    "Spring 4.x": [
+      "spring 4.x",
+      "spring 4x"
+    ],
+    "Sencha": [
+      "sencha"
+    ],
+    "Spring-ORM": [
+      "spring-orm",
+      "springorm"
+    ],
+    "PrimeFaces": [
+      "primefaces"
+    ],
+    "Balsamiq": [
+      "balsamiq"
+    ],
+    "Drupal": [
+      "drupal"
+    ],
+    "Struts 2.x/1.x": [
+      "struts 2.x/1.x",
+      "struts 2x/1x"
+    ],
+    "AWT": [
+      "awt"
+    ],
+    "Handlebars.JS": [
+      "handlebars.js",
+      "handlebarsjs"
+    ],
+    "Flexcube": [
+      "flexcube"
+    ],
+    "PEGA PRPC": [
+      "pega prpc"
+    ],
+    "Kendo UI": [
+      "kendo ui"
+    ],
+    "Spring 2.x/3.x": [
+      "spring 2.x/3.x",
+      "spring 2x/3x"
+    ],
+    "RCP/SWT": [
+      "rcp/swt"
+    ],
+    "Jersey": [
+      "jersey"
+    ],
+    "Oracle SOA Suite": [
+      "oracle soa suite"
+    ],
+    "Page Factory": [
+      "page factory"
+    ],
+    "Cucumber-BDD": [
+      "cucumber-bdd",
+      "cucumberbdd"
+    ],
+    "Sencha Touch": [
+      "sencha touch"
+    ],
+    "Mule ESB": [
+      "mule esb"
+    ],
+    "Spring 3.0 (Core": [
+      "spring 3.0 (core",
+      "spring 30 (core"
+    ],
+    "Track Wise": [
+      "track wise"
+    ],
+    "Struts 2.0/1.0": [
+      "struts 2.0/1.0",
+      "struts 20/10"
+    ],
+    "Grunt.js": [
+      "grunt.js",
+      "gruntjs"
+    ],
+    "OOP": [
+      "oop"
+    ],
+    "QNXT": [
+      "qnxt"
+    ],
+    "J unit": [
+      "j unit"
+    ],
+    "Jaspersoft": [
+      "jaspersoft"
+    ],
+    "Jakarta Struts": [
+      "jakarta struts"
+    ],
+    "Grails": [
+      "grails"
+    ],
+    "Security": [
+      "security"
+    ],
+    "onBase": [
+      "onbase"
+    ],
+    "Oracle OSB": [
+      "oracle osb"
+    ],
+    "Spring Data JPA": [
+      "spring data jpa"
+    ],
+    "Facade": [
+      "facade"
+    ],
+    "Springs 4+": [
+      "springs 4+"
+    ],
+    "I BATIS": [
+      "i batis"
+    ],
+    "ADF": [
+      "adf"
+    ],
+    "SOAP UI": [
+      "soap ui"
+    ],
+    "Sencha ExtJS": [
+      "sencha extjs"
+    ],
+    "Hapi.js": [
+      "hapi.js",
+      "hapijs"
+    ],
+    "Karma": [
+      "karma"
+    ],
+    "Groovy on Rails 2.x": [
+      "groovy on rails 2.x",
+      "groovy on rails 2x"
+    ],
+    "WebSphere Portal 5.x": [
+      "websphere portal 5.x",
+      "websphere portal 5x"
+    ],
+    "CVS": [
+      "cvs"
+    ],
+    "Authorize.net": [
+      "authorize.net",
+      "authorizenet"
+    ],
+    "JBOSS 4.x/3.x": [
+      "jboss 4.x/3.x",
+      "jboss 4x/3x"
+    ],
+    "Zookeeper": [
+      "zookeeper"
+    ],
+    "Kitematic": [
+      "kitematic"
+    ],
+    "Micro Services": [
+      "micro services",
+      "micro-services",
+      "microservices"
+    ],
+    "Endevor": [
+      "endevor"
+    ],
+    "Web-logic Server": [
+      "web-logic server",
+      "weblogic server"
+    ],
+    "JMeter": [
+      "jmeter"
+    ],
+    "Anthill": [
+      "anthill"
+    ],
+    "Apache-Hive": [
+      "apache-hive",
+      "apachehive"
+    ],
+    "Visual Studio Team Services": [
+      "visual studio team services"
+    ],
+    "Sublime": [
+      "sublime"
+    ],
+    "Microsoft Power BI": [
+      "microsoft power bi"
+    ],
+    "R Studio": [
+      "r studio"
+    ],
+    "WINSCP3": [
+      "winscp3"
+    ],
+    "JiBX": [
+      "jibx"
+    ],
+    "Quick Test Pro": [
+      "quick test pro"
+    ],
+    "Rallydev": [
+      "rallydev"
+    ],
+    "Gradle": [
+      "gradle"
+    ],
+    "Rational Robot": [
+      "rational robot"
+    ],
+    "Tomcat 5.0.28/6.0": [
+      "tomcat 5.0.28/6.0",
+      "tomcat 5028/60"
+    ],
+    "Clear case": [
+      "clear case",
+      "clear case)"
+    ],
+    "PostMan": [
+      "postman"
+    ],
+    "CRSCTL)": [
+      "crsctl)"
+    ],
+    "Weblogic": [
+      "weblogic"
+    ],
+    "IBM’s Sterling order management system": [
+      "ibm’s sterling order management system"
+    ],
+    "DB Visualizer": [
+      "db visualizer"
+    ],
+    "Windows phone OS": [
+      "windows phone os"
+    ],
+    "MS Office": [
+      "ms office",
+      "ms-office",
+      "msoffice"
+    ],
+    "HP QTP": [
+      "hp qtp"
+    ],
+    "VersionOne": [
+      "versionone"
+    ],
+    "AWS S3": [
+      "aws (s3",
+      "aws s3"
+    ],
+    "Ranorex": [
+      "ranorex"
+    ],
+    "Access": [
+      "access"
+    ],
+    "IBM Cognos Data Manager": [
+      "ibm cognos data manager"
+    ],
+    "SonarQube": [
+      "sonarqube"
+    ],
+    "RestClient-UI": [
+      "restclient-ui",
+      "restclientui"
+    ],
+    "HP ServiceDesk": [
+      "hp servicedesk"
+    ],
+    "Apache Tomcat 5.x/6.x/7.x/8.x": [
+      "apache tomcat 5.x/6.x/7.x/8.x",
+      "apache tomcat 5x/6x/7x/8x"
+    ],
+    "SunStudio Collect": [
+      "sunstudio collect"
+    ],
+    "Guidewire Suit": [
+      "guidewire suit"
+    ],
+    "XFire": [
+      "xfire"
+    ],
+    "Edit Plus": [
+      "edit plus"
+    ],
+    "Rational Clear quest": [
+      "rational clear quest"
+    ],
+    "Oracle SOA Suite/BPEL/Fusion Middleware": [
+      "oracle soa suite/bpel/fusion middleware"
+    ],
+    "Jenkins/Hudson": [
+      "jenkins/hudson"
+    ],
+    "IBM WebSphere": [
+      "ibm websphere"
+    ],
+    "Eclipse STS": [
+      "eclipse sts"
+    ],
+    "SQL*PLUS": [
+      "sql*plus"
+    ],
+    "Web Sphere studio": [
+      "web sphere studio"
+    ],
+    "Harvest": [
+      "harvest"
+    ],
+    "IBM Integration Designer": [
+      "ibm integration designer"
+    ],
+    "TextPad": [
+      "textpad"
+    ],
+    "Microsoft Visio": [
+      "microsoft visio"
+    ],
+    "iRise": [
+      "irise"
+    ],
+    "LINQ": [
+      "linq"
+    ],
+    "MagicDraw UML": [
+      "magicdraw uml"
+    ],
+    "Text Pad": [
+      "text pad"
+    ],
+    "Track It": [
+      "track it"
+    ],
+    "INFORMATICA Power Centre": [
+      "informatica power centre"
+    ],
+    "Vmware": [
+      "vmware"
+    ],
+    "SQL Server Integration Services": [
+      "sql server integration services"
+    ],
+    "CA’s Clarity PPM": [
+      "ca’s clarity ppm"
+    ],
+    "IBM RSA": [
+      "ibm rsa"
+    ],
+    "SSAS": [
+      "ssas"
+    ],
+    "Oracle WebLogic": [
+      "oracle weblogic"
+    ],
+    "JBPM": [
+      "jbpm"
+    ],
+    "Optimal Trace": [
+      "optimal trace"
+    ],
+    "ISPF": [
+      "ispf"
+    ],
+    "IBM Congos": [
+      "ibm congos"
+    ],
+    "Jboss6.1": [
+      "jboss6.1",
+      "jboss61"
+    ],
+    "JDeveloper": [
+      "jdeveloper"
+    ],
+    "Apache Zookeeper": [
+      "apache zookeeper"
+    ],
+    "Flume": [
+      "flume"
+    ],
+    "Joomla": [
+      "joomla"
+    ],
+    "IBM WebSphere Application Developer 5.x": [
+      "ibm websphere application developer 5.x",
+      "ibm websphere application developer 5x"
+    ],
+    "Spike Proxy": [
+      "spike proxy"
+    ],
+    "Caliber": [
+      "caliber"
+    ],
+    "Force.com Eclipse IDE Plug-in": [
+      "force.com eclipse ide plug-in",
+      "forcecom eclipse ide plugin"
+    ],
+    "Blackberry": [
+      "blackberry"
+    ],
+    "Appworx": [
+      "appworx"
+    ],
+    "Actuate": [
+      "actuate"
+    ],
+    "Google Checkout": [
+      "google checkout"
+    ],
+    "Rational Clear case": [
+      "rational clear case"
+    ],
+    "Magento": [
+      "magento"
+    ],
+    "Cognos": [
+      "cognos"
+    ],
+    "Jboss Application Server 4.x/5.x": [
+      "jboss application server 4.x/5.x",
+      "jboss application server 4x/5x"
+    ],
+    "KOMODO": [
+      "komodo"
+    ],
+    "Jetty Server": [
+      "jetty server"
+    ],
+    "WSRR": [
+      "wsrr"
+    ],
+    "WebLogic Application Server": [
+      "weblogic application server"
+    ],
+    "MapR": [
+      "mapr"
+    ],
+    "Web Sphere MQ": [
+      "web sphere mq"
+    ],
+    "Message Broker": [
+      "message broker"
+    ],
+    "QV/QVXP": [
+      "qv/qvxp"
+    ],
+    "Elastic search": [
+      "elastic search"
+    ],
+    "Sublime Text": [
+      "sublime text"
+    ],
+    "Quest TOAD for Oracle": [
+      "quest toad for oracle"
+    ],
+    "JRules": [
+      "jrules"
+    ],
+    "Pusher": [
+      "pusher"
+    ],
+    "iReports": [
+      "ireports"
+    ],
+    "ITKO LISA": [
+      "itko lisa"
+    ],
+    "HP UFT/QTP": [
+      "hp uft/qtp"
+    ],
+    "PayPal": [
+      "paypal"
+    ],
+    "Maven2": [
+      "maven2"
+    ],
+    "SQL Server Reporting Service": [
+      "sql server reporting service"
+    ],
+    "Fishbone": [
+      "fishbone"
+    ],
+    "IBM WebSphere 5.X/6.0": [
+      "ibm websphere 5.x/6.0",
+      "ibm websphere 5x/60"
+    ],
+    "11.0)": [
+      "11.0)",
+      "110)"
+    ],
+    "Microsoft SharePoint": [
+      "microsoft sharepoint"
+    ],
+    "Enterprise Architect": [
+      "enterprise architect"
+    ],
+    "HP ALM QC": [
+      "hp alm qc"
+    ],
+    "BEA-Weblogic": [
+      "bea weblogic",
+      "bea-weblogic",
+      "beaweblogic"
+    ],
+    "Squirrel": [
+      "squirrel"
+    ],
+    "Mule API Gateway": [
+      "mule api gateway"
+    ],
+    "Star Team": [
+      "star team"
+    ],
+    "HPAS": [
+      "hpas"
+    ],
+    "Jenkin": [
+      "jenkin"
+    ],
+    "IBM TeaLeaf": [
+      "ibm tealeaf"
+    ],
+    "MS VISIO": [
+      "ms visio",
+      "ms-visio",
+      "msvisio"
+    ],
+    "HP Quality Center ALM": [
+      "hp quality center alm"
+    ],
+    "MS Office Suite": [
+      "ms office suite"
+    ],
+    "TOAD 5.0/8.0": [
+      "toad 5.0/8.0",
+      "toad 50/80"
+    ],
+    "Mind Mapping Software": [
+      "mind mapping software"
+    ],
+    "SPARX System’s EA": [
+      "sparx system’s ea"
+    ],
+    "Tableau": [
+      "tableau"
+    ],
+    "Clarity": [
+      "clarity"
+    ],
+    "OSCommerce": [
+      "oscommerce"
+    ],
+    "Microsoft Excel": [
+      "microsoft excel"
+    ],
+    "People soft HRMS": [
+      "people soft hrms"
+    ],
+    "Microsoft Project": [
+      "microsoft project"
+    ],
+    "IBM Web Sphere 4.x/5.x/6.x": [
+      "ibm web sphere 4.x/5.x/6.x",
+      "ibm web sphere 4x/5x/6x"
+    ],
+    "EMC Documentum": [
+      "emc documentum"
+    ],
+    "WSAD": [
+      "wsad"
+    ],
+    "VSS": [
+      "vss"
+    ],
+    "Qlikview": [
+      "qlikview"
+    ],
+    "Microsoft Visual Studio": [
+      "microsoft visual studio"
+    ],
+    "Grunt": [
+      "grunt"
+    ],
+    "Power Mock": [
+      "power mock"
+    ],
+    "Visual Studio": [
+      "visual studio"
+    ],
+    "Salesforce CRM": [
+      "salesforce crm"
+    ],
+    "Balsamic": [
+      "balsamic"
+    ],
+    "SPF": [
+      "spf"
+    ],
+    "Oracle BPM": [
+      "oracle bpm"
+    ],
+    "SublimeText": [
+      "sublimetext"
+    ],
+    "Metalink": [
+      "metalink"
+    ],
+    "Negotiate to Win | The 7 Habits of Highly Effective People Certified, German Language course": [
+      "negotiate to win | the 7 habits of highly effective people certified, german language course"
+    ],
+    "uDeploy": [
+      "udeploy"
+    ],
+    "Specflow C": [
+      "specflow c"
+    ],
+    "Oracle ECM": [
+      "oracle ecm"
+    ],
+    "Webstorm": [
+      "webstorm"
+    ],
+    "Adobe Photoshop": [
+      "adobe photoshop"
+    ],
+    "Dream weaver": [
+      "dream weaver"
+    ],
+    "OWASP": [
+      "owasp"
+    ],
+    "XML SPY": [
+      "xml spy"
+    ],
+    "Microsoft Project Plan": [
+      "microsoft project plan"
+    ],
+    "Jasper Report": [
+      "jasper report"
+    ],
+    "BMC Remedy": [
+      "bmc remedy"
+    ],
+    "Intellij 14.x/15.x": [
+      "intellij 14.x/15.x",
+      "intellij 14x/15x"
+    ],
+    "Glassfish ORB Daemon": [
+      "glassfish orb daemon"
+    ],
+    "Mocha JS": [
+      "mocha js"
+    ],
+    "Visual Cafe": [
+      "visual cafe"
+    ],
+    "Hudson": [
+      "hudson"
+    ],
+    "WMS": [
+      "wms"
+    ],
+    "Yourkit": [
+      "yourkit"
+    ],
+    "Tomcat 5.x/6.x": [
+      "tomcat 5.x/6.x",
+      "tomcat 5x/6x"
+    ],
+    "HP QC": [
+      "hp qc"
+    ],
+    "Cherwell": [
+      "cherwell"
+    ],
+    "FileAid": [
+      "fileaid"
+    ],
+    "Quartz": [
+      "quartz"
+    ],
+    "Subversion": [
+      "subversion"
+    ],
+    "JHiccup": [
+      "jhiccup"
+    ],
+    "Teradata": [
+      "teradata"
+    ],
+    "Quality Center/Test Director": [
+      "quality center/test director"
+    ],
+    "Source Tree": [
+      "source tree"
+    ],
+    "EMMA": [
+      "emma"
+    ],
+    "FICO": [
+      "fico"
+    ],
+    "Oracle SQL developer": [
+      "oracle sql developer"
+    ],
+    "HPUFT": [
+      "hpuft"
+    ],
+    "Jnuit": [
+      "jnuit"
+    ],
+    "Jakarta Tomcat": [
+      "jakarta tomcat"
+    ],
+    "Ultra Edit-32": [
+      "ultra edit-32",
+      "ultra edit32"
+    ],
+    "FAST": [
+      "fast"
+    ],
+    "Protractor": [
+      "protractor"
+    ],
+    "Metastorm BPM": [
+      "metastorm bpm"
+    ],
+    "Selenium Grid": [
+      "selenium grid"
+    ],
+    "ILog JRules": [
+      "ilog jrules"
+    ],
+    "BEA Web Logic": [
+      "bea web logic"
+    ],
+    "Mercurial": [
+      "mercurial"
+    ],
+    "MS SharePoint Server": [
+      "ms sharepoint server"
+    ],
+    "IOS": [
+      "ios"
+    ],
+    "Oracle Fusion": [
+      "oracle fusion"
+    ],
+    "Rational Quantify": [
+      "rational quantify"
+    ],
+    "Bit Bucket": [
+      "bit bucket"
+    ],
+    "Oracle Warehouse Builder": [
+      "oracle warehouse builder"
+    ],
+    "Intellij IDEA": [
+      "intellij idea"
+    ],
+    "Active MQ": [
+      "active mq"
+    ],
+    "Crystal Reports XI": [
+      "crystal reports xi"
+    ],
+    "TSO": [
+      "tso"
+    ],
+    "IBM Cognos BI": [
+      "ibm cognos bi"
+    ],
+    "Maven/Git": [
+      "maven/git"
+    ],
+    "Version ONE": [
+      "version one"
+    ],
+    "Sareena PVCS": [
+      "sareena pvcs"
+    ],
+    "IBM Appscan": [
+      "ibm appscan"
+    ],
+    "Microsoft Word": [
+      "microsoft word"
+    ],
+    "Mule soft ESB": [
+      "mule soft esb"
+    ],
+    "SAP (HR": [
+      "sap (hr"
+    ],
+    "QRADAR rest api": [
+      "qradar rest api"
+    ],
+    "VisualVM": [
+      "visualvm"
+    ],
+    "WebLogic 8.1/9.1": [
+      "weblogic 8.1/9.1",
+      "weblogic 81/91"
+    ],
+    "Salesforce": [
+      "salesforce"
+    ],
+    "Rational Requiste Pro": [
+      "rational requiste pro"
+    ],
+    "Rabbit MQ": [
+      "rabbit mq"
+    ],
+    "Web Logic 11g/12c": [
+      "web logic 11g/12c"
+    ],
+    "Apache Tomcat 8.0/7.x/6.x": [
+      "apache tomcat 8.0/7.x/6.x",
+      "apache tomcat 80/7x/6x"
+    ],
+    "MS Visual Studio": [
+      "ms visual studio"
+    ],
+    "IBM Websphere Portal": [
+      "ibm websphere portal"
+    ],
+    "RAD": [
+      "rad"
+    ],
+    "GlassFish": [
+      "glassfish"
+    ],
+    "Rational Rose": [
+      "rational rose"
+    ],
+    "Git-hub": [
+      "git-hub",
+      "github"
+    ],
+    "APEX Search Client": [
+      "apex search client"
+    ],
+    "SVN Tortoise": [
+      "svn tortoise"
+    ],
+    "JVisual VM": [
+      "jvisual vm"
+    ],
+    "Unifi Pro": [
+      "unifi pro"
+    ],
+    "Outlook Express": [
+      "outlook express"
+    ],
+    "Rational ClearCase": [
+      "rational clearcase"
+    ],
+    "AS400": [
+      "as400"
+    ],
+    "SSRS": [
+      "ssrs"
+    ],
+    "Map Reduce": [
+      "map reduce"
+    ],
+    "DB2": [
+      "db2"
+    ],
+    "Oracle WebLogic 10.x/9.x": [
+      "oracle weblogic 10.x/9.x",
+      "oracle weblogic 10x/9x"
+    ],
+    "WSAD/RAD": [
+      "wsad/rad"
+    ],
+    "Velocedi/Claredi": [
+      "velocedi/claredi"
+    ],
+    "Apache Maven": [
+      "apache maven"
+    ],
+    "Surround SCM": [
+      "surround scm"
+    ],
+    "Workbench": [
+      "workbench"
+    ],
+    "IBM Rational Clear Case": [
+      "ibm rational clear case"
+    ],
+    "Oracle Utilities (OBACKTRACK": [
+      "oracle utilities (obacktrack"
+    ],
+    "XMLSpy": [
+      "xmlspy"
+    ],
+    "IBM WebSphere 8.x/6.x": [
+      "ibm websphere 8.x/6.x",
+      "ibm websphere 8x/6x"
+    ],
+    "Windows 8.0/8.1": [
+      "windows 8.0/8.1",
+      "windows 80/81"
+    ],
+    "Google GSA": [
+      "google gsa"
+    ],
+    "TKPROF": [
+      "tkprof"
+    ],
+    "JBoss 5.x": [
+      "jboss 5.x",
+      "jboss 5x"
+    ],
+    "Tortoise-SVN": [
+      "tortoise svn",
+      "tortoise-svn",
+      "tortoisesvn"
+    ],
+    "Rational Tool Suite": [
+      "rational tool suite"
+    ],
+    "PLSql Developer": [
+      "plsql developer"
+    ],
+    "SPSS": [
+      "spss"
+    ],
+    "Cron Jobs": [
+      "cron jobs"
+    ],
+    "SOQLxplorer": [
+      "soqlxplorer"
+    ],
+    "ReqTrace Web": [
+      "reqtrace web"
+    ],
+    "Custom Import Wizard": [
+      "custom import wizard"
+    ],
+    "WSO2": [
+      "wso2"
+    ],
+    "MEMS)": [
+      "mems)"
+    ],
+    "Apache Tomcat 6/7": [
+      "apache tomcat 6/7"
+    ],
+    "Kafka": [
+      "kafka"
+    ],
+    "SOMA": [
+      "soma"
+    ],
+    "Eclipse 3.5/3.7/4.0": [
+      "eclipse 3.5/3.7/4.0",
+      "eclipse 35/37/40"
+    ],
+    "TortoiseGIT": [
+      "tortoisegit"
+    ],
+    "IE Developer Toolbar": [
+      "ie developer toolbar"
+    ],
+    "EclEmma": [
+      "eclemma"
+    ],
+    "Firebug": [
+      "firebug"
+    ],
+    "IBM BPM": [
+      "ibm bpm"
+    ],
+    "Jprobe suite": [
+      "jprobe suite"
+    ],
+    "Rational Robo": [
+      "rational robo"
+    ],
+    "11.2": [
+      "11.2",
+      "112"
+    ],
+    "Smart Draw": [
+      "smart draw"
+    ],
+    "JDB": [
+      "jdb"
+    ],
+    "Packet Tracer": [
+      "packet tracer"
+    ],
+    "ManageNow": [
+      "managenow"
+    ],
+    "iReport": [
+      "ireport"
+    ],
+    "SVC": [
+      "svc"
+    ],
+    "Text Wrangler": [
+      "text wrangler"
+    ],
+    "Visual Studio Code": [
+      "visual studio code"
+    ],
+    "JTop": [
+      "jtop"
+    ],
+    "7.x": [
+      "7.x",
+      "7x"
+    ],
+    "JBoss Drools Rules Engine": [
+      "jboss drools rules engine"
+    ],
+    "MOCK UP screens": [
+      "mock up screens"
+    ],
+    "Mocktio": [
+      "mocktio"
+    ],
+    "SourceTree)": [
+      "sourcetree)"
+    ],
+    "Ganymede": [
+      "ganymede"
+    ],
+    "Apache Tomcat 5.x": [
+      "apache tomcat 5.x",
+      "apache tomcat 5x"
+    ],
+    "Quality Center": [
+      "quality center"
+    ],
+    "iLotus Notes": [
+      "ilotus notes"
+    ],
+    "SRVCTL": [
+      "srvctl"
+    ],
+    "TeamCity": [
+      "teamcity"
+    ],
+    "Web sphere 4.0/5.0/6.1/7.0/8.0": [
+      "web sphere 4.0/5.0/6.1/7.0/8.0",
+      "web sphere 40/50/61/70/80"
+    ],
+    "redhat BPM": [
+      "redhat bpm"
+    ],
+    "MQ Series": [
+      "mq series",
+      "mq-series",
+      "mqseries"
+    ],
+    "Tomcat 5/6/7": [
+      "tomcat 5/6/7"
+    ],
+    "MQ": [
+      "mq"
+    ],
+    "Qlikview 11.0/11.2": [
+      "qlikview 11.0/11.2",
+      "qlikview 110/112"
+    ],
+    "HP Project and Portfolio Management": [
+      "hp project and portfolio management"
+    ],
+    "Artifactory": [
+      "artifactory"
+    ],
+    "PowerMockito": [
+      "powermockito"
+    ],
+    "Rational Test Manager": [
+      "rational test manager"
+    ],
+    "Atom": [
+      "atom"
+    ],
+    "Jenkins Enterprise": [
+      "jenkins enterprise"
+    ],
+    "mdb": [
+      "mdb"
+    ],
+    "Adobe Dreamweaver": [
+      "adobe dreamweaver"
+    ],
+    "Jbuilder": [
+      "jbuilder"
+    ],
+    "NetBeans IDE": [
+      "netbeans ide"
+    ],
+    "Hadoop": [
+      "hadoop"
+    ],
+    "IBM RAD": [
+      "ibm rad"
+    ],
+    "NetBean": [
+      "netbean"
+    ],
+    "Net beans RAD": [
+      "net beans rad"
+    ],
+    "Team City": [
+      "team city"
+    ],
+    "SQL Server 2008 R2/2013": [
+      "sql server 2008 r2/2013"
+    ],
+    "WinSCP": [
+      "winscp"
+    ],
+    "Gulp": [
+      "gulp"
+    ],
+    "HPQTP": [
+      "hpqtp"
+    ],
+    "Chef-Vault": [
+      "chef-vault",
+      "chefvault"
+    ],
+    "Actuate BIRT": [
+      "actuate birt"
+    ],
+    "Adobe Connect": [
+      "adobe connect"
+    ],
+    "PVCS Dimension": [
+      "pvcs dimension"
+    ],
+    "Impala": [
+      "impala"
+    ],
+    "Cucumber-JVM": [
+      "cucumber jvm",
+      "cucumber-jvm",
+      "cucumberjvm"
+    ],
+    "WebSphere MQ": [
+      "websphere mq"
+    ],
+    "Splunk": [
+      "splunk"
+    ],
+    "AWR": [
+      "awr"
+    ],
+    "REST/Soap Services": [
+      "rest/soap services"
+    ],
+    "ArcGIS": [
+      "arcgis"
+    ],
+    "Perforce": [
+      "perforce"
+    ],
+    "Tomcat 5.0/6.0/7.0": [
+      "tomcat 5.0/6.0/7.0",
+      "tomcat 50/60/70"
+    ],
+    "Oracle Data Integrator": [
+      "oracle data integrator"
+    ],
+    "Serena Dimensions": [
+      "serena dimensions"
+    ],
+    "Google API": [
+      "google api"
+    ],
+    "Rally Dev": [
+      "rally dev"
+    ],
+    "ADDM": [
+      "addm"
+    ],
+    "Apache Tomcat6.0/7.0/8.0": [
+      "apache tomcat6.0/7.0/8.0",
+      "apache tomcat60/70/80"
+    ],
+    "Excel": [
+      "excel"
+    ],
+    "Hudson 3.x": [
+      "hudson 3.x",
+      "hudson 3x"
+    ],
+    "WebLogic Workshop": [
+      "weblogic workshop"
+    ],
+    "JBOSS Server": [
+      "jboss server"
+    ],
+    "Rational Application Developer RAD": [
+      "rational application developer rad"
+    ],
+    "Platinum tool for DB2": [
+      "platinum tool for db2"
+    ],
+    "Travis CI": [
+      "travis ci"
+    ],
+    "UIPath": [
+      "uipath"
+    ],
+    "STS": [
+      "sts"
+    ],
+    "SAP PowerBuilder": [
+      "sap powerbuilder"
+    ],
+    "IText": [
+      "itext"
+    ],
+    "Brackets": [
+      "brackets"
+    ],
+    "Control M": [
+      "control m"
+    ],
+    "Swagger": [
+      "swagger"
+    ],
+    "Glass Fish": [
+      "glass fish"
+    ],
+    "Webhooks": [
+      "webhooks"
+    ],
+    "WebFOCUS": [
+      "webfocus"
+    ],
+    "SiteMinder": [
+      "siteminder"
+    ],
+    "Bamboo": [
+      "bamboo"
+    ],
+    "IBM MQ Series": [
+      "ibm mq series"
+    ],
+    "gdb": [
+      "gdb"
+    ],
+    "ISM": [
+      "ism"
+    ],
+    "Squirrel SQL Client": [
+      "squirrel sql client"
+    ],
+    "Adobe Experience Manager": [
+      "adobe experience manager"
+    ],
+    "WinCvs": [
+      "wincvs"
+    ],
+    "Photoshop": [
+      "photoshop"
+    ],
+    "Gherkin": [
+      "gherkin"
+    ],
+    "BMC": [
+      "bmc"
+    ],
+    "EditPlus": [
+      "editplus"
+    ],
+    "Team track": [
+      "team track"
+    ],
+    "RSA": [
+      "rsa"
+    ],
+    "Clion": [
+      "clion"
+    ],
+    "Core FTPLite": [
+      "core ftplite"
+    ],
+    "Dynatrace": [
+      "dynatrace"
+    ],
+    "HP Quality Centre": [
+      "hp quality centre"
+    ],
+    "Nagios": [
+      "nagios"
+    ],
+    "Clarity Project Manager": [
+      "clarity project manager"
+    ],
+    "JMock": [
+      "jmock"
+    ],
+    "Quality Center (9": [
+      "quality center (9"
+    ],
+    "TCPMon": [
+      "tcpmon"
+    ],
+    "GITHUB": [
+      "github"
+    ],
+    "Apache ATOM": [
+      "apache atom"
+    ],
+    "IBM Cognos": [
+      "ibm cognos"
+    ],
+    "IBM -WSAD": [
+      "ibm -wsad",
+      "ibm wsad"
+    ],
+    "Jprofile": [
+      "jprofile"
+    ],
+    "NPM": [
+      "npm"
+    ],
+    "Spring Tool suite 2.x/3.x": [
+      "spring tool suite 2.x/3.x",
+      "spring tool suite 2x/3x"
+    ],
+    "NetBeans7": [
+      "netbeans7"
+    ],
+    "Dojo Toolkit": [
+      "dojo toolkit"
+    ],
+    "Domo": [
+      "domo"
+    ],
+    "IBM Lotus": [
+      "ibm lotus"
+    ],
+    "Golden Gate": [
+      "golden gate"
+    ],
+    "Crystal Report": [
+      "crystal report"
+    ],
+    "Oracle SOA Suit": [
+      "oracle soa suit"
+    ],
+    "Front Page": [
+      "front page"
+    ],
+    "Atlassian Confluence": [
+      "atlassian confluence"
+    ],
+    "web-methods": [
+      "web-methods",
+      "webmethods"
+    ],
+    "SAP Business Objects": [
+      "sap business objects"
+    ],
+    "6.x": [
+      "6.x",
+      "6x"
+    ],
+    "MS Project": [
+      "ms project"
+    ],
+    "IBM WebSphere 5.1/6.0/6.1/7.0": [
+      "ibm websphere 5.1/6.0/6.1/7.0",
+      "ibm websphere 51/60/61/70"
+    ],
+    "Power BI": [
+      "power bi"
+    ],
+    "QuickBuild": [
+      "quickbuild"
+    ],
+    "SharePoint": [
+      "sharepoint"
+    ],
+    "Test Director": [
+      "test director"
+    ],
+    "Informatica": [
+      "informatica"
+    ],
+    "Wordpress": [
+      "wordpress"
+    ],
+    "Test-ng": [
+      "test-ng",
+      "testng"
+    ],
+    "Continuum": [
+      "continuum"
+    ],
+    "MapReduce": [
+      "mapreduce"
+    ],
+    "Cloudera Manager": [
+      "cloudera manager"
+    ],
+    "SQL*Loader": [
+      "sql*loader"
+    ],
+    "SAP BR": [
+      "sap br"
+    ],
+    "PHPUnit": [
+      "phpunit"
+    ],
+    "Altova XML SPY": [
+      "altova xml spy"
+    ],
+    "Karma JS": [
+      "karma js"
+    ],
+    "Visual Studios": [
+      "visual studios"
+    ],
+    "Web Logic 9.1/10": [
+      "web logic 9.1/10",
+      "web logic 91/10"
+    ],
+    "Clearcase": [
+      "clearcase"
+    ],
+    "Draw.io": [
+      "draw.io",
+      "drawio"
+    ],
+    "Galelio)": [
+      "galelio)"
+    ],
+    "HP ALM": [
+      "hp alm"
+    ],
+    "Windows 2000/XP/Vista/7/8/10": [
+      "windows 2000/xp/vista/7/8/10"
+    ],
+    "MS Project Server": [
+      "ms project server"
+    ],
+    "Web Sphere 6.x/5.x": [
+      "web sphere 6.x/5.x",
+      "web sphere 6x/5x"
+    ],
+    "Starteam": [
+      "starteam"
+    ],
+    "Net Beans": [
+      "net beans"
+    ],
+    "10": [
+      "10"
+    ],
+    "Propel": [
+      "propel"
+    ],
+    "Oracle WebLogic 10g": [
+      "oracle weblogic 10g"
+    ],
+    "PVCS": [
+      "pvcs"
+    ],
+    "ITSM": [
+      "itsm"
+    ],
+    "Microsoft Team Foundation Server": [
+      "microsoft team foundation server"
+    ],
+    "ClearQuest": [
+      "clearquest"
+    ],
+    "Curl": [
+      "curl"
+    ],
+    "IBM Requisite Pro": [
+      "ibm requisite pro"
+    ],
+    "Oracle BI Enterprise Edition": [
+      "oracle bi enterprise edition"
+    ],
+    "IBM Process Designer": [
+      "ibm process designer"
+    ],
+    "MS Excel": [
+      "ms excel"
+    ],
+    "LoadRunner": [
+      "loadrunner"
+    ],
+    "IBM Info Sphere": [
+      "ibm info sphere"
+    ],
+    "Espresso": [
+      "espresso"
+    ],
+    "Business Objects": [
+      "business objects"
+    ],
+    "Mercury Quality Center": [
+      "mercury quality center"
+    ],
+    "Signal": [
+      "signal"
+    ],
+    "CDH3&4": [
+      "cdh3&4"
+    ],
+    "Rational Requisite Pro": [
+      "rational requisite pro"
+    ],
+    "SAP SD": [
+      "sap sd"
+    ],
+    "AXIOM": [
+      "axiom"
+    ],
+    "AquaStudio GUI": [
+      "aquastudio gui"
+    ],
+    "Xpeditor": [
+      "xpeditor"
+    ],
+    "TSO/ISPF": [
+      "tso/ispf"
+    ],
+    "Goethe Institute": [
+      "goethe institute"
+    ],
+    "Nexpose Security": [
+      "nexpose security"
+    ],
+    "JUNIT4.12": [
+      "junit4.12",
+      "junit412"
+    ],
+    "CMVC": [
+      "cmvc"
+    ],
+    "Rational Software Architect": [
+      "rational software architect"
+    ],
+    "Apache": [
+      "apache"
+    ],
+    "Adobe Acrobat": [
+      "adobe acrobat"
+    ],
+    "WebSphere": [
+      "websphere"
+    ],
+    "JProfiler": [
+      "jprofiler"
+    ],
+    "IBM Web Sphere": [
+      "ibm web sphere"
+    ],
+    "BEA Web Logic 7.x/8.x/10.x": [
+      "bea web logic 7.x/8.x/10.x",
+      "bea web logic 7x/8x/10x"
+    ],
+    "Oozie": [
+      "oozie"
+    ],
+    "Vagrant": [
+      "vagrant"
+    ],
+    "Quick Build": [
+      "quick build"
+    ],
+    "10.2": [
+      "10.2",
+      "102"
+    ],
+    "Trello": [
+      "trello"
+    ],
+    "Jetty": [
+      "jetty"
+    ],
+    "MicroStrategy": [
+      "microstrategy"
+    ],
+    "libumem": [
+      "libumem"
+    ],
+    "Solace": [
+      "solace"
+    ],
+    "OEM": [
+      "oem"
+    ],
+    "Web Storm": [
+      "web storm"
+    ],
+    "PuTTY": [
+      "putty"
+    ],
+    "eMatrix": [
+      "ematrix"
+    ],
+    "Remedy": [
+      "remedy"
+    ],
+    "SQL Developer": [
+      "sql developer"
+    ],
+    "Spring Tool Suite": [
+      "spring tool suite"
+    ],
+    "Requisite Pro": [
+      "requisite pro"
+    ],
+    "RoboMQ": [
+      "robomq"
+    ],
+    "Apache Ant": [
+      "apache ant"
+    ],
+    "BW Hana": [
+      "bw hana"
+    ],
+    "Coherence": [
+      "coherence"
+    ],
+    "Hazelcast": [
+      "hazelcast"
+    ],
+    "Rational Rose XDE": [
+      "rational rose xde"
+    ],
+    "PowerPoint": [
+      "powerpoint"
+    ],
+    "Code Collaborator": [
+      "code collaborator",
+      "code-collaborator",
+      "codecollaborator"
+    ],
+    "SPOT": [
+      "spot"
+    ],
+    "SAP PowerDesigner": [
+      "sap powerdesigner"
+    ],
+    "IntelliJ IDE": [
+      "intellij ide"
+    ],
+    "Axure": [
+      "axure"
+    ],
+    "SAP CRM": [
+      "sap crm"
+    ],
+    "CM SYNERGY": [
+      "cm synergy"
+    ],
+    "Tealeaf": [
+      "tealeaf"
+    ],
+    "BIRT": [
+      "birt"
+    ],
+    "VANTAGE-ONE": [
+      "vantage-one",
+      "vantageone"
+    ],
+    "JPAYMENT": [
+      "jpayment"
+    ],
+    "RAD 6.0/6.x/7.x/8.0": [
+      "rad 6.0/6.x/7.x/8.0",
+      "rad 60/6x/7x/80"
+    ],
+    "CA ERwin": [
+      "ca erwin"
+    ],
+    "MPP": [
+      "mpp"
+    ],
+    "Oracle 11i/R12 Financials": [
+      "oracle 11i/r12 financials"
+    ],
+    "Caliber RM": [
+      "caliber rm"
+    ],
+    "Sales force CRM": [
+      "sales force crm"
+    ],
+    "Erwin": [
+      "erwin"
+    ],
+    "Rational Application Developer": [
+      "rational application developer"
+    ],
+    "Bea Web logic Server": [
+      "bea web logic server"
+    ],
+    "IBM WebSphere 8.x/9.x": [
+      "ibm websphere 8.x/9.x",
+      "ibm websphere 8x/9x"
+    ],
+    "QC": [
+      "qc"
+    ],
+    "WebSphere 6.x/7.x": [
+      "websphere 6.x/7.x",
+      "websphere 6x/7x"
+    ],
+    "Active Directory": [
+      "active directory"
+    ],
+    "qTrack": [
+      "qtrack"
+    ],
+    "Jtest": [
+      "jtest"
+    ],
+    "Apex Data loader": [
+      "apex data loader"
+    ],
+    "Android": [
+      "android"
+    ],
+    "Chai": [
+      "chai"
+    ],
+    "SQL Server Management Studio": [
+      "sql server management studio"
+    ],
+    "XPlanner": [
+      "xplanner"
+    ],
+    "FileZilla": [
+      "filezilla"
+    ],
+    "PVCS Tracker": [
+      "pvcs tracker"
+    ],
+    "Jackson Mapper": [
+      "jackson mapper"
+    ],
+    "Couchbase": [
+      "couchbase"
+    ],
+    "CXF": [
+      "cxf"
+    ],
+    "Macintosh": [
+      "macintosh"
+    ],
+    "EDIFECS": [
+      "edifecs"
+    ],
+    "Apex Explorer": [
+      "apex explorer"
+    ],
+    "IIS6.0": [
+      "iis6.0",
+      "iis60"
+    ],
+    "Informatica Power Center": [
+      "informatica power center"
+    ],
+    "ServiceNow": [
+      "servicenow"
+    ],
+    "Force.com IDE": [
+      "force.com ide",
+      "forcecom ide"
+    ],
+    "Parasoft": [
+      "parasoft"
+    ],
+    "J-Boss 6.x/7.x": [
+      "j-boss 6.x/7.x",
+      "jboss 6x/7x"
+    ],
+    "Tableau 10.1/10.2": [
+      "tableau 10.1/10.2",
+      "tableau 101/102"
+    ],
+    "OCR for AnyDoc- Hyland Software": [
+      "ocr for anydoc hyland software",
+      "ocr for anydoc- hyland software"
+    ],
+    "Spotfire": [
+      "spotfire"
+    ],
+    "Jasper Assistants": [
+      "jasper assistants"
+    ],
+    "Team Foundation Server": [
+      "team foundation server"
+    ],
+    "Git (EGIT": [
+      "git (egit"
+    ],
+    "OIM-OIF": [
+      "oim-oif",
+      "oimoif"
+    ],
+    "Data Stage": [
+      "data stage"
+    ],
+    "WebEx": [
+      "webex"
+    ],
+    "jPod": [
+      "jpod"
+    ],
+    "Eclipse (Europe": [
+      "eclipse (europe"
+    ],
+    "Oracle/BEA WebLogic 8.1/9.1": [
+      "oracle/bea weblogic 8.1/9.1",
+      "oracle/bea weblogic 81/91"
+    ],
+    "Cygwin": [
+      "cygwin"
+    ],
+    "Lotus Notes": [
+      "lotus notes"
+    ],
+    "My Eclipse": [
+      "my eclipse"
+    ],
+    "Cloudhub": [
+      "cloudhub"
+    ],
+    "MS Office – Word": [
+      "ms office – word"
+    ],
+    "IBM Test Management": [
+      "ibm test management"
+    ],
+    "Xpages": [
+      "xpages"
+    ],
+    "Web logic Application server": [
+      "web logic application server"
+    ],
+    "Eclipse Mars": [
+      "eclipse mars"
+    ],
+    "Visual Age Java": [
+      "visual age java"
+    ],
+    "Liferay": [
+      "liferay"
+    ],
+    "BPT": [
+      "bpt"
+    ],
+    "Oracle Application Testing Suite": [
+      "oracle application testing suite"
+    ],
+    "Jdeveloper 9/10": [
+      "jdeveloper 9/10"
+    ],
+    "Win Runner": [
+      "win runner"
+    ],
+    "Selenium RC": [
+      "selenium rc"
+    ],
+    "Curam": [
+      "curam"
+    ],
+    "CruiseControl.NET": [
+      "cruisecontrol.net",
+      "cruisecontrolnet"
+    ],
+    "Marathon": [
+      "marathon"
+    ],
+    "STIBO Step Solutions": [
+      "stibo step solutions"
+    ],
+    "cucumber JS": [
+      "cucumber js"
+    ],
+    "Max Mueller Bhavan": [
+      "max mueller bhavan"
+    ],
+    "Rational ClearQuest": [
+      "rational clearquest"
+    ],
+    "Force.com Excel Connector": [
+      "force.com excel connector",
+      "forcecom excel connector"
+    ],
+    "Lisa": [
+      "lisa"
+    ],
+    "Microsoft Test Manager": [
+      "microsoft test manager"
+    ],
+    "Selenium Ide": [
+      "selenium ide"
+    ],
+    "Support Central": [
+      "support central"
+    ],
+    "Eclipse IDE": [
+      "eclipse ide"
+    ],
+    "JBoss Drools": [
+      "jboss drools"
+    ],
+    "IBM Clear Case": [
+      "ibm clear case"
+    ],
+    "WorkSoft-Certify": [
+      "worksoft-certify",
+      "worksoftcertify"
+    ],
+    "Odysseus": [
+      "odysseus"
+    ],
+    "Aws": [
+      "aws"
+    ],
+    "XML Beans": [
+      "xml beans"
+    ],
+    "Sales Force": [
+      "sales force"
+    ],
+    "Tally": [
+      "tally"
+    ],
+    "Apache Tomcat": [
+      "apache tomcat"
+    ],
+    "Apache Spark": [
+      "apache spark"
+    ],
+    "SCCM": [
+      "sccm"
+    ],
+    "Web logic": [
+      "web logic"
+    ],
+    "Apache Tomcat Server 5.x": [
+      "apache tomcat server 5.x",
+      "apache tomcat server 5x"
+    ],
+    "Octopus": [
+      "octopus"
+    ],
+    "WESB": [
+      "wesb"
+    ],
+    "Kibana": [
+      "kibana",
+      "kibana)"
+    ],
+    "Mainframes": [
+      "mainframes"
+    ],
+    "HostBridge": [
+      "hostbridge"
+    ],
+    "Gimp": [
+      "gimp"
+    ],
+    "Pentaho": [
+      "pentaho"
+    ],
+    "WebLogic 7.0/8.1/9.2/10.0": [
+      "weblogic 7.0/8.1/9.2/10.0",
+      "weblogic 70/81/92/100"
+    ],
+    "Jameleon": [
+      "jameleon"
+    ],
+    "Hyperion Reporting": [
+      "hyperion reporting"
+    ],
+    "My eclipse STS": [
+      "my eclipse sts"
+    ],
+    "Axis2": [
+      "axis2"
+    ],
+    "Siebel CRM": [
+      "siebel crm"
+    ],
+    "Adobe Acrobat Professional": [
+      "adobe acrobat professional"
+    ],
+    "Tomcat 5.5/6.0": [
+      "tomcat 5.5/6.0",
+      "tomcat 55/60"
+    ],
+    "TFS Team Build/MS Build": [
+      "tfs team build/ms build"
+    ],
+    "OpsView": [
+      "opsview"
+    ],
+    "JBoss Fuse": [
+      "jboss fuse"
+    ],
+    "Code Check": [
+      "code check"
+    ],
+    "Storm": [
+      "storm"
+    ],
+    "Rational Tools (Rational Rose": [
+      "rational tools (rational rose"
+    ],
+    "Mantis Bug Tracker": [
+      "mantis bug tracker"
+    ],
+    "Jenkins 2.x": [
+      "jenkins 2.x",
+      "jenkins 2x"
+    ],
+    "VS": [
+      "vs"
+    ],
+    "TFS": [
+      "tfs"
+    ],
+    "SDS": [
+      "sds"
+    ],
+    "HPQC": [
+      "hpqc"
+    ],
+    "Mantis": [
+      "mantis"
+    ],
+    "RMAN": [
+      "rman"
+    ],
+    "SSIS": [
+      "ssis"
+    ],
+    "JUnit3.8/4.0": [
+      "junit3.8/4.0",
+      "junit38/40"
+    ],
+    "Kerberos": [
+      "kerberos"
+    ],
+    "Selenium Web Driver/RC/IDE/Grid": [
+      "selenium web driver/rc/ide/grid"
+    ],
+    "LiveLink": [
+      "livelink"
+    ],
+    "WebSphere Application Server": [
+      "websphere application server"
+    ],
+    "RAD 6.0/7.0": [
+      "rad 6.0/7.0",
+      "rad 60/70"
+    ],
+    "Jenkins/Puppet/Ansible/Docker/OpenStack": [
+      "jenkins/puppet/ansible/docker/openstack"
+    ],
+    "Wily": [
+      "wily"
+    ],
+    "BI Launchpad": [
+      "bi launchpad"
+    ],
+    "Mulesoft": [
+      "mulesoft"
+    ],
+    "IBM WebSphere Commerce": [
+      "ibm websphere commerce"
+    ],
+    "Layer7": [
+      "layer7"
+    ],
+    "Powermock": [
+      "powermock"
+    ],
+    "AppDynamics": [
+      "appdynamics"
+    ],
+    "SAS": [
+      "sas"
+    ],
+    "Hortonwork clusters": [
+      "hortonwork clusters"
+    ],
+    "WebSphere Studio Application Developer": [
+      "websphere studio application developer"
+    ],
+    "MyEclipse": [
+      "myeclipse"
+    ],
+    "OEPE": [
+      "oepe"
+    ],
+    "Horton Works Distributions": [
+      "horton works distributions"
+    ],
+    "Chrome Developers": [
+      "chrome developers"
+    ],
+    "HP Quality Center": [
+      "hp quality center"
+    ],
+    "TMAG RAP": [
+      "tmag rap"
+    ],
+    "SnagIt": [
+      "snagit"
+    ],
+    "Tibco Spotfire": [
+      "tibco spotfire"
+    ],
+    "MM": [
+      "mm"
+    ],
+    "Visual Source Safe": [
+      "visual source safe"
+    ],
+    "IBM RTC": [
+      "ibm rtc"
+    ],
+    "Sonar": [
+      "sonar"
+    ],
+    "XAMPP": [
+      "xampp"
+    ],
+    "Web Sphere": [
+      "web sphere"
+    ],
+    "Service Now": [
+      "service now"
+    ],
+    "Activiti BPM": [
+      "activiti bpm"
+    ],
+    "Crystal Reports": [
+      "crystal reports"
+    ],
+    "Load Runner": [
+      "load runner"
+    ],
+    "IIS": [
+      "iis"
+    ],
+    "Outlook": [
+      "outlook"
+    ],
+    "ERWIN Data Modeler": [
+      "erwin data modeler"
+    ],
+    "Maven 3.x": [
+      "maven 3.x",
+      "maven 3x"
+    ],
+    "Hue": [
+      "hue"
+    ],
+    "Windows XP/Vista/7/10": [
+      "windows xp/vista/7/10"
+    ],
+    "truss": [
+      "truss"
+    ],
+    "Blaze": [
+      "blaze"
+    ],
+    "BEA Web Logic 9.x/10.x/12.x": [
+      "bea web logic 9.x/10.x/12.x",
+      "bea web logic 9x/10x/12x"
+    ],
+    "Notepad++": [
+      "notepad++"
+    ],
+    "Apache Mesos": [
+      "apache mesos"
+    ],
+    "strace": [
+      "strace"
+    ],
+    "Apache Tomcat 9/8": [
+      "apache tomcat 9/8"
+    ],
+    "RETS API": [
+      "rets api"
+    ],
+    "Open Project": [
+      "open project"
+    ],
+    "Bugzilla": [
+      "bugzilla"
+    ],
+    "Red mine": [
+      "red mine"
+    ],
+    "Tomcat AX-WS": [
+      "tomcat ax-ws",
+      "tomcat axws"
+    ],
+    "Documentum": [
+      "documentum"
+    ],
+    "phone gap": [
+      "phone gap"
+    ],
+    "Silverlight": [
+      "silverlight"
+    ],
+    "Amazon API": [
+      "amazon api"
+    ],
+    "Visio": [
+      "visio"
+    ],
+    "MII": [
+      "mii"
+    ],
+    "Wily Interscope": [
+      "wily interscope"
+    ],
+    "Ready API": [
+      "ready api"
+    ],
+    "Camunda BPM": [
+      "camunda bpm"
+    ],
+    "## Other Skills": [
+      "## other skills"
+    ],
+    "Eclipse/My Eclipse": [
+      "eclipse/my eclipse"
+    ],
+    "XUL": [
+      "xul"
+    ],
+    "CRM": [
+      "crm"
+    ],
+    "Eclipse 3.x": [
+      "eclipse 3.x",
+      "eclipse 3x"
+    ],
+    "Jasper Soft": [
+      "jasper soft"
+    ],
+    "DB2 UDB": [
+      "db2 udb"
+    ],
+    "OLTP": [
+      "oltp"
+    ],
+    "Oracle SQL": [
+      "oracle sql"
+    ],
+    "Microsoft SQL Server": [
+      "microsoft sql server"
+    ],
+    "DB/UDB": [
+      "db/udb"
+    ],
+    "Oracle 10g/11g": [
+      "oracle 10g/11g"
+    ],
+    "2005": [
+      "2005"
+    ],
+    "RDBMS": [
+      "rdbms"
+    ],
+    "Oracle 8i/9i/10g": [
+      "oracle 8i/9i/10g"
+    ],
+    "SQL Server 6.5/7.0": [
+      "sql server 6.5/7.0",
+      "sql server 65/70"
+    ],
+    "Mongo DB": [
+      "mongo db",
+      "mongo db)",
+      "mongo-db",
+      "mongodb"
+    ],
+    "H2": [
+      "h2"
+    ],
+    "Oracle 9i": [
+      "oracle 9i"
+    ],
+    "Agile Methodologies": [
+      "## agile methodologies",
+      "agile methodologies"
+    ],
+    "Amazon Dynamo DB": [
+      "amazon dynamo db"
+    ],
+    "MS SQL Server": [
+      "ms sql server",
+      "ms sql-server",
+      "ms sqlserver",
+      "ms-sql server",
+      "mssql server"
+    ],
+    "Oracle 9i/10g": [
+      "oracle 9i & 10g",
+      "oracle 9i/10g"
+    ],
+    "Oracle 10/11": [
+      "oracle 10/11"
+    ],
+    "SQL-Server-2008": [
+      "sql-server-2008",
+      "sqlserver2008"
+    ],
+    "2008)": [
+      "2008)"
+    ],
+    "Dynamo DB": [
+      "dynamo db"
+    ],
+    "Postgres SQL": [
+      "postgres sql"
+    ],
+    "Apache Cassandra": [
+      "apache cassandra"
+    ],
+    "MS SQL Server (2000": [
+      "ms sql server (2000"
+    ],
+    "Oracle 11g/10g": [
+      "oracle 11g/10g"
+    ],
+    "Sybase": [
+      "sybase"
+    ],
+    "SQL Server 2005/2008": [
+      "sql server 2005/2008"
+    ],
+    "Talend ETL": [
+      "talend etl"
+    ],
+    "Teradata IW": [
+      "teradata iw"
+    ],
+    "Oracle 8.x/9i/10/11g Enterprise Edition": [
+      "oracle 8.x/9i/10/11g enterprise edition",
+      "oracle 8x/9i/10/11g enterprise edition"
+    ],
+    "DML": [
+      "dml"
+    ],
+    "Oracle 9i/10g/11g/12c": [
+      "oracle 9i/10g/11g/12c"
+    ],
+    "Microsoft SQL Server 2012/2008": [
+      "microsoft sql server 2012/2008"
+    ],
+    "MS SQL Server 2005/2008/2014": [
+      "ms sql server 2005/2008/2014"
+    ],
+    "Couchbase DB": [
+      "couchbase db"
+    ],
+    "IMS DB": [
+      "ims db"
+    ],
+    "No SQL Databases (Cassandra": [
+      "no sql databases (cassandra"
+    ],
+    "Teradata SQL": [
+      "teradata sql"
+    ],
+    "Oracle 12c/11g/10g/9i": [
+      "oracle 12c/11g/10g/9i"
+    ],
+    "IMS": [
+      "ims"
+    ],
+    "Oracle9i/10g/11g": [
+      "oracle9i/10g/11g"
+    ],
+    "ASM": [
+      "asm"
+    ],
+    "MongoDB/NoSQL": [
+      "mongodb/nosql"
+    ],
+    "IBM DB2": [
+      "ibm db2"
+    ],
+    "Oracle Service Bus": [
+      "oracle service bus"
+    ],
+    "My Sql": [
+      "my sql"
+    ],
+    "MS-SQL Server 2008/2005": [
+      "ms-sql server 2008/2005",
+      "mssql server 2008/2005"
+    ],
+    "Oracle 10g/9i": [
+      "oracle 10g/9i"
+    ],
+    "Microsoft Access": [
+      "microsoft access"
+    ],
+    "12c)": [
+      "12c)"
+    ],
+    "Oracle 10g": [
+      "oracle (10g",
+      "oracle 10g"
+    ],
+    "SQL Server 2008/2013": [
+      "sql server 2008/2013"
+    ],
+    "DDL": [
+      "ddl"
+    ],
+    "11g": [
+      "11g"
+    ],
+    "VSAM": [
+      "vsam"
+    ],
+    "Essbase": [
+      "essbase"
+    ],
+    "MS Access": [
+      "ms access"
+    ],
+    "SQL server 2012/2014/2016": [
+      "sql server 2012/2014/2016"
+    ],
+    "Oracle 11g": [
+      "oracle (11g",
+      "oracle 11g"
+    ],
+    "PostgressSql": [
+      "postgresssql"
+    ],
+    "Oracle 8i/9i/10g/11g": [
+      "oracle 8i/9i/10g/11g"
+    ],
+    "Oracle 11g/12C": [
+      "oracle 11g/12c"
+    ],
+    "DB2 9.X": [
+      "db2 9.x",
+      "db2 9x"
+    ],
+    "Couch base": [
+      "couch base"
+    ],
+    "MSSQL Server": [
+      "mssql server"
+    ],
+    "SQL Server 2000/2005/2008": [
+      "sql server 2000/2005/2008"
+    ],
+    "Postgre SQL": [
+      "postgre sql"
+    ],
+    "OLAP": [
+      "olap"
+    ],
+    "Oracle 8.x/9i/10g": [
+      "oracle 8.x/9i/10g",
+      "oracle 8x/9i/10g"
+    ],
+    "MS SQL": [
+      "ms sql"
+    ],
+    "Operating Systems: Windows XP, Red Hat LINUX": [
+      "operating systems: windows xp, red hat linux"
+    ],
+    "Oracle R12": [
+      "oracle r12"
+    ],
+    "Graph DB": [
+      "graph db"
+    ],
+    "Oracle 12c/11g": [
+      "oracle 12c/11g"
+    ],
+    "Mongo DB and Dynamo DB": [
+      "mongo db and dynamo db"
+    ],
+    "MangoDB": [
+      "mangodb"
+    ],
+    "Data Guard": [
+      "data guard"
+    ],
+    "Microsoft SQL": [
+      "microsoft sql"
+    ],
+    "Apache Cassandra DB": [
+      "apache cassandra db"
+    ],
+    "Oracle Technologies (RAC": [
+      "oracle technologies (rac"
+    ],
+    "Oracle 9i/10g/11g": [
+      "oracle 9i/10g/11g"
+    ],
+    "Oracle10g/9i/8i": [
+      "oracle10g/9i/8i"
+    ],
+    "Oracle 11g/10g/9i": [
+      "oracle 11g/10g/9i"
+    ],
+    "Couch DB": [
+      "couch db"
+    ],
+    "SQL Server 2014/2012/2008R2": [
+      "sql server 2014/2012/2008r2"
+    ],
+    "Oracle 12 C": [
+      "oracle 12 c"
+    ],
+    "Database Vault": [
+      "database vault"
+    ],
+    "Oracle 12c/11i/11g/10g/9i/8i": [
+      "oracle 12c/11i/11g/10g/9i/8i"
+    ],
+    "MySql5.7": [
+      "mysql5.7",
+      "mysql57"
+    ],
+    "MS SQL Server2005/08": [
+      "ms sql server2005/08"
+    ],
+    "Oracle Database server 11g": [
+      "oracle database server 11g"
+    ],
+    "Flashback": [
+      "flashback"
+    ],
+    "Microsoft SQL Server 2008/2012/2014": [
+      "microsoft sql server 2008/2012/2014"
+    ],
+    "9i": [
+      "9i"
+    ],
+    "Agile SCRUM, Kanban, Scrum Master, Agile Coach": [
+      "agile scrum, kanban, scrum master, agile coach"
+    ],
+    "ORACLE 8i/9i/11g": [
+      "oracle 8i/9i/11g"
+    ],
+    "ORDBMS": [
+      "ordbms"
+    ],
+    "MySQL server": [
+      "mysql server"
+    ],
+    "TSM)": [
+      "tsm)"
+    ],
+    "MS-Access and MS-SQL Server": [
+      "ms-access and ms-sql server",
+      "msaccess and mssql server"
+    ],
+    "Oracle 9i/10g/11i": [
+      "oracle 9i/10g/11i"
+    ],
+    "Big Data Hadoop": [
+      "big data hadoop"
+    ],
+    "MSSQL": [
+      "mssql"
+    ],
+    "Mongo DB and Cassandra": [
+      "mongo db and cassandra"
+    ],
+    "SAAS": [
+      "saas"
+    ],
+    "AWS LAMBDA": [
+      "aws lambda"
+    ],
+    "Amazon EC2": [
+      "amazon ec2"
+    ],
+    "RedShift": [
+      "redshift"
+    ],
+    "Cloud Formation": [
+      "cloud formation",
+      "cloud formation)"
+    ],
+    "IAM": [
+      "iam",
+      "iam)"
+    ],
+    "AWS Beanstalk": [
+      "aws beanstalk"
+    ],
+    "ECS": [
+      "ecs"
+    ],
+    "Auto Scaling": [
+      "auto scaling",
+      "auto-scaling",
+      "autoscaling"
+    ],
+    "ELK(ElasticSearch": [
+      "elk(elasticsearch"
+    ],
+    "Elastic Load Balance": [
+      "elastic load balance"
+    ],
+    "API Gateway": [
+      "api gateway",
+      "api-gateway",
+      "apigateway"
+    ],
+    "AWS stack (EC2": [
+      "aws stack (ec2"
+    ],
+    "Elastic file system": [
+      "elastic file system"
+    ],
+    "Cloud Front)": [
+      "cloud front)"
+    ],
+    "AWS (Cloud Formation": [
+      "aws (cloud formation"
+    ],
+    "ELB": [
+      "elb",
+      "elb)"
+    ],
+    "PIVOTAL CLOUD FOUNDRY": [
+      "pivotal cloud foundry"
+    ],
+    "Simple DB": [
+      "simple db",
+      "simple db)"
+    ],
+    "EMR": [
+      "emr",
+      "emr)"
+    ],
+    "Cloud Trial": [
+      "cloud trial"
+    ],
+    "Azure document DB": [
+      "azure document db"
+    ],
+    "VPC": [
+      "vpc",
+      "vpc)"
+    ],
+    "AWS SQS": [
+      "aws sqs"
+    ],
+    "Cloud watch": [
+      "cloud watch"
+    ],
+    "Cloud Trail)": [
+      "cloud trail)"
+    ],
+    "PaaS": [
+      "paas"
+    ],
+    "SNS/SQS": [
+      "sns/sqs"
+    ],
+    "AWS EC2": [
+      "aws (ec2",
+      "aws ec2",
+      "aws(ec2"
+    ],
+    "AWS load balancing": [
+      "aws load balancing"
+    ],
+    "MESOSPHERE": [
+      "mesosphere"
+    ],
+    "IBM BlueMix": [
+      "ibm bluemix"
+    ],
+    "EME AWS": [
+      "eme aws"
+    ],
+    "HP/VMware": [
+      "hp/vmware"
+    ],
+    "Elastic Beanstalk": [
+      "elastic beanstalk"
+    ],
+    "AWS Container service": [
+      "aws container service"
+    ],
+    "Elastic Load Balancing ELB": [
+      "elastic load balancing elb"
+    ],
+    "Amazon EMR": [
+      "amazon emr"
+    ],
+    "Elastic Beanstalk EBS": [
+      "elastic beanstalk ebs"
+    ],
+    "Amazon Simple DB)": [
+      "amazon simple db)"
+    ],
+    "AWS EMR": [
+      "aws emr"
+    ],
+    "Virtual Private Cloud": [
+      "virtual private cloud"
+    ],
+    "IaaS": [
+      "iaas"
+    ],
+    "Open Shift": [
+      "open shift"
+    ],
+    "SWF": [
+      "swf"
+    ],
+    "Google App Engine": [
+      "google app engine"
+    ],
+    "Amazon Web Services (RDS": [
+      "amazon web services (rds"
+    ],
+    "Windows Azure": [
+      "windows azure"
+    ],
+    "Azure cloud services": [
+      "azure cloud services"
+    ],
+    "AWS EFS": [
+      "aws efs"
+    ],
+    "Mesos/Marathon": [
+      "mesos/marathon"
+    ],
+    "MS Azure": [
+      "ms azure"
+    ],
+    "Elastic Load balancer": [
+      "elastic load balancer"
+    ],
+    "ElastiCache": [
+      "elasticache"
+    ],
+    "Microsoft Azure": [
+      "microsoft azure"
+    ],
+    "SQS": [
+      "sqs"
+    ],
+    "Load Balancer": [
+      "load balancer"
+    ],
+    "Google Cloud": [
+      "google cloud"
+    ],
+    "Google": [
+      "google"
+    ],
+    "AWS SNS": [
+      "aws sns"
+    ],
+    "EBS": [
+      "ebs",
+      "ebs)"
+    ],
+    "CloudWatch": [
+      "cloudwatch"
+    ],
+    "ESB": [
+      "esb"
+    ],
+    "SNS": [
+      "sns"
+    ],
+    "Salesforce Force.com IDE": [
+      "salesforce force.com ide",
+      "salesforce forcecom ide"
+    ],
+    "Netflix Eureka": [
+      "netflix eureka"
+    ],
+    "Mesos": [
+      "mesos"
+    ],
+    "AWS KINESIS": [
+      "aws kinesis"
+    ],
+    "MQL": [
+      "mql"
+    ],
+    "AWS IAM": [
+      "aws iam"
+    ],
+    "CloudFormation": [
+      "cloudformation"
+    ],
+    "AMIs": [
+      "amis"
+    ],
+    "Amazon Web Service": [
+      "amazon web service"
+    ],
+    "REDHAT OPENSHIFT": [
+      "redhat openshift"
+    ],
+    "Amazon Web Services EC2": [
+      "amazon web services (ec2",
+      "amazon web services ec2"
+    ],
+    "SolrCloud": [
+      "solrcloud"
+    ],
+    "Route": [
+      "route"
+    ],
+    "Amazon AWS": [
+      "amazon aws"
+    ],
+    "Route53": [
+      "route53"
+    ],
+    "LogStash": [
+      "logstash"
+    ],
+    "Amazon Web Services": [
+      "amazon web services"
+    ],
+    "AWS SDK": [
+      "aws sdk"
+    ],
+    "Glacier": [
+      "glacier"
+    ],
+    "HTTP": [
+      "http"
+    ],
+    "XP": [
+      "xp"
+    ],
+    "J2EE Design patterns": [
+      "j2ee design patterns"
+    ],
+    "CI)": [
+      "ci)"
+    ],
+    "ATDD": [
+      "atdd"
+    ],
+    "PMO": [
+      "pmo"
+    ],
+    "ODS": [
+      "ods"
+    ],
+    "Waterfall Process": [
+      "waterfall process"
+    ],
+    "Waterfall-SDLC": [
+      "waterfall-sdlc",
+      "waterfallsdlc"
+    ],
+    "EAI": [
+      "eai"
+    ],
+    "Treasury": [
+      "treasury"
+    ],
+    "ITIL": [
+      "itil"
+    ],
+    "PMP": [
+      "pmp"
+    ],
+    "Training and Development": [
+      "training and development"
+    ],
+    "OOD": [
+      "ood"
+    ],
+    "Monolithic": [
+      "monolithic"
+    ],
+    "UAT": [
+      "uat"
+    ],
+    "TOGAF": [
+      "togaf"
+    ],
+    "SaFE": [
+      "safe"
+    ],
+    "CoE": [
+      "coe"
+    ],
+    "Waterfall": [
+      "waterfall"
+    ],
+    "Agile Scrum": [
+      "agile (scrum",
+      "agile scrum",
+      "agile-scrum",
+      "agile/scrum",
+      "agilescrum"
+    ],
+    "OOA": [
+      "ooa"
+    ],
+    "Waterfall-Scrum Hybrid": [
+      "waterfall-scrum hybrid",
+      "waterfallscrum hybrid"
+    ],
+    "KANBAN": [
+      "kanban"
+    ],
+    "Star Schema": [
+      "star schema"
+    ],
+    "Continuous integration": [
+      "continuous integration"
+    ],
+    "GAP Analysis": [
+      "gap analysis"
+    ],
+    "Spiral": [
+      "spiral"
+    ],
+    "Design Patterns (Singleton": [
+      "design patterns (singleton"
+    ],
+    "DMADV": [
+      "dmadv"
+    ],
+    "Microservice": [
+      "microservice"
+    ],
+    "PMI based project management": [
+      "pmi based project management"
+    ],
+    "Rapid Application Development": [
+      "rapid application development"
+    ],
+    "Service-Oriented Architecture": [
+      "service oriented architecture",
+      "service-oriented architecture",
+      "serviceoriented architecture"
+    ],
+    "Micro-service architecture": [
+      "micro service architecture",
+      "micro-service architecture",
+      "microservice architecture"
+    ],
+    "Get along with co-workers easily and Able to adapt in changing circumstances": [
+      "get along with co-workers easily and able to adapt in changing circumstances",
+      "get along with coworkers easily and able to adapt in changing circumstances"
+    ],
+    "EIA": [
+      "eia"
+    ],
+    "BSS/BPS": [
+      "bss/bps"
+    ],
+    "MVP": [
+      "mvp"
+    ],
+    "BDD": [
+      "bdd"
+    ],
+    "OOAD": [
+      "ooad"
+    ],
+    "Singleton": [
+      "singleton"
+    ],
+    "Session Facade": [
+      "session facade"
+    ],
+    "REST Services Oriented Architecture": [
+      "rest services oriented architecture"
+    ],
+    "Focused": [
+      "focused"
+    ],
+    "SOA/EAI": [
+      "soa/eai"
+    ],
+    "Creative and innovative": [
+      "creative and innovative"
+    ],
+    "Good communication skills": [
+      "good communication skills"
+    ],
+    "Business Analysis": [
+      "business analysis"
+    ],
+    "Impact Analysis": [
+      "impact analysis"
+    ],
+    "Dev-ops": [
+      "dev-ops",
+      "devops"
+    ],
+    "Agile Methodology": [
+      "agile methodology"
+    ],
+    "MVVC": [
+      "mvvc"
+    ],
+    "e-commerce": [
+      "e-commerce",
+      "ecommerce"
+    ],
+    "PMBOK": [
+      "pmbok"
+    ],
+    "Dev Ops Automation": [
+      "dev ops automation"
+    ],
+    "Unit testing": [
+      "unit testing"
+    ],
+    "SWOT Analysis": [
+      "swot analysis"
+    ],
+    "Pair Programming": [
+      "pair programming"
+    ],
+    "EABOK": [
+      "eabok"
+    ],
+    "V-Model": [
+      "v-model",
+      "vmodel"
+    ],
+    "## Professional Skills": [
+      "## professional skills"
+    ],
+    "LAMP": [
+      "lamp"
+    ],
+    "RUP": [
+      "rup"
+    ],
+    "Time Management": [
+      "time management"
+    ],
+    "Confident": [
+      "confident"
+    ],
+    "API driven communications": [
+      "api driven communications"
+    ],
+    "CICD": [
+      "cicd"
+    ],
+    "Iterative": [
+      "iterative"
+    ],
+    "Water Scrum fall-Hybrid": [
+      "water scrum fall-hybrid",
+      "water scrum fallhybrid"
+    ],
+    "Project Management": [
+      "project management"
+    ],
+    "Handle Workload well and have been able to meet deadlines": [
+      "handle workload well and have been able to meet deadlines"
+    ],
+    "RWD": [
+      "rwd"
+    ],
+    "Waterfall model": [
+      "waterfall model"
+    ],
+    "Water-Fall": [
+      "water-fall",
+      "waterfall"
+    ],
+    "MVVM": [
+      "mvvm"
+    ],
+    "Leadership": [
+      "leadership"
+    ],
+    "J2EE Design Patterns (MVC": [
+      "j2ee design patterns (mvc"
+    ],
+    "Communication": [
+      "communication"
+    ],
+    "BIZBOK": [
+      "bizbok"
+    ],
+    "Client-Server": [
+      "client-server",
+      "clientserver"
+    ],
+    "Continuous Improvement": [
+      "continuous improvement"
+    ],
+    "Snowflake Schema": [
+      "snowflake schema"
+    ],
+    "BABOK": [
+      "babok"
+    ],
+    "J2EE Design Patterns (Singleton": [
+      "j2ee design patterns (singleton"
+    ],
+    "Scrum-ban": [
+      "scrum-ban",
+      "scrumban"
+    ],
+    "Factory": [
+      "factory"
+    ],
+    "SDLC Waterfall model": [
+      "sdlc waterfall model"
+    ],
+    "Rational Unified Process": [
+      "rational unified process"
+    ],
+    "DMAIC": [
+      "dmaic"
+    ],
+    "Microservices Architecture": [
+      "microservices architecture"
+    ],
+    "DODAF": [
+      "dodaf"
+    ],
+    "Micro Services Architecture": [
+      "micro services architecture"
+    ],
+    "Test Driven Methodology": [
+      "test driven methodology"
+    ],
+    "Prototyping": [
+      "prototyping"
+    ],
+    "JAD Sessions": [
+      "jad sessions"
+    ],
+    "Continuous Integration using CruiseControl": [
+      "continuous integration using cruisecontrol"
+    ],
+    "Fall": [
+      "fall"
+    ],
+    "etc.)": [
+      "etc)",
+      "etc.)"
+    ],
+    "iPaaS": [
+      "ipaas"
+    ],
+    "Iterative Process": [
+      "iterative process"
+    ],
+    "Salesforce CRM Administration": [
+      "salesforce crm administration"
+    ],
+    "Change and Risk Management": [
+      "change and risk management"
+    ],
+    "Scrum Master and Facilitation": [
+      "scrum master and facilitation"
+    ],
+    "Build and Release Management": [
+      "build and release management"
+    ],
+    "Cloud-Based Application Development": [
+      "cloud-based application development",
+      "cloudbased application development"
+    ],
+    "Cloud Infrastructure and Migration": [
+      "cloud infrastructure and migration"
+    ],
+    "Data Pipeline Implementation": [
+      "data pipeline implementation"
+    ],
+    "Business Process Improvement": [
+      "business process improvement"
+    ],
+    "Cloud and Infrastructure Management": [
+      "cloud and infrastructure management"
+    ],
+    "Oracle Database Development": [
+      "oracle database development"
+    ],
+    "Database Design and Programming": [
+      "database design and programming"
+    ],
+    "Project Management and Architecture": [
+      "project management and architecture"
+    ],
+    "Data Governance and Compliance": [
+      "data governance and compliance"
+    ],
+    "MVC Architecture": [
+      "mvc architecture"
+    ],
+    "Problem Solving and Bug Fixing": [
+      "problem solving and bug fixing"
+    ],
+    "Microservices with Spring Boot": [
+      "microservices with spring boot"
+    ],
+    "RESTful and SOAP Web Services": [
+      "restful and soap web services"
+    ],
+    "Risk and Issue Management": [
+      "risk and issue management"
+    ],
+    "Agile Methodologies and TDD": [
+      "agile methodologies and tdd"
+    ],
+    "Big Data Technologies": [
+      "big data technologies"
+    ],
+    "Scrum Master and Agile Coaching": [
+      "scrum master and agile coaching"
+    ],
+    "Continuous Integration/Continuous Deployment": [
+      "continuous integration/continuous deployment"
+    ],
+    "Agile Methodologies and DevOps": [
+      "agile methodologies and devops"
+    ],
+    "Requirements Management": [
+      "requirements management"
+    ],
+    "Microservices and Cloud Deployment": [
+      "microservices and cloud deployment"
+    ],
+    "Project/Program/Account Management": [
+      "project/program/account management"
+    ],
+    "Requirements Gathering and System Design": [
+      "requirements gathering and system design"
+    ],
+    "Pre-Sales / Business Development": [
+      "pre-sales / business development",
+      "presales / business development"
+    ],
+    "Performance Tuning and Optimization": [
+      "performance tuning and optimization"
+    ],
+    "Business Process Management": [
+      "business process management"
+    ],
+    "Web Services and Microservices": [
+      "web services and microservices"
+    ],
+    "Code Reviews and Test Planning": [
+      "code reviews and test planning"
+    ],
+    "Data Analysis and Data Modeling": [
+      "data analysis and data modeling"
+    ],
+    "Cloud Technologies": [
+      "cloud technologies"
+    ],
+    "Budget / Cost Control": [
+      "budget / cost control"
+    ],
+    "Automation Architecture and Framework Design": [
+      "automation architecture and framework design"
+    ],
+    "RESTful API and Web Services": [
+      "restful api and web services"
+    ],
+    "Mobile Application Development": [
+      "mobile application development"
+    ],
+    "Cloud and DevOps": [
+      "cloud and devops"
+    ],
+    "UI/UX Design and Prototyping": [
+      "ui/ux design and prototyping"
+    ],
+    "Full Stack Java/UI Development": [
+      "full stack java/ui development"
+    ],
+    "Agile Scrum Master & QA Leadership": [
+      "agile scrum master & qa leadership"
+    ],
+    "People and Client Management": [
+      "people and client management"
+    ],
+    "Database Design and SQL/NoSQL": [
+      "database design and sql/nosql"
+    ],
+    "Automated Testing and CI/CD": [
+      "automated testing and ci/cd"
+    ],
+    "Agile Methodologies and Test-Driven Development": [
+      "agile methodologies and test-driven development",
+      "agile methodologies and testdriven development"
+    ],
+    "Agile/Scrum and TDD Methodologies": [
+      "agile/scrum and tdd methodologies"
+    ],
+    "Technical Program Management": [
+      "technical program management"
+    ],
+    "Strategic Planning": [
+      "strategic planning"
+    ],
+    "Web Services Development": [
+      "web services development"
+    ],
+    "Cloud Deployment": [
+      "cloud deployment"
+    ],
+    "CI/CD and DevOps Practices": [
+      "ci/cd and devops practices"
+    ],
+    "Security Framework Implementation": [
+      "security framework implementation"
+    ],
+    "UI/Front-end Development": [
+      "ui/front-end development",
+      "ui/frontend development"
+    ],
+    "Database Management": [
+      "database management"
+    ],
+    "Data Warehousing and Business Intelligence": [
+      "data warehousing and business intelligence"
+    ],
+    "Database Design and PL/SQL": [
+      "database design and pl/sql"
+    ],
+    "Agile and Team Leadership": [
+      "agile and team leadership"
+    ],
+    "Budget Management and Projections": [
+      "budget management and projections"
+    ],
+    "Salesforce CRM Administration and Integration": [
+      "salesforce crm administration and integration"
+    ],
+    "Agile and Test-Driven Development": [
+      "agile and test-driven development",
+      "agile and testdriven development"
+    ],
+    "Database Development": [
+      "database development"
+    ],
+    "Big Data and Hadoop Development": [
+      "big data and hadoop development"
+    ],
+    "Cloud and Microservices Architecture": [
+      "cloud and microservices architecture"
+    ],
+    "Full Software Development Life Cycle": [
+      "full software development life cycle"
+    ],
+    "Business Analysis and Requirements Gathering": [
+      "business analysis and requirements gathering"
+    ],
+    "Customer Interaction and Issue Resolution": [
+      "customer interaction and issue resolution"
+    ],
+    "E-commerce and Content Management Systems": [
+      "e-commerce and content management systems",
+      "ecommerce and content management systems"
+    ],
+    "Full Stack Web Development": [
+      "full stack web development"
+    ],
+    "Distributed Systems Architecture": [
+      "distributed systems architecture"
+    ],
+    "Strategic Planning and Stakeholder Management": [
+      "strategic planning and stakeholder management"
+    ],
+    "Cloud-Based Solutions": [
+      "cloud-based solutions",
+      "cloudbased solutions"
+    ],
+    "Cloud and Microservices": [
+      "cloud and microservices"
+    ],
+    "Data Warehousing and ETL": [
+      "data warehousing and etl"
+    ],
+    "Full Stack Java/Web Development": [
+      "full stack java/web development"
+    ],
+    "E-commerce and CMS Development": [
+      "e-commerce and cms development",
+      "ecommerce and cms development"
+    ],
+    "Full Stack Java Development": [
+      "full stack java development"
+    ],
+    "Big Data and Cloud Technologies": [
+      "big data and cloud technologies"
+    ],
+    "Microservices and Spring Cloud": [
+      "microservices and spring cloud"
+    ],
+    "J2EE and AWS Development": [
+      "j2ee and aws development"
+    ],
+    "Process Improvement and Automation": [
+      "process improvement and automation"
+    ],
+    "Microservices and Service-Oriented Architecture": [
+      "microservices and service-oriented architecture",
+      "microservices and serviceoriented architecture"
+    ],
+    "People and Performance Management": [
+      "people and performance management"
+    ],
+    "Agile Scrum Master": [
+      "agile scrum master"
+    ],
+    "Real-time Data Processing and Streaming": [
+      "real-time data processing and streaming",
+      "realtime data processing and streaming"
+    ],
+    "Microservice Architecture and Web Services": [
+      "microservice architecture and web services"
+    ],
+    "Version Control and Build Management": [
+      "version control and build management"
+    ],
+    "Microservices and SOA": [
+      "microservices and soa"
+    ],
+    "Requirements Gathering and Documentation": [
+      "requirements gathering and documentation"
+    ],
+    "Full Stack Java/J2EE Development": [
+      "full stack java/j2ee development",
+      "full-stack java/j2ee development",
+      "fullstack java/j2ee development"
+    ],
+    "Agile Program and Project Management": [
+      "agile program and project management"
+    ],
+    "Team Leadership and Development": [
+      "team leadership and development"
+    ],
+    "Web Services and API Development": [
+      "web services and api development"
+    ],
+    "User Acceptance Testing": [
+      "user acceptance testing"
+    ],
+    "Full Stack PHP Development": [
+      "full stack php development"
+    ],
+    "Front-End Web Development": [
+      "front-end web development",
+      "frontend web development"
+    ],
+    "Requirements Elicitation and Management": [
+      "requirements elicitation and management"
+    ],
+    "Project and Product Management": [
+      "project and product management"
+    ],
+    "Object-Oriented Analysis and Design": [
+      "object-oriented analysis and design",
+      "objectoriented analysis and design"
+    ],
+    "E-commerce and Treasury Domain Expertise": [
+      "e-commerce and treasury domain expertise",
+      "ecommerce and treasury domain expertise"
+    ],
+    "Scrum Master and Agile Facilitation": [
+      "scrum master and agile facilitation"
+    ],
+    "Responsive Web Design": [
+      "responsive web design"
+    ],
+    "API Integration": [
+      "api integration"
+    ],
+    "E-commerce and Retail Domain Expertise": [
+      "e-commerce and retail domain expertise",
+      "ecommerce and retail domain expertise"
+    ],
+    "Web Application Development": [
+      "web application development"
+    ],
+    "Cloud Application Development": [
+      "cloud application development"
+    ],
+    "Full Software Development Life Cycle Management": [
+      "full software development life cycle management"
+    ],
+    "Release and Defect Management": [
+      "release and defect management"
+    ],
+    "Continuous Integration and Deployment": [
+      "continuous integration and deployment"
+    ],
+    "Outsource Management": [
+      "outsource management"
+    ],
+    "Spring Framework and Microservices": [
+      "spring framework and microservices"
+    ],
+    "Lead Java/J2EE Development": [
+      "lead java/j2ee development"
+    ],
+    "Agile and Scrum Methodologies": [
+      "agile and scrum methodologies"
+    ],
+    "Project and Program Management": [
+      "project and program management"
+    ],
+    "Business Process Automation and Improvement": [
+      "business process automation and improvement"
+    ],
+    "Cloud and NoSQL": [
+      "cloud and nosql"
+    ],
+    "ETL and Data Warehousing": [
+      "etl and data warehousing"
+    ],
+    "Cloud Computing": [
+      "cloud computing"
+    ],
+    "System Architecture and Design": [
+      "system architecture and design"
+    ],
+    "Big Data and Hadoop Ecosystem": [
+      "big data and hadoop ecosystem"
+    ],
+    "Object-Oriented Design and Analysis": [
+      "object-oriented design and analysis",
+      "objectoriented design and analysis"
+    ],
+    "Database Design and Management": [
+      "database design and management"
+    ],
+    "Requirements Gathering and Management": [
+      "requirements gathering and management"
+    ],
+    "Database Management and SQL": [
+      "database management and sql"
+    ],
+    "Agile/Scrum and Test-Driven Development": [
+      "agile/scrum and test-driven development",
+      "agile/scrum and testdriven development"
+    ],
+    "Cloud and DevOps Practices": [
+      "cloud and devops practices"
+    ],
+    "Test Driven Development and Behavior Driven Development": [
+      "test driven development and behavior driven development"
+    ],
+    "Agile/Scrum Methodologies": [
+      "agile/scrum methodologies"
+    ],
+    "Database Design and SQL": [
+      "database design and sql"
+    ],
+    "Front-End and UI Development": [
+      "front-end and ui development",
+      "frontend and ui development"
+    ],
+    "Test-Driven and Behavior-Driven Development": [
+      "test-driven and behavior-driven development",
+      "testdriven and behaviordriven development"
+    ],
+    "Agile and RUP Methodologies": [
+      "agile and rup methodologies"
+    ],
+    "Quality Assurance and Control": [
+      "quality assurance and control"
+    ],
+    "Release and Infrastructure Management": [
+      "release and infrastructure management"
+    ],
+    "Automation and Scripting": [
+      "automation and scripting"
+    ],
+    "Agile and Waterfall Methodologies": [
+      "agile and waterfall methodologies"
+    ],
+    "Database Design and Development": [
+      "database design and development"
+    ],
+    "Agile/Scrum and Microservices": [
+      "agile/scrum and microservices"
+    ],
+    "Agile/Scrum and Waterfall Methodologies": [
+      "agile/scrum and waterfall methodologies"
+    ],
+    "Process Modeling and GAP Analysis": [
+      "process modeling and gap analysis"
+    ],
+    "Business Systems Analysis": [
+      "business systems analysis"
+    ]
+  },
+  "skill_categories": {
+    "programming_languages": [
+      "IBATIS",
+      "VBScript",
+      "Cloud foundry",
+      "Clarion",
+      "Bitbucket",
+      "Kotlin",
+      "QTP",
+      "PHYTHON",
+      "Angular Js",
+      ".NET C#",
+      "JSON",
+      "Struts",
+      "PHP 4/5",
+      "Java 1.5/1.6/1.7/1.8",
+      "CSS 3 and CSS",
+      "AZURE",
+      "Docker",
+      "C++ and Java",
+      "Predix",
+      "UNIX Shell",
+      "RESTFul",
+      "JAVA7/8",
+      ".Net VB Script",
+      "JPA",
+      "Java 8.0/7.0/6.0/5.0",
+      "ADO.Net",
+      "VS COBOL-II",
+      "CockroachDB",
+      "Tomcat",
+      "Oracle R11i and R12 finance modules",
+      "Servlet",
+      "JavaScript",
+      "XML",
+      "Bash",
+      "Pig Latin",
+      "UNIX/Linux shell",
+      "Visual Basic",
+      "HTML4/5",
+      "JSP",
+      "Java Servlets",
+      "Java Version",
+      "VB Script",
+      "JMS",
+      "Messaging",
+      "Test-Driven Development",
+      "PL/SQL and NoSQL.",
+      "Java8/J2EE",
+      "Agile Methodology –SCRUM",
+      "PL/I",
+      "Dynamo DB Cloud Technologies: AWS (SNS/SQS",
+      "Java Mail",
+      "Uniface",
+      "Shell Scripts",
+      "Core Java APIs",
+      "ETL",
+      "HDFS",
+      "Cassandra",
+      "ASP",
+      "Rust",
+      "JNDI",
+      "Scala",
+      "Groovy/Grails",
+      "Shell Script",
+      "GWT",
+      "Web Services",
+      "JSP/JSF",
+      "Toad",
+      "C++",
+      "R",
+      "UNIX Shell Script",
+      ".Net",
+      "JCL",
+      "Dropbox Core API",
+      "SVN",
+      "Ruby scripting",
+      "JDBC",
+      "SQL Query",
+      "PERL scripting",
+      "Javascript",
+      "UNIX Shell Scripting",
+      "Design Patterns",
+      "UML",
+      "Swift",
+      "EMR) Methodologies: Test case driven methodology",
+      "R-programming",
+      "1.8)",
+      "Developer",
+      "Camel",
+      "REST web services",
+      "Linux",
+      "Ant",
+      "IMS DC/DB",
+      "Java 1.5/1.6/1.7/8",
+      "IntelliJ",
+      "CSS2/3",
+      "Magic Draw UML",
+      "JNotify",
+      "JSF",
+      "Tibco flow",
+      "JSTL",
+      "EC2",
+      "MONGODB",
+      "PERL",
+      "HQL",
+      "Java J2SE 1.6/1.7",
+      "Servlets",
+      "Java using generics",
+      "NoSQL",
+      "UNIX",
+      "Basic SQL",
+      "OpenStack",
+      "Angular 2/4",
+      "SQL",
+      "Pig",
+      "MySql",
+      "ColdFusion",
+      "Appian",
+      "Lightbend Reactive",
+      "Play",
+      "Spring MVC",
+      "ActiveX",
+      "Confluent",
+      "Java/Scala/Ruby",
+      "Oracle PL/SQL",
+      "Selenium",
+      "Stash",
+      "Oracle",
+      "and C+",
+      "Objective-C",
+      "IBM RAD 7.5.x",
+      "MFC",
+      "Node.js",
+      "PostgreSQL",
+      "Eclipse",
+      "CSS",
+      "SAP",
+      "Go",
+      "T-SQL",
+      "KUBERNETES",
+      "GIT",
+      "webMethods flow",
+      "Microsoft Dot Net",
+      "UNIX programming",
+      "VB.NET",
+      "Swift/ Objective-C",
+      "SAP ABAP",
+      "Sencha Tools & Platforms: MyEclipse",
+      "PHP",
+      "RMI",
+      "Shell & Perl Scripting",
+      "COBOL",
+      "Sympfony2 Databases: ORACLE 9i/10g/11g/12c",
+      "Rally",
+      "XSLT",
+      "SCOBOL",
+      "JS",
+      "CICS",
+      "XPath",
+      "Java Beans",
+      "Solr",
+      "Groovy",
+      "NetBeans",
+      "OAuth",
+      "J2ee",
+      "Extjs",
+      "SQL AND .NET",
+      "MATLAB",
+      "PowerBuilder",
+      "Java",
+      "Sqoop",
+      "VC++",
+      "TypeScript",
+      "Python",
+      "CSS3",
+      "JAVA(1.7",
+      "Core Java",
+      "Akka",
+      "Apex",
+      "C",
+      "JBoss",
+      "Extreme Programming",
+      "Multithreading",
+      "ActionScript",
+      "PL/SQL",
+      "Spark",
+      "Hbase",
+      "Perl",
+      "XSL",
+      "SQL-Server",
+      "Java Script",
+      "React Js",
+      "EJB",
+      "Jira",
+      "SOAP",
+      "HTML5",
+      "HTML",
+      "VB Scripting",
+      "SQL & PL/SQL",
+      "DHTML",
+      "XHTML",
+      "PowerShell",
+      "PLSQL",
+      "C#",
+      "ABAP",
+      "Ezytreive",
+      "Java/J2EE",
+      "Unix/Windows Shell Scripting",
+      "Oracle WebLogic 10.x",
+      "REXX",
+      "Shell",
+      "DTD",
+      "ASP.net",
+      "JAVAEE",
+      "WSDL",
+      "S3",
+      "SQL and PL/SQL",
+      "PL/SQL Frameworks & Libraries: Spring 3.x",
+      "jQuery",
+      "Microsoft VB",
+      "Hive",
+      "VB",
+      "Shell Scripting",
+      "JSPs",
+      "Ruby",
+      "Sitemesh",
+      "WebSphere Portal",
+      "C/C++",
+      "COBOL85",
+      "Hibernate"
+    ],
+    "frameworks_libraries": [
+      "MVC",
+      "Spring Restful Service",
+      "Flask",
+      "SOA",
+      "Mockito",
+      "J2EE (JMS",
+      "Struts",
+      "APACHE CXF",
+      "Spring Framework 4.x (Dependency Injection",
+      "Titanium",
+      "YII",
+      "Spring with Hibernate)",
+      "JD Edwards",
+      "handlebar.js",
+      "Java 2D)",
+      "LESS",
+      "DI",
+      "Junit",
+      "Spring IOC",
+      "Cloud",
+      "JMS",
+      "Context",
+      "Filters",
+      "Spring 4.x/3.x/2.5",
+      "Laravel",
+      "CDI",
+      "Spring 2.x",
+      "Swings",
+      "Global Pay Plus",
+      "XSD schemas",
+      "JSF 1.2/2.0",
+      "Facets",
+      "Code Igniter",
+      "Servlets",
+      "ASP.net MVC",
+      "Drool",
+      "D3Js",
+      "Slim",
+      "Backbone)",
+      "Factory Pattern",
+      "RC",
+      "Drools Rules Engine",
+      "Ribbon",
+      "Spring MVC",
+      "Selenium",
+      "VueJS",
+      "Pandas",
+      "Spring 3.*/4",
+      "ASP.NET",
+      "Apache Sling",
+      "Spring Roo",
+      "Mate",
+      "ElasticSearch",
+      "CodeIgniter",
+      "onBase 16.0 -Hyland Software",
+      "Log4J",
+      "OGNL",
+      "J2ee",
+      "Struts 2.x",
+      "Zulu)",
+      "Spring4/3",
+      "Jira",
+      "PMB",
+      "ASPECTJ",
+      "Core",
+      "HTML",
+      "AngularJS 1.0/1.5/2.0/4.0",
+      "Thymeleaf",
+      "ReactJS",
+      "Spine.js",
+      "Knockout.js",
+      "TensorFlow",
+      "Web Flow",
+      "ASP.net",
+      "ATG Merchandising",
+      "Ionic",
+      "jQuery",
+      "Express.js",
+      "D3.js",
+      "Ruby",
+      "Spring 3.x",
+      "with Hibernate)",
+      "Hibernate",
+      "Codeignitor",
+      "TestNG",
+      "Cucumber",
+      "NLTK",
+      "Netflix",
+      "IOS SDK",
+      "FastAPI",
+      "Docker",
+      "JAAS",
+      "Rich-Faces",
+      "Spring JMS",
+      "ATG Commerce",
+      "MyBatis",
+      "Spring-AOP",
+      "XML",
+      "JSP",
+      "Adobe Flash",
+      "Spring DAO",
+      "BackBoneJs",
+      "JFC (SWING",
+      "JAX-WS",
+      "Java Mail",
+      "Vue",
+      "Ruby on Rails",
+      "Cayenne",
+      "Page Object Model",
+      "JNDI",
+      "Oracle Fusion Middleware (Oracle JDeveloper",
+      "Web Services",
+      "SAML",
+      "Nuxt.js",
+      "TDD",
+      "Spring 2.5/3.0",
+      "MyFaces",
+      "Batch",
+      "Seam",
+      "Android SDK",
+      "Pencil",
+      "MVC 5.0/4.0",
+      "Cache",
+      "Appium",
+      "Cairngorm architecture",
+      "Apache Infinispan Cache",
+      "Jasmine",
+      "Apache camel",
+      "JBehave",
+      "Netflix OSS",
+      "Java Swing",
+      "Hibernate 3.x",
+      "Play",
+      "Spring Batch",
+      "Symfony",
+      "CakePHP",
+      "Backbone JS",
+      "Spring (Dependency Injection",
+      "Apigee",
+      "CSS",
+      "Hibernate 4.x/3.x",
+      "ASP.NET 2.0/3.5/4.5",
+      "Hadoop/ Big Data",
+      "Spring boot",
+      "JReport",
+      "Hibernate 3.x/4.x",
+      "XML DOM",
+      "Finacle",
+      "RMI",
+      "Meteor JS",
+      "Spring RESTful Web-Services",
+      "React.js/Redux",
+      "Spring Data",
+      "Hibernate 4.0/3.0",
+      "DOJO",
+      "Polymer.JS",
+      "Spring Framework (IOC",
+      "Apache tiles",
+      "Extjs",
+      "ILOG",
+      "Akka",
+      "PDFJS",
+      ".NET Framework",
+      "AXIS",
+      "Oracle BAM",
+      "Spring HATEOAS",
+      "Jasper reports",
+      "JTA",
+      "Django",
+      "JavaBeans",
+      "Rails 2.X",
+      "Spring 2.0/3.0",
+      "Hibernate 2.0/3.0",
+      "JBoss SEAM",
+      "RichFaces",
+      "Spring WS",
+      "ATG Multisite",
+      "AOP",
+      "Lucidchart",
+      "JavaScript Frameworks (Angular",
+      "JPA/Hibernate",
+      "WPF",
+      "Apache Wicket",
+      "Prime faces",
+      "Angular Js",
+      "JSON",
+      "PugJS",
+      "Express",
+      "Maven",
+      "Zend",
+      "Data",
+      "JAX-RS",
+      "Adobe",
+      "Spock",
+      "OAUTH2",
+      "Struts 1.x/2.x",
+      "XML Schema",
+      "EJB2.0/3.0",
+      "Next.js",
+      "MXML",
+      "Struts 1.x/2.0",
+      "Drools",
+      "Bower",
+      "SDLC",
+      "Jackrabbit",
+      "Alloy JS",
+      "SPRING CLOUD",
+      "Endeca",
+      "Javascript",
+      "React",
+      "Oracle ADF",
+      "Tiles",
+      "HMAC",
+      "Apache Solr",
+      "Spring Integration",
+      "Spring Web Flow",
+      "AXIS-2",
+      "Ember.js",
+      "IoC",
+      "JSTL",
+      "Nodejs",
+      "Spring 4.x/3.x/2.x",
+      "Selenium web driver",
+      "Adobe Flex",
+      "Struts 1/",
+      "Springboot",
+      "Struts2",
+      "Spring JDBC",
+      "Ext GWT",
+      "Apache ActiveMQ",
+      "Svelte",
+      "Spring JPA",
+      "Selenium WebDriver",
+      "Pdf.js",
+      "Action Script",
+      "PyTorch",
+      "Ploymer.js",
+      "Struts 2.0/1.1",
+      "ORM",
+      "Microservices",
+      "Apache Kafka",
+      "Groovy",
+      "OAuth",
+      "Bootstrap",
+      "TypeScript",
+      "Bootstrap.js",
+      "Require.js",
+      "PL/SQL",
+      "DAO",
+      "JAXB",
+      "Eureka",
+      "EJB",
+      "Ext Js",
+      "React Js",
+      "Spring Core",
+      "UDFs",
+      "Eclipse RCP",
+      "Angular-CLI",
+      "Underscore.js",
+      "Spring 3.x/2.x",
+      "NumPy",
+      "Spring Context",
+      "Google Web Toolkit",
+      "Integration",
+      "Angular2",
+      "Apache Axis",
+      "JSF 1.1/1.2/2.0",
+      "Hugging Face",
+      "Power Mockito",
+      "REST",
+      "AJAX",
+      "Smarty Template Engine",
+      "AngularJS",
+      "IBATIS",
+      "Spring 4.x",
+      "Sencha",
+      "Spring-ORM",
+      "PrimeFaces",
+      "JPA",
+      "Balsamiq",
+      "Drupal",
+      "Struts 2.x/1.x",
+      "AWT",
+      "Handlebars.JS",
+      "Flexcube",
+      "PEGA PRPC",
+      "Scala",
+      "GWT",
+      "Kendo UI",
+      ".Net",
+      "Spring 2.x/3.x",
+      "RCP/SWT",
+      "Jersey",
+      "JDBC",
+      "scikit-learn",
+      "SoapUI",
+      "Oracle SOA Suite",
+      "Page Factory",
+      "Camel",
+      "Cucumber-BDD",
+      "JSF",
+      "Sencha Touch",
+      "Mule ESB",
+      "Spring 3.0 (Core",
+      "Track Wise",
+      "Angular",
+      "Struts 2.0/1.0",
+      "Grunt.js",
+      "spaCy",
+      "OOP",
+      "QNXT",
+      "Node.js",
+      "Keras",
+      "J unit",
+      "Spring-Security",
+      "Jaspersoft",
+      "BPM",
+      "Jakarta Struts",
+      "Grails",
+      "Boot",
+      "Security",
+      "onBase",
+      "Oracle OSB",
+      "Spring Data JPA",
+      "Facade",
+      "Springs 4+",
+      "SOAP",
+      "I BATIS",
+      "ADF",
+      "SOAP UI",
+      "Sencha ExtJS",
+      "Spring",
+      "Hapi.js",
+      "Apache struts",
+      "Karma",
+      "Groovy on Rails 2.x"
+    ],
+    "databases": [
+      "DB2 UDB",
+      "Oracle SQL developer",
+      "OLTP",
+      "Oracle SQL",
+      "Microsoft SQL Server",
+      "SQL Server",
+      "DB/UDB",
+      "Oracle 10g/11g",
+      "2005",
+      "RDBMS",
+      "Oracle 8i/9i/10g",
+      "SQL Server 6.5/7.0",
+      "Mongo DB",
+      "Oracle R11i and R12 finance modules",
+      "Elasticsearch",
+      "H2",
+      "Oracle 9i",
+      "Amazon Dynamo DB",
+      "MS SQL Server",
+      "Oracle 10/11",
+      "Oracle 9i/10g",
+      "Redis",
+      "SQL-Server-2008",
+      "2008)",
+      "Postgres SQL",
+      "Informatica",
+      "Apache Cassandra",
+      "MS SQL Server (2000",
+      "Oracle 11g/10g",
+      "Sybase",
+      "Elastic search",
+      "SQL Server 2005/2008",
+      "Talend ETL",
+      "Teradata IW",
+      "Oracle 8.x/9i/10/11g Enterprise Edition",
+      "DML",
+      "Oracle 9i/10g/11g/12c",
+      "Map Reduce",
+      "DB2",
+      "HDFS",
+      "Cassandra",
+      "Microsoft SQL Server 2012/2008",
+      "MS SQL Server 2005/2008/2014",
+      "Couchbase DB",
+      "Toad",
+      "IMS DB",
+      "No SQL Databases (Cassandra",
+      "Teradata SQL",
+      "Oracle 12c/11g/10g/9i",
+      "SQLite",
+      "IMS",
+      "Oracle9i/10g/11g",
+      "ASM",
+      "MongoDB/NoSQL",
+      "IBM DB2",
+      "Oracle Service Bus",
+      "MySQL",
+      "MS-SQL Server 2008/2005",
+      "Oracle 10g/9i",
+      "DynamoDB",
+      "Microsoft Access",
+      "12c)",
+      "Oracle 10g",
+      "SQL Server 2008/2013",
+      "DDL",
+      "11g",
+      "Apache",
+      "SSIS",
+      "MONGODB",
+      "VSAM",
+      "Essbase",
+      "MS Access",
+      "NoSQL",
+      "SQL",
+      "SQL server 2012/2014/2016",
+      "MySql",
+      "Oracle 11g",
+      "PostgressSql",
+      "Oracle 8i/9i/10g/11g",
+      "Oracle 11g/12C",
+      "DB2 9.X",
+      "Oracle",
+      "Neo4j",
+      "Couch base",
+      "SQL Developer",
+      "MSSQL Server",
+      "SQL Server 2000/2005/2008",
+      "PostgreSQL",
+      "Postgre SQL",
+      "Agile Methodologies",
+      "OLAP",
+      "T-SQL",
+      "Oracle 8.x/9i/10g",
+      "MS SQL",
+      "Operating Systems: Windows XP, Red Hat LINUX",
+      "Oracle R12",
+      "Graph DB",
+      "Oracle 12c/11g",
+      "Hadoop",
+      "Mongo DB and Dynamo DB",
+      "MangoDB",
+      "Data Guard",
+      "Microsoft SQL",
+      "Dynamo DB",
+      "ElasticSearch",
+      "Apache Cassandra DB",
+      "Oracle Technologies (RAC",
+      "Oracle 9i/10g/11g",
+      "Oracle10g/9i/8i",
+      "Oracle 11g/10g/9i",
+      "Couch DB",
+      "PL/SQL",
+      "Hbase",
+      "SQL Server 2014/2012/2008R2",
+      "SQL-Server",
+      "Oracle 12 C",
+      "Database Vault",
+      "Oracle 12c/11i/11g/10g/9i/8i",
+      "Couchbase",
+      "MS SQL Server2005/08",
+      "MySql5.7",
+      "Documentum",
+      "Oracle Database server 11g",
+      "Flashback",
+      "9i",
+      "Microsoft SQL Server 2008/2012/2014",
+      "Agile SCRUM, Kanban, Scrum Master, Agile Coach",
+      "ORACLE 8i/9i/11g",
+      "ORDBMS",
+      "MySQL server",
+      "S3",
+      "TSM)",
+      "MS-Access and MS-SQL Server",
+      "MongoDB",
+      "Oracle 9i/10g/11i",
+      "My Sql",
+      "Big Data Hadoop",
+      "Hive",
+      "Teradata",
+      "MSSQL",
+      "Mongo DB and Cassandra"
+    ],
+    "cloud_technologies": [
+      "SAAS",
+      "Cloud foundry",
+      "AWS LAMBDA",
+      "Amazon EC2",
+      "RedShift",
+      "Docker",
+      "AZURE",
+      "Predix",
+      "AWS Beanstalk",
+      "ECS",
+      "Auto Scaling",
+      "ELK(ElasticSearch",
+      "Elastic Load Balance",
+      "AWS stack (EC2",
+      "Cloud Front)",
+      "Elastic file system",
+      "API Gateway",
+      "Jenkins",
+      "AWS (Cloud Formation",
+      "ELB",
+      "Simple DB",
+      "EMR",
+      "AWS S3",
+      "AWS",
+      "Elastic search",
+      "Cloud Trial",
+      "Cloud Formation",
+      "PIVOTAL CLOUD FOUNDRY",
+      "Azure document DB",
+      "AWS SQS",
+      "Cloud watch",
+      "Kibana",
+      "Cloud Trail)",
+      "SNS/SQS",
+      "RDS",
+      "AWS load balancing",
+      "GCP",
+      "SPRING CLOUD",
+      "MESOSPHERE",
+      "IBM BlueMix",
+      "WSO2",
+      "EME AWS",
+      "Lambda",
+      "AWS Container service",
+      "AWS EC2",
+      "DynamoDB",
+      "Elastic Load Balancing ELB",
+      "HP/VMware",
+      "Amazon EMR",
+      "Elastic Beanstalk EBS",
+      "Amazon Simple DB)",
+      "EC2",
+      "Azure",
+      "AWS EMR",
+      "Virtual Private Cloud",
+      "OpenStack",
+      "IAM",
+      "Heroku",
+      "IaaS",
+      "Open Shift",
+      "SWF",
+      "Elastic Beanstalk",
+      "Google App Engine",
+      "Amazon Web Services (RDS",
+      "Windows Azure",
+      "Azure cloud services",
+      "KUBERNETES",
+      "AWS EFS",
+      "Mesos/Marathon",
+      "MS Azure",
+      "Elastic Load balancer",
+      "ElastiCache",
+      "Hadoop",
+      "Microsoft Azure",
+      "Load Balancer",
+      "Google Cloud",
+      "CloudFront",
+      "SQS",
+      "Google",
+      "AWS SNS",
+      "Dynamo DB",
+      "EBS",
+      "VPC",
+      "CloudWatch",
+      "PaaS",
+      "Aws",
+      "ESB",
+      "SNS",
+      "Salesforce Force.com IDE",
+      "Netflix Eureka",
+      "Splunk",
+      "Mesos",
+      "AWS KINESIS",
+      "MQL",
+      "AWS IAM",
+      "CloudFormation",
+      "AMIs",
+      "Amazon Web Service",
+      "REDHAT OPENSHIFT",
+      "SolrCloud",
+      "S3",
+      "Route",
+      "Amazon AWS",
+      "LogStash",
+      "AWS SDK",
+      "Amazon Web Services",
+      "Route53",
+      "Glacier",
+      "Amazon Web Services EC2",
+      "DigitalOcean"
+    ],
+    "tools_platforms": [
+      "WebSphere Portal 5.x",
+      "QTP",
+      "CVS",
+      "SOA",
+      "Mockito",
+      "JBOSS 4.x/3.x",
+      "APACHE CXF",
+      "Zookeeper",
+      "Kitematic",
+      "Web-logic Server",
+      "Endevor",
+      "Anthill",
+      "Apache-Hive",
+      "Tomcat",
+      "Visual Studio Team Services",
+      "Microsoft Power BI",
+      "R Studio",
+      "JiBX",
+      "WINSCP3",
+      "Quick Test Pro",
+      "Rallydev",
+      "Gradle",
+      "Rational Robot",
+      "Tomcat 5.0.28/6.0",
+      "CRSCTL)",
+      "PostMan",
+      "IBM’s Sterling order management system",
+      "Slack",
+      "DB Visualizer",
+      "Junit",
+      "MS Office",
+      "Windows phone OS",
+      "HP QTP",
+      "VersionOne",
+      "JMS",
+      "AWS S3",
+      "Ranorex",
+      "Access",
+      "IBM Cognos Data Manager",
+      "SonarQube",
+      "RestClient-UI",
+      "HP ServiceDesk",
+      "SunStudio Collect",
+      "Guidewire Suit",
+      "XFire",
+      "Rational Clear quest",
+      "Oracle SOA Suite/BPEL/Fusion Middleware",
+      "HDFS",
+      "Jenkins/Hudson",
+      "IBM WebSphere",
+      "Eclipse STS",
+      "SQL*PLUS",
+      "Web Sphere studio",
+      "Harvest",
+      "IBM Integration Designer",
+      "TextPad",
+      "LINQ",
+      "Microsoft Visio",
+      "iRise",
+      "MagicDraw UML",
+      "Text Pad",
+      "Track It",
+      "INFORMATICA Power Centre",
+      "SQL Server Integration Services",
+      "CA’s Clarity PPM",
+      "UML",
+      "IBM RSA",
+      "SSAS",
+      "Oracle WebLogic",
+      "JBPM",
+      "Optimal Trace",
+      "Facets",
+      "Ant",
+      "ISPF",
+      "IBM Congos",
+      "Jboss6.1",
+      "Apache Zookeeper",
+      "Flume",
+      "IBM WebSphere Application Developer 5.x",
+      "Google Checkout",
+      "Appworx",
+      "Caliber",
+      "Actuate",
+      "Blackberry",
+      "Force.com Eclipse IDE Plug-in",
+      "Joomla",
+      "Spike Proxy",
+      "Magento",
+      "Cognos",
+      "Jboss Application Server 4.x/5.x",
+      "KOMODO",
+      "Jetty Server",
+      "WSRR",
+      "WebLogic Application Server",
+      "MapR",
+      "Selenium",
+      "Web Sphere MQ",
+      "Stash",
+      "Message Broker",
+      "QV/QVXP",
+      "Sublime Text",
+      "Quest TOAD for Oracle",
+      "JRules",
+      "Pusher",
+      "iReports",
+      "ITKO LISA",
+      "HP UFT/QTP",
+      "GIT",
+      "PayPal",
+      "Maven2",
+      "Fishbone",
+      "SQL Server Reporting Service",
+      "IBM WebSphere 5.X/6.0",
+      "11.0)",
+      "Microsoft SharePoint",
+      "Enterprise Architect",
+      "HP ALM QC",
+      "Squirrel",
+      "Mule API Gateway",
+      "Spring Roo",
+      "ElasticSearch",
+      "Star Team",
+      "HPAS",
+      "Solr",
+      "Jenkin",
+      "IBM TeaLeaf",
+      "Log4J",
+      "HP Quality Center ALM",
+      "MS Office Suite",
+      "TOAD 5.0/8.0",
+      "Mind Mapping Software",
+      "SPARX System’s EA",
+      "Tableau",
+      "Clarity",
+      "Microsoft Excel",
+      "OSCommerce",
+      "People soft HRMS",
+      "Microsoft Project",
+      "IBM Web Sphere 4.x/5.x/6.x",
+      "EMC Documentum",
+      "WSAD",
+      "VSS",
+      "Qlikview",
+      "Microsoft Visual Studio",
+      "Grunt",
+      "Power Mock",
+      "Salesforce CRM",
+      "Visual Studio",
+      "Hbase",
+      "Balsamic",
+      "Micro Services",
+      "Postman",
+      "Jira",
+      "Oracle BPM",
+      "SPF",
+      "SublimeText",
+      "Metalink",
+      "Negotiate to Win | The 7 Habits of Highly Effective People Certified, German Language course",
+      "uDeploy",
+      "Rational Clear case",
+      "Specflow C",
+      "Oracle ECM",
+      "Adobe Photoshop",
+      "OWASP",
+      "XML SPY",
+      "Microsoft Project Plan",
+      "BMC Remedy",
+      "Intellij 14.x/15.x",
+      "Glassfish ORB Daemon",
+      "Mocha JS",
+      "Hudson",
+      "Visual Cafe",
+      "Tomcat 5.x/6.x",
+      "WMS",
+      "Yourkit",
+      "HP QC",
+      "Cherwell",
+      "FileAid",
+      "JHiccup",
+      "Quartz",
+      "Subversion",
+      "Teradata",
+      "Quality Center/Test Director",
+      "Source Tree",
+      "FICO",
+      "EMMA",
+      "TestNG",
+      "Oracle SQL developer",
+      "HPUFT",
+      "Jnuit",
+      "FAST",
+      "Jakarta Tomcat",
+      "Ultra Edit-32",
+      "Cucumber",
+      "Protractor",
+      "Metastorm BPM",
+      "BEA Web Logic",
+      "VS Code",
+      "ILog JRules",
+      "Selenium Grid",
+      "Docker",
+      "Mercurial",
+      "MS SharePoint Server",
+      "Oracle Fusion",
+      "IOS",
+      "Rational Quantify",
+      "Bit Bucket",
+      "Intellij IDEA",
+      "Oracle Warehouse Builder",
+      "Active MQ",
+      "Crystal Reports XI",
+      "TSO",
+      "IBM Cognos BI",
+      "Maven/Git",
+      "Sareena PVCS",
+      "Version ONE",
+      "IBM Appscan",
+      "Microsoft Word",
+      "Mule soft ESB",
+      "SAP (HR",
+      "QRADAR rest api",
+      "WebLogic 8.1/9.1",
+      "Salesforce",
+      "Rational Requiste Pro",
+      "Rabbit MQ",
+      "Test-Driven Development",
+      "Web Logic 11g/12c",
+      "Apache Tomcat 8.0/7.x/6.x",
+      "Elastic search",
+      "IBM Websphere Portal",
+      "MS Visual Studio",
+      "JAX-WS",
+      "GlassFish",
+      "RAD",
+      "Git-hub",
+      "APEX Search Client",
+      "SVN Tortoise",
+      "JVisual VM",
+      "Unifi Pro",
+      "Outlook Express",
+      "Rational ClearCase",
+      "AS400",
+      "SSRS",
+      "Map Reduce",
+      "DB2",
+      "Confluence",
+      "Oracle WebLogic 10.x/9.x",
+      "Apache Maven",
+      "Surround SCM",
+      "Velocedi/Claredi",
+      "WSAD/RAD",
+      "Workbench",
+      "IBM Rational Clear Case",
+      "Oracle Utilities (OBACKTRACK",
+      "SAML",
+      "IBM WebSphere 8.x/6.x",
+      "XMLSpy",
+      "Windows 8.0/8.1",
+      "Google GSA",
+      "TKPROF",
+      "JBoss 5.x",
+      "SVN",
+      "Tortoise-SVN",
+      "Rational Tool Suite",
+      "PLSql Developer",
+      "SPSS",
+      "Cron Jobs",
+      "SOQLxplorer",
+      "ReqTrace Web",
+      "Custom Import Wizard",
+      "WSO2",
+      "MEMS)",
+      "Apache Tomcat 6/7",
+      "Kafka",
+      "SOMA",
+      "Eclipse 3.5/3.7/4.0",
+      "Appium",
+      "TortoiseGIT",
+      "IE Developer Toolbar",
+      "EclEmma",
+      "IBM BPM",
+      "Terraform",
+      "Firebug",
+      "Linux",
+      "Kubernetes",
+      "Puppet",
+      "Jasmine",
+      "Jprobe suite",
+      "11.2",
+      "Rational Robo",
+      "Smart Draw",
+      "JDB",
+      "Packet Tracer",
+      "ManageNow",
+      "Apache camel",
+      "iReport",
+      "SVC",
+      "Text Wrangler",
+      "Visual Studio Code",
+      "JTop",
+      "7.x",
+      "JBoss Drools Rules Engine",
+      "MOCK UP screens",
+      "Mocktio",
+      "SourceTree)",
+      "Ganymede",
+      "Apache Tomcat 5.x",
+      "Quality Center",
+      "iLotus Notes",
+      "SRVCTL",
+      "TeamCity",
+      "Web sphere 4.0/5.0/6.1/7.0/8.0",
+      "redhat BPM",
+      "MQ Series",
+      "Tomcat 5/6/7",
+      "MQ",
+      "Qlikview 11.0/11.2",
+      "Apigee",
+      "HP Project and Portfolio Management",
+      "CircleCI",
+      "Artifactory",
+      "KUBERNETES",
+      "PowerMockito",
+      "Atom",
+      "Rational Test Manager",
+      "Jenkins Enterprise",
+      "mdb",
+      "Adobe Dreamweaver",
+      "NetBeans IDE",
+      "Hadoop",
+      "IBM RAD",
+      "Rally",
+      "NetBean",
+      "Net beans RAD",
+      "SQL Server 2008 R2/2013",
+      "Team City",
+      "WinSCP",
+      "Gulp",
+      "Sqoop",
+      "Chef-Vault",
+      "HPQTP",
+      "Weblogic",
+      "ILOG",
+      "Actuate BIRT",
+      "Adobe Connect",
+      "PVCS Dimension",
+      "Impala",
+      "Jest",
+      "Authorize.net",
+      "Splunk",
+      "WebSphere MQ",
+      "AWR",
+      "REST/Soap Services",
+      "Apache Tomcat 5.x/6.x/7.x/8.x",
+      "AXIS",
+      "ArcGIS",
+      "Oracle Data Integrator",
+      "Perforce",
+      "Apache Tomcat6.0/7.0/8.0",
+      "Google API",
+      "Hudson 3.x",
+      "ADDM",
+      "Rally Dev",
+      "Serena Dimensions",
+      "Excel",
+      "Tomcat 5.0/6.0/7.0",
+      "WebLogic Workshop",
+      "Jasper reports",
+      "JBOSS Server",
+      "Rational Application Developer RAD",
+      "Platinum tool for DB2",
+      "Travis CI",
+      "MS VISIO",
+      "UIPath",
+      "STS",
+      "JDeveloper",
+      "SAP PowerBuilder",
+      "Brackets",
+      "Control M",
+      "Swagger",
+      "Glass Fish",
+      "WebFOCUS",
+      "Webhooks",
+      "SiteMinder",
+      "Bamboo",
+      "IBM MQ Series",
+      "Hive",
+      "WPF",
+      "gdb",
+      "ISM",
+      "Squirrel SQL Client",
+      "Adobe Experience Manager",
+      "WinCvs",
+      "Photoshop",
+      "Gherkin",
+      "BMC",
+      "EditPlus",
+      "Team track",
+      "Clion",
+      "Bitbucket",
+      "RSA",
+      "Core FTPLite",
+      "Dynatrace",
+      "HP Quality Centre",
+      "Nagios",
+      "Clarity Project Manager",
+      "JMock",
+      "Quality Center (9",
+      "Ansible",
+      "Jprofile",
+      "GitHub",
+      "Apache ATOM",
+      "IBM -WSAD",
+      "IBM Cognos",
+      "Predix",
+      "TCPMon",
+      "Maven",
+      "Spring Tool suite 2.x/3.x",
+      "Dojo Toolkit",
+      "NetBeans7",
+      "Domo",
+      "Crystal Report",
+      "Golden Gate",
+      "IBM Lotus",
+      "Oracle SOA Suit",
+      "Front Page",
+      "6.x",
+      "Atlassian Confluence",
+      "Jenkins",
+      "SAP Business Objects",
+      "web-methods",
+      "IBM WebSphere 5.1/6.0/6.1/7.0",
+      "MS Project",
+      "Redis",
+      "Power BI",
+      "Jasper Report",
+      "QuickBuild",
+      "SharePoint",
+      "Test Director",
+      "Informatica",
+      "Wordpress",
+      "Test-ng",
+      "Sublime",
+      "Continuum",
+      "MapReduce",
+      "Cloudera Manager",
+      "SQL*Loader",
+      "SAP BR",
+      "Karma JS",
+      "Altova XML SPY",
+      "PHPUnit",
+      "Visual Studios",
+      "Web Logic 9.1/10",
+      "Draw.io",
+      "Galelio)",
+      "HP ALM",
+      "Cypress",
+      "Windows 2000/XP/Vista/7/8/10",
+      "MS Project Server",
+      "Web Sphere 6.x/5.x",
+      "Starteam",
+      "Webstorm",
+      "Groovy/Grails",
+      "10",
+      "Propel",
+      "Drools",
+      "Bower",
+      "Curl",
+      "Oracle WebLogic 10g",
+      "ITSM",
+      "ClearQuest",
+      "IBM Requisite Pro",
+      "Microsoft Team Foundation Server",
+      "PVCS",
+      "Oracle BI Enterprise Edition",
+      "IBM Process Designer",
+      "MS Excel",
+      "LoadRunner",
+      "IBM Info Sphere",
+      "Espresso",
+      "Business Objects",
+      "Endeca",
+      "Mercury Quality Center",
+      "Oracle ADF",
+      "GitHub Actions",
+      "Signal",
+      "CDH3&4",
+      "Rational Requisite Pro",
+      "AXIOM",
+      "SAP SD",
+      "AquaStudio GUI",
+      "Xpeditor",
+      "CMVC",
+      "IntelliJ",
+      "Goethe Institute",
+      "JUNIT4.12",
+      "Nexpose Security",
+      "TSO/ISPF",
+      "Rational Software Architect",
+      "Apache",
+      "Edit Plus",
+      "Nodejs",
+      "Adobe Acrobat",
+      "IBM Web Sphere",
+      "JProfiler",
+      "WebSphere",
+      "BEA Web Logic 7.x/8.x/10.x",
+      "OpenStack",
+      "Oozie",
+      "Vagrant",
+      "Quick Build",
+      "10.2",
+      "Trello",
+      "Selenium web driver",
+      "Jetty",
+      "MicroStrategy",
+      "Solace",
+      "libumem",
+      "OEM",
+      "Web Storm",
+      "PuTTY",
+      "eMatrix",
+      "Remedy",
+      "SQL Developer",
+      "Eclipse",
+      "Spring Tool Suite",
+      "Requisite Pro",
+      "RoboMQ",
+      "BW Hana",
+      "Coherence",
+      "NPM",
+      "Hazelcast",
+      "Rational Rose XDE",
+      "Vmware",
+      "Code Collaborator",
+      "PowerPoint",
+      "Selenium WebDriver",
+      "SPOT",
+      "IntelliJ IDE",
+      "SAP PowerDesigner",
+      "Axure",
+      "SAP CRM",
+      "CM SYNERGY",
+      "Tealeaf",
+      "BIRT",
+      "VANTAGE-ONE",
+      "Jbuilder",
+      "JPAYMENT",
+      "RAD 6.0/6.x/7.x/8.0",
+      "Apache Kafka",
+      "IText",
+      "CA ERwin",
+      "MPP",
+      "Bea Web logic Server",
+      "Caliber RM",
+      "MATLAB",
+      "Erwin",
+      "Oracle 11i/R12 Financials",
+      "Rational Application Developer",
+      "Sales force CRM",
+      "IBM WebSphere 8.x/9.x",
+      "Clear case",
+      "QC",
+      "WebSphere 6.x/7.x",
+      "Active Directory",
+      "qTrack",
+      "JBoss",
+      "Jtest",
+      "Apex Data loader",
+      "Android",
+      "Chai",
+      "SQL Server Management Studio",
+      "XPlanner",
+      "FileZilla",
+      "PVCS Tracker",
+      "Jackson Mapper",
+      "JAXB",
+      "Couchbase",
+      "CXF",
+      "Chef",
+      "EDIFECS",
+      "Macintosh",
+      "Apex Explorer",
+      "Eclipse RCP",
+      "IIS6.0",
+      "Informatica Power Center",
+      "Force.com IDE",
+      "Parasoft",
+      "ServiceNow",
+      "J-Boss 6.x/7.x",
+      "OCR for AnyDoc- Hyland Software",
+      "Tableau 10.1/10.2",
+      "Spotfire",
+      "Jasper Assistants",
+      "Git (EGIT",
+      "OIM-OIF",
+      "Team Foundation Server",
+      "Data Stage",
+      "WebEx",
+      "jPod",
+      "Eclipse (Europe",
+      "Oracle/BEA WebLogic 8.1/9.1",
+      "Cygwin",
+      "Lotus Notes",
+      "My Eclipse",
+      "Cloudhub",
+      "MS Office – Word",
+      "IBM Test Management",
+      "Web logic Application server",
+      "Xpages",
+      "Cloud foundry",
+      "Eclipse Mars",
+      "Jdeveloper 9/10",
+      "Liferay",
+      "BPT",
+      "Oracle Application Testing Suite",
+      "Visual Age Java",
+      "Win Runner",
+      "Selenium RC",
+      "Curam",
+      "CruiseControl.NET",
+      "Marathon",
+      "cucumber JS",
+      "STIBO Step Solutions",
+      "Max Mueller Bhavan",
+      "Rational ClearQuest",
+      "Pytest",
+      "Balsamiq",
+      "Force.com Excel Connector",
+      "Lisa",
+      "Microsoft Test Manager",
+      "Selenium Ide",
+      "Support Central",
+      "Drupal",
+      "Eclipse IDE",
+      "Clearcase",
+      "JBoss Drools",
+      "WorkSoft-Certify",
+      "Odysseus",
+      "XML Beans",
+      "Sales Force",
+      "Tally",
+      "PEGA PRPC",
+      "VisualVM",
+      "Apache Tomcat",
+      "Cucumber-JVM",
+      "Apache Spark",
+      "SCCM",
+      "Scala",
+      "Apache Tomcat Server 5.x",
+      "GWT",
+      "Octopus",
+      "WESB",
+      "Kibana",
+      "Toad",
+      "Mainframes",
+      "HostBridge",
+      "Gimp",
+      "Pentaho",
+      "WebLogic 7.0/8.1/9.2/10.0",
+      "Jameleon",
+      "Hyperion Reporting",
+      "My eclipse STS",
+      "Axis2",
+      "Adobe Acrobat Professional",
+      "Siebel CRM",
+      "Jersey",
+      "Tomcat 5.5/6.0",
+      "TFS Team Build/MS Build",
+      "OpsView",
+      "Dream weaver",
+      "JBoss Fuse",
+      "BEA-Weblogic",
+      "Code Check",
+      "SoapUI",
+      "Camel",
+      "Storm",
+      "Rational Tools (Rational Rose",
+      "Mantis Bug Tracker",
+      "Jenkins 2.x",
+      "VS",
+      "HPQC",
+      "Git",
+      "SDS",
+      "TFS",
+      "Mantis",
+      "RMAN",
+      "SSIS",
+      "JUnit3.8/4.0",
+      "Kerberos",
+      "MONGODB",
+      "Selenium Web Driver/RC/IDE/Grid",
+      "LiveLink",
+      "GITHUB",
+      "WebSphere Application Server",
+      "Mule ESB",
+      "RAD 6.0/7.0",
+      "Jenkins/Puppet/Ansible/Docker/OpenStack",
+      "Wily",
+      "Pig",
+      "BI Launchpad",
+      "Track Wise",
+      "JUnit",
+      "IBM WebSphere Commerce",
+      "Layer7",
+      "Mulesoft",
+      "Powermock",
+      "AppDynamics",
+      "GitLab",
+      "SAS",
+      "Hortonwork clusters",
+      "WebSphere Studio Application Developer",
+      "MyEclipse",
+      "OEPE",
+      "Horton Works Distributions",
+      "Chrome Developers",
+      "HP Quality Center",
+      "QNXT",
+      "TMAG RAP",
+      "Apache Ant",
+      "SnagIt",
+      "SAP",
+      "Tibco Spotfire",
+      "MM",
+      "IBM RTC",
+      "Visual Source Safe",
+      "Sonar",
+      "XAMPP",
+      "Web Sphere",
+      "Activiti BPM",
+      "Service Now",
+      "Crystal Reports",
+      "IIS",
+      "JMeter",
+      "Outlook",
+      "Web logic",
+      "ERWIN Data Modeler",
+      "XPath",
+      "Maven 3.x",
+      "NetBeans",
+      "Hue",
+      "Aws",
+      "Mocha",
+      "Windows XP/Vista/7/10",
+      "truss",
+      "Blaze",
+      "BEA Web Logic 9.x/10.x/12.x",
+      "Notepad++",
+      "Apache Mesos",
+      "Apache Tomcat 9/8",
+      "strace",
+      "Net Beans",
+      "Spark",
+      "RETS API",
+      "SQL-Server",
+      "Open Project",
+      "Bugzilla",
+      "Red mine",
+      "SOAP",
+      "Tomcat AX-WS",
+      "Documentum",
+      "GitLab CI",
+      "phone gap",
+      "Silverlight",
+      "Amazon API",
+      "SOAP UI",
+      "Load Runner",
+      "MII",
+      "Visio",
+      "Wily Interscope",
+      "Ready API",
+      "IBM Clear Case",
+      "Rational Rose",
+      "Camunda BPM",
+      "Karma",
+      "## Other Skills",
+      "Eclipse/My Eclipse",
+      "XUL",
+      "CRM",
+      "Eclipse 3.x",
+      "Jasper Soft"
+    ],
+    "methodologies": [
+      "MVC",
+      "HTTP",
+      "SOA",
+      "XP",
+      "J2EE Design patterns",
+      "CI)",
+      "ATDD",
+      "Waterfall Process",
+      "PMO",
+      "ODS",
+      "Treasury",
+      "Waterfall-SDLC",
+      "EAI",
+      "ITIL",
+      "PMP",
+      "OOD",
+      "Training and Development",
+      "Monolithic",
+      "UAT",
+      "TOGAF",
+      "CoE",
+      "OOA",
+      "Waterfall-Scrum Hybrid",
+      "JMS",
+      "Test-Driven Development",
+      "Kanban",
+      "Star Schema",
+      "Continuous integration",
+      "Scrum",
+      "GAP Analysis",
+      "Agile",
+      "Spiral",
+      "Design Patterns (Singleton",
+      "DMADV",
+      "Waterfall",
+      "Microservice",
+      "ETL",
+      "PMI based project management",
+      "Rapid Application Development",
+      "JNDI",
+      "Micro-service architecture",
+      "GWT",
+      "Get along with co-workers easily and Able to adapt in changing circumstances",
+      "EIA",
+      "BSS/BPS",
+      "MVP",
+      "SDLC",
+      "BDD",
+      "OOAD",
+      "Service-Oriented Architecture",
+      "TDD",
+      "KANBAN",
+      "Singleton",
+      "JDBC",
+      "Session Facade",
+      "Design Patterns",
+      "UML",
+      "REST Services Oriented Architecture",
+      "SaFE",
+      "CI/CD",
+      "Focused",
+      "SOA/EAI",
+      "Creative and innovative",
+      "Good communication skills",
+      "Business Analysis",
+      "Dev-ops",
+      "Impact Analysis",
+      "Agile Methodology",
+      "MVVC",
+      "Factory Pattern",
+      "e-commerce",
+      "Dev Ops Automation",
+      "PMBOK",
+      "Unit testing",
+      "SWOT Analysis",
+      "OOP",
+      "Pair Programming",
+      "EABOK",
+      "V-Model",
+      "## Professional Skills",
+      "LAMP",
+      "RUP",
+      "Time Management",
+      "Confident",
+      "Agile Scrum",
+      "API driven communications",
+      "CICD",
+      "Iterative",
+      "BPM",
+      "Water Scrum fall-Hybrid",
+      "Handle Workload well and have been able to meet deadlines",
+      "Project Management",
+      "RWD",
+      "Microservices",
+      "Waterfall model",
+      "Water-Fall",
+      "J2ee",
+      "MVVM",
+      "Leadership",
+      "J2EE Design Patterns (MVC",
+      "Communication",
+      "BIZBOK",
+      "Client-Server",
+      "Continuous Improvement",
+      "Extreme Programming",
+      "Snowflake Schema",
+      "BABOK",
+      "DAO",
+      "J2EE Design Patterns (Singleton",
+      "Scrum-ban",
+      "Factory",
+      "Facade",
+      "Micro Services",
+      "SDLC Waterfall model",
+      "Rational Unified Process",
+      "SOAP",
+      "DMAIC",
+      "Microservices Architecture",
+      "DODAF",
+      "Micro Services Architecture",
+      "GraphQL",
+      "Test Driven Methodology",
+      "Prototyping",
+      "WSDL",
+      "JAD Sessions",
+      "AOP",
+      "Continuous Integration using CruiseControl",
+      "Fall",
+      "etc.)",
+      "iPaaS",
+      "Iterative Process",
+      "REST",
+      "DevOps",
+      "CRM"
+    ],
+    "professional_skills": [
+      "API Integration",
+      "Agile Methodologies",
+      "Agile Methodologies and DevOps",
+      "Agile Methodologies and TDD",
+      "Agile Methodologies and Test-Driven Development",
+      "Agile Program and Project Management",
+      "Agile Scrum Master",
+      "Agile Scrum Master & QA Leadership",
+      "Agile and RUP Methodologies",
+      "Agile and Scrum Methodologies",
+      "Agile and Team Leadership",
+      "Agile and Test-Driven Development",
+      "Agile and Waterfall Methodologies",
+      "Agile/Scrum Methodologies",
+      "Agile/Scrum and Microservices",
+      "Agile/Scrum and TDD Methodologies",
+      "Agile/Scrum and Test-Driven Development",
+      "Agile/Scrum and Waterfall Methodologies",
+      "Automated Testing and CI/CD",
+      "Automation Architecture and Framework Design",
+      "Automation and Scripting",
+      "Big Data Technologies",
+      "Big Data and Cloud Technologies",
+      "Big Data and Hadoop Development",
+      "Big Data and Hadoop Ecosystem",
+      "Budget / Cost Control",
+      "Budget Management and Projections",
+      "Build and Release Management",
+      "Business Analysis and Requirements Gathering",
+      "Business Process Automation and Improvement",
+      "Business Process Improvement",
+      "Business Process Management",
+      "Business Systems Analysis",
+      "CI/CD and DevOps Practices",
+      "Change and Risk Management",
+      "Cloud",
+      "Cloud Application Development",
+      "Cloud Computing",
+      "Cloud Deployment",
+      "Cloud Infrastructure and Migration",
+      "Cloud Technologies",
+      "Cloud and DevOps",
+      "Cloud and DevOps Practices",
+      "Cloud and Infrastructure Management",
+      "Cloud and Microservices",
+      "Cloud and Microservices Architecture",
+      "Cloud and NoSQL",
+      "Cloud-Based Application Development",
+      "Cloud-Based Solutions",
+      "Code Reviews and Test Planning",
+      "Continuous Integration and Deployment",
+      "Continuous Integration/Continuous Deployment",
+      "Customer Interaction and Issue Resolution",
+      "Data Analysis and Data Modeling",
+      "Data Governance and Compliance",
+      "Data Pipeline Implementation",
+      "Data Warehousing and Business Intelligence",
+      "Data Warehousing and ETL",
+      "Database Design and Development",
+      "Database Design and Management",
+      "Database Design and PL/SQL",
+      "Database Design and Programming",
+      "Database Design and SQL",
+      "Database Design and SQL/NoSQL",
+      "Database Development",
+      "Database Management",
+      "Database Management and SQL",
+      "Distributed Systems Architecture",
+      "E-commerce and CMS Development",
+      "E-commerce and Content Management Systems",
+      "E-commerce and Retail Domain Expertise",
+      "E-commerce and Treasury Domain Expertise",
+      "ETL and Data Warehousing",
+      "Front-End Web Development",
+      "Front-End and UI Development",
+      "Full Software Development Life Cycle",
+      "Full Software Development Life Cycle Management",
+      "Full Stack Java Development",
+      "Full Stack Java/J2EE Development",
+      "Full Stack Java/UI Development",
+      "Full Stack Java/Web Development",
+      "Full Stack PHP Development",
+      "Full Stack Web Development",
+      "J2EE and AWS Development",
+      "Javascript",
+      "Lead Java/J2EE Development",
+      "MVC",
+      "MVC Architecture",
+      "Microservice Architecture and Web Services",
+      "Microservices Architecture",
+      "Microservices and Cloud Deployment",
+      "Microservices and SOA",
+      "Microservices and Service-Oriented Architecture",
+      "Microservices and Spring Cloud",
+      "Microservices with Spring Boot",
+      "Mobile Application Development",
+      "NoSQL",
+      "Object-Oriented Analysis and Design",
+      "Object-Oriented Design and Analysis",
+      "Oracle Database Development",
+      "Outsource Management",
+      "People and Client Management",
+      "People and Performance Management",
+      "Performance Tuning and Optimization",
+      "Pre-Sales / Business Development",
+      "Problem Solving and Bug Fixing",
+      "Process Improvement and Automation",
+      "Process Modeling and GAP Analysis",
+      "Project Management and Architecture",
+      "Project and Product Management",
+      "Project and Program Management",
+      "Project/Program/Account Management",
+      "Quality Assurance and Control",
+      "RESTful API and Web Services",
+      "RESTful and SOAP Web Services",
+      "Real-time Data Processing and Streaming",
+      "Release and Defect Management",
+      "Release and Infrastructure Management",
+      "Requirements Elicitation and Management",
+      "Requirements Gathering and Documentation",
+      "Requirements Gathering and Management",
+      "Requirements Gathering and System Design",
+      "Requirements Management",
+      "Responsive Web Design",
+      "Risk and Issue Management",
+      "Salesforce CRM Administration",
+      "Salesforce CRM Administration and Integration",
+      "Scrum Master and Agile Coaching",
+      "Scrum Master and Agile Facilitation",
+      "Scrum Master and Facilitation",
+      "Security Framework Implementation",
+      "Service-Oriented Architecture",
+      "Spring Framework and Microservices",
+      "Strategic Planning",
+      "Strategic Planning and Stakeholder Management",
+      "System Architecture and Design",
+      "Team Leadership and Development",
+      "Technical Program Management",
+      "Test Driven Development and Behavior Driven Development",
+      "Test-Driven Development",
+      "Test-Driven and Behavior-Driven Development",
+      "UI/Front-end Development",
+      "UI/UX Design and Prototyping",
+      "User Acceptance Testing",
+      "Version Control and Build Management",
+      "Web Application Development",
+      "Web Services",
+      "Web Services Development",
+      "Web Services and API Development",
+      "Web Services and Microservices"
+    ]
+  },
+  "total_skills": 1672,
+  "total_categories": 7,
+  "source": "merged_base_and_resumes",
+  "total_resumes_analyzed": 228,
+  "extraction_source": "resume_dataset"
+}

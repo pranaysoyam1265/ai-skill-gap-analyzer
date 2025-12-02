@@ -1,0 +1,70 @@
+erDiagram
+    USER ||--o{ RESUME : "has"
+    RESUME ||--o{ SKILL : "has"
+    RESUME ||--o{ CANDIDATE : "maps_to"
+    CANDIDATE ||--o{ CANDIDATE_SKILL : "has"
+    SKILL ||--o{ CANDIDATE_SKILL : "in"
+    SKILL ||--o{ COURSE_SKILL : "in"
+    COURSE ||--o{ COURSE_SKILL : "teaches"
+    CANDIDATE ||--o{ RECOMMENDATION : "receives"
+    COURSE ||--o{ RECOMMENDATION : "recommended_in"
+    
+    USER {
+        uuid id PK
+        string email
+        string created_at
+    }
+    
+    RESUME {
+        uuid id PK
+        uuid user_id FK
+        string filename
+        string storage_path
+        integer candidate_id FK
+        jsonb extracted_skills
+        string status
+        timestamp uploaded_at
+    }
+    
+    CANDIDATE {
+        integer id PK
+        string resume_id
+        string name
+        string email
+    }
+    
+    SKILL {
+        integer id PK
+        string name
+        string category
+    }
+    
+    CANDIDATE_SKILL {
+        integer candidate_id FK
+        integer skill_id FK
+        string proficiency_level
+        float years_of_experience
+    }
+    
+    COURSE {
+        integer id PK
+        string title
+        string platform
+        string url
+        float rating
+        string level
+    }
+    
+    COURSE_SKILL {
+        integer course_id FK
+        integer skill_id FK
+        boolean is_primary
+    }
+    
+    RECOMMENDATION {
+        integer candidate_id FK
+        integer course_id FK
+        float match_score
+        string reason
+    }
+

@@ -1,0 +1,880 @@
+{
+  "roles": [
+    {
+      "role_name": "Frontend Developer",
+      "category": "Software Engineering",
+      "experience_level": "Mid",
+      "required_skills": {
+        "React": {"importance": "Critical", "min_proficiency": 4},
+        "JavaScript": {"importance": "Critical", "min_proficiency": 4},
+        "TypeScript": {"importance": "High", "min_proficiency": 3},
+        "HTML": {"importance": "Critical", "min_proficiency": 4},
+        "CSS": {"importance": "Critical", "min_proficiency": 4},
+        "Responsive Design": {"importance": "High", "min_proficiency": 3},
+        "REST APIs": {"importance": "High", "min_proficiency": 3},
+        "Git": {"importance": "High", "min_proficiency": 3},
+        "CSS Preprocessors": {"importance": "Medium", "min_proficiency": 2}
+      },
+      "optional_skills": {
+        "Next.js": {"importance": "Medium", "min_proficiency": 2},
+        "Tailwind CSS": {"importance": "Medium", "min_proficiency": 2},
+        "Redux": {"importance": "Medium", "min_proficiency": 2},
+        "Testing (Jest)": {"importance": "Medium", "min_proficiency": 2}
+      }
+    },
+    {
+      "role_name": "Backend Developer",
+      "category": "Software Engineering",
+      "experience_level": "Mid",
+      "required_skills": {
+        "Python": {"importance": "Critical", "min_proficiency": 4},
+        "REST APIs": {"importance": "Critical", "min_proficiency": 4},
+        "SQL": {"importance": "Critical", "min_proficiency": 4},
+        "Databases": {"importance": "High", "min_proficiency": 3},
+        "Git": {"importance": "High", "min_proficiency": 3},
+        "Docker": {"importance": "High", "min_proficiency": 3},
+        "System Design": {"importance": "High", "min_proficiency": 3},
+        "Authentication": {"importance": "High", "min_proficiency": 3},
+        "ORM Frameworks": {"importance": "Medium", "min_proficiency": 2}
+      },
+      "optional_skills": {
+        "Microservices": {"importance": "Medium", "min_proficiency": 2},
+        "Caching": {"importance": "Medium", "min_proficiency": 2},
+        "Message Queues": {"importance": "Medium", "min_proficiency": 2}
+      }
+    },
+    {
+      "role_name": "Full Stack Developer",
+      "category": "Software Engineering",
+      "experience_level": "Senior",
+      "required_skills": {
+        "React": {"importance": "Critical", "min_proficiency": 4},
+        "Python": {"importance": "Critical", "min_proficiency": 4},
+        "JavaScript": {"importance": "Critical", "min_proficiency": 4},
+        "SQL": {"importance": "High", "min_proficiency": 3},
+        "REST APIs": {"importance": "High", "min_proficiency": 3},
+        "Git": {"importance": "High", "min_proficiency": 3},
+        "Docker": {"importance": "High", "min_proficiency": 3},
+        "HTML": {"importance": "High", "min_proficiency": 3},
+        "CSS": {"importance": "High", "min_proficiency": 3}
+      },
+      "optional_skills": {
+        "GraphQL": {"importance": "Medium", "min_proficiency": 2},
+        "Kubernetes": {"importance": "Medium", "min_proficiency": 2},
+        "CI/CD": {"importance": "Medium", "min_proficiency": 2}
+      }
+    },
+    {
+      "role_name": "Mobile Developer (iOS)",
+      "category": "Mobile Development",
+      "experience_level": "Mid",
+      "required_skills": {
+        "Swift": {"importance": "Critical", "min_proficiency": 4},
+        "Objective-C": {"importance": "High", "min_proficiency": 3},
+        "iOS SDK": {"importance": "Critical", "min_proficiency": 4},
+        "Xcode": {"importance": "Critical", "min_proficiency": 4},
+        "UIKit": {"importance": "High", "min_proficiency": 3},
+        "REST APIs": {"importance": "High", "min_proficiency": 3},
+        "Git": {"importance": "High", "min_proficiency": 3},
+        "Testing": {"importance": "Medium", "min_proficiency": 2}
+      },
+      "optional_skills": {
+        "SwiftUI": {"importance": "Medium", "min_proficiency": 2},
+        "Core Data": {"importance": "Medium", "min_proficiency": 2},
+        "Firebase": {"importance": "Medium", "min_proficiency": 2}
+      }
+    },
+    {
+      "role_name": "Mobile Developer (Android)",
+      "category": "Mobile Development",
+      "experience_level": "Mid",
+      "required_skills": {
+        "Kotlin": {"importance": "Critical", "min_proficiency": 4},
+        "Java": {"importance": "High", "min_proficiency": 3},
+        "Android SDK": {"importance": "Critical", "min_proficiency": 4},
+        "Android Studio": {"importance": "Critical", "min_proficiency": 4},
+        "REST APIs": {"importance": "High", "min_proficiency": 3},
+        "Git": {"importance": "High", "min_proficiency": 3},
+        "XML": {"importance": "High", "min_proficiency": 3},
+        "Testing": {"importance": "Medium", "min_proficiency": 2}
+      },
+      "optional_skills": {
+        "Jetpack Compose": {"importance": "Medium", "min_proficiency": 2},
+        "Room Database": {"importance": "Medium", "min_proficiency": 2},
+        "Firebase": {"importance": "Medium", "min_proficiency": 2}
+      }
+    },
+    {
+      "role_name": "React Developer",
+      "category": "Software Engineering",
+      "experience_level": "Mid",
+      "required_skills": {
+        "React": {"importance": "Critical", "min_proficiency": 5},
+        "JavaScript": {"importance": "Critical", "min_proficiency": 4},
+        "TypeScript": {"importance": "High", "min_proficiency": 3},
+        "JSX": {"importance": "Critical", "min_proficiency": 4},
+        "State Management": {"importance": "High", "min_proficiency": 3},
+        "Hooks": {"importance": "High", "min_proficiency": 3},
+        "CSS": {"importance": "High", "min_proficiency": 3},
+        "Testing": {"importance": "Medium", "min_proficiency": 2}
+      },
+      "optional_skills": {
+        "Redux": {"importance": "Medium", "min_proficiency": 2},
+        "Context API": {"importance": "Medium", "min_proficiency": 2},
+        "Performance Optimization": {"importance": "Medium", "min_proficiency": 2}
+      }
+    },
+    {
+      "role_name": "Angular Developer",
+      "category": "Software Engineering",
+      "experience_level": "Mid",
+      "required_skills": {
+        "Angular": {"importance": "Critical", "min_proficiency": 4},
+        "TypeScript": {"importance": "Critical", "min_proficiency": 4},
+        "JavaScript": {"importance": "High", "min_proficiency": 3},
+        "RxJS": {"importance": "High", "min_proficiency": 3},
+        "Dependency Injection": {"importance": "High", "min_proficiency": 3},
+        "Angular CLI": {"importance": "High", "min_proficiency": 3},
+        "HTML": {"importance": "High", "min_proficiency": 3},
+        "CSS": {"importance": "High", "min_proficiency": 3}
+      },
+      "optional_skills": {
+        "NgRx": {"importance": "Medium", "min_proficiency": 2},
+        "Angular Material": {"importance": "Medium", "min_proficiency": 2},
+        "Testing": {"importance": "Medium", "min_proficiency": 2}
+      }
+    },
+    {
+      "role_name": "Vue.js Developer",
+      "category": "Software Engineering",
+      "experience_level": "Mid",
+      "required_skills": {
+        "Vue.js": {"importance": "Critical", "min_proficiency": 4},
+        "JavaScript": {"importance": "Critical", "min_proficiency": 4},
+        "TypeScript": {"importance": "High", "min_proficiency": 3},
+        "Composition API": {"importance": "High", "min_proficiency": 3},
+        "Vue Router": {"importance": "High", "min_proficiency": 3},
+        "CSS": {"importance": "High", "min_proficiency": 3},
+        "HTML": {"importance": "High", "min_proficiency": 3},
+        "Vuex": {"importance": "Medium", "min_proficiency": 2}
+      },
+      "optional_skills": {
+        "Nuxt.js": {"importance": "Medium", "min_proficiency": 2},
+        "Testing": {"importance": "Medium", "min_proficiency": 2},
+        "Performance Optimization": {"importance": "Medium", "min_proficiency": 2}
+      }
+    },
+    {
+      "role_name": "Node.js Developer",
+      "category": "Software Engineering",
+      "experience_level": "Mid",
+      "required_skills": {
+        "Node.js": {"importance": "Critical", "min_proficiency": 4},
+        "JavaScript": {"importance": "Critical", "min_proficiency": 4},
+        "Express": {"importance": "High", "min_proficiency": 3},
+        "REST APIs": {"importance": "High", "min_proficiency": 3},
+        "SQL": {"importance": "High", "min_proficiency": 3},
+        "Git": {"importance": "High", "min_proficiency": 3},
+        "Async/Await": {"importance": "High", "min_proficiency": 3},
+        "Testing": {"importance": "Medium", "min_proficiency": 2}
+      },
+      "optional_skills": {
+        "GraphQL": {"importance": "Medium", "min_proficiency": 2},
+        "WebSockets": {"importance": "Medium", "min_proficiency": 2},
+        "Microservices": {"importance": "Medium", "min_proficiency": 2}
+      }
+    },
+    {
+      "role_name": "Python Developer",
+      "category": "Software Engineering",
+      "experience_level": "Mid",
+      "required_skills": {
+        "Python": {"importance": "Critical", "min_proficiency": 4},
+        "Object-Oriented Programming": {"importance": "High", "min_proficiency": 3},
+        "SQL": {"importance": "High", "min_proficiency": 3},
+        "REST APIs": {"importance": "High", "min_proficiency": 3},
+        "Databases": {"importance": "High", "min_proficiency": 3},
+        "Git": {"importance": "High", "min_proficiency": 3},
+        "Debugging": {"importance": "High", "min_proficiency": 3},
+        "Testing": {"importance": "Medium", "min_proficiency": 2}
+      },
+      "optional_skills": {
+        "Django": {"importance": "Medium", "min_proficiency": 2},
+        "FastAPI": {"importance": "Medium", "min_proficiency": 2},
+        "Data Processing": {"importance": "Medium", "min_proficiency": 2}
+      }
+    },
+    {
+      "role_name": "Java Developer",
+      "category": "Software Engineering",
+      "experience_level": "Mid",
+      "required_skills": {
+        "Java": {"importance": "Critical", "min_proficiency": 4},
+        "Object-Oriented Programming": {"importance": "Critical", "min_proficiency": 4},
+        "Spring": {"importance": "High", "min_proficiency": 3},
+        "SQL": {"importance": "High", "min_proficiency": 3},
+        "REST APIs": {"importance": "High", "min_proficiency": 3},
+        "Git": {"importance": "High", "min_proficiency": 3},
+        "Maven": {"importance": "High", "min_proficiency": 3},
+        "Testing": {"importance": "Medium", "min_proficiency": 2}
+      },
+      "optional_skills": {
+        "Spring Boot": {"importance": "Medium", "min_proficiency": 2},
+        "Microservices": {"importance": "Medium", "min_proficiency": 2},
+        "JPA/Hibernate": {"importance": "Medium", "min_proficiency": 2}
+      }
+    },
+    {
+      "role_name": ".NET Developer",
+      "category": "Software Engineering",
+      "experience_level": "Mid",
+      "required_skills": {
+        "C#": {"importance": "Critical", "min_proficiency": 4},
+        ".NET": {"importance": "Critical", "min_proficiency": 4},
+        "ASP.NET": {"importance": "High", "min_proficiency": 3},
+        "SQL": {"importance": "High", "min_proficiency": 3},
+        "REST APIs": {"importance": "High", "min_proficiency": 3},
+        "Git": {"importance": "High", "min_proficiency": 3},
+        "Entity Framework": {"importance": "High", "min_proficiency": 3},
+        "Testing": {"importance": "Medium", "min_proficiency": 2}
+      },
+      "optional_skills": {
+        ".NET Core": {"importance": "Medium", "min_proficiency": 2},
+        "Microservices": {"importance": "Medium", "min_proficiency": 2},
+        "LINQ": {"importance": "Medium", "min_proficiency": 2}
+      }
+    },
+    {
+      "role_name": "Go Developer",
+      "category": "Software Engineering",
+      "experience_level": "Mid",
+      "required_skills": {
+        "Go": {"importance": "Critical", "min_proficiency": 4},
+        "REST APIs": {"importance": "High", "min_proficiency": 3},
+        "SQL": {"importance": "High", "min_proficiency": 3},
+        "Concurrency": {"importance": "High", "min_proficiency": 3},
+        "Git": {"importance": "High", "min_proficiency": 3},
+        "Docker": {"importance": "High", "min_proficiency": 3},
+        "Testing": {"importance": "Medium", "min_proficiency": 2}
+      },
+      "optional_skills": {
+        "gRPC": {"importance": "Medium", "min_proficiency": 2},
+        "Microservices": {"importance": "Medium", "min_proficiency": 2},
+        "Goroutines": {"importance": "Medium", "min_proficiency": 2}
+      }
+    },
+    {
+      "role_name": "Rust Developer",
+      "category": "Software Engineering",
+      "experience_level": "Senior",
+      "required_skills": {
+        "Rust": {"importance": "Critical", "min_proficiency": 4},
+        "Memory Management": {"importance": "Critical", "min_proficiency": 4},
+        "Ownership Model": {"importance": "Critical", "min_proficiency": 4},
+        "Cargo": {"importance": "High", "min_proficiency": 3},
+        "Systems Programming": {"importance": "High", "min_proficiency": 3},
+        "Testing": {"importance": "High", "min_proficiency": 3},
+        "Git": {"importance": "High", "min_proficiency": 3}
+      },
+      "optional_skills": {
+        "WebAssembly": {"importance": "Medium", "min_proficiency": 2},
+        "Async/Await": {"importance": "Medium", "min_proficiency": 2},
+        "Performance Optimization": {"importance": "Medium", "min_proficiency": 2}
+      }
+    },
+    {
+      "role_name": "DevOps Engineer",
+      "category": "DevOps & Cloud",
+      "experience_level": "Mid",
+      "required_skills": {
+        "Docker": {"importance": "Critical", "min_proficiency": 4},
+        "Kubernetes": {"importance": "Critical", "min_proficiency": 4},
+        "Linux": {"importance": "Critical", "min_proficiency": 4},
+        "CI/CD": {"importance": "High", "min_proficiency": 3},
+        "Git": {"importance": "High", "min_proficiency": 3},
+        "Infrastructure as Code": {"importance": "High", "min_proficiency": 3},
+        "Terraform": {"importance": "High", "min_proficiency": 3},
+        "Monitoring": {"importance": "High", "min_proficiency": 3}
+      },
+      "optional_skills": {
+        "Ansible": {"importance": "Medium", "min_proficiency": 2},
+        "Jenkins": {"importance": "Medium", "min_proficiency": 2},
+        "GitLab CI": {"importance": "Medium", "min_proficiency": 2}
+      }
+    },
+    {
+      "role_name": "Cloud Engineer (AWS)",
+      "category": "DevOps & Cloud",
+      "experience_level": "Mid",
+      "required_skills": {
+        "AWS": {"importance": "Critical", "min_proficiency": 4},
+        "EC2": {"importance": "Critical", "min_proficiency": 4},
+        "S3": {"importance": "Critical", "min_proficiency": 4},
+        "RDS": {"importance": "High", "min_proficiency": 3},
+        "Lambda": {"importance": "High", "min_proficiency": 3},
+        "VPC": {"importance": "High", "min_proficiency": 3},
+        "IAM": {"importance": "High", "min_proficiency": 3},
+        "Networking": {"importance": "High", "min_proficiency": 3}
+      },
+      "optional_skills": {
+        "CloudFormation": {"importance": "Medium", "min_proficiency": 2},
+        "ECS": {"importance": "Medium", "min_proficiency": 2},
+        "CloudFront": {"importance": "Medium", "min_proficiency": 2}
+      }
+    },
+    {
+      "role_name": "Cloud Engineer (Azure)",
+      "category": "DevOps & Cloud",
+      "experience_level": "Mid",
+      "required_skills": {
+        "Azure": {"importance": "Critical", "min_proficiency": 4},
+        "Virtual Machines": {"importance": "Critical", "min_proficiency": 4},
+        "Azure SQL": {"importance": "High", "min_proficiency": 3},
+        "App Service": {"importance": "High", "min_proficiency": 3},
+        "Azure DevOps": {"importance": "High", "min_proficiency": 3},
+        "Networking": {"importance": "High", "min_proficiency": 3},
+        "Identity Management": {"importance": "High", "min_proficiency": 3},
+        "Storage Accounts": {"importance": "High", "min_proficiency": 3}
+      },
+      "optional_skills": {
+        "Azure Functions": {"importance": "Medium", "min_proficiency": 2},
+        "Kubernetes": {"importance": "Medium", "min_proficiency": 2},
+        "Terraform": {"importance": "Medium", "min_proficiency": 2}
+      }
+    },
+    {
+      "role_name": "Cloud Engineer (GCP)",
+      "category": "DevOps & Cloud",
+      "experience_level": "Mid",
+      "required_skills": {
+        "GCP": {"importance": "Critical", "min_proficiency": 4},
+        "Compute Engine": {"importance": "Critical", "min_proficiency": 4},
+        "Cloud Storage": {"importance": "Critical", "min_proficiency": 4},
+        "Cloud SQL": {"importance": "High", "min_proficiency": 3},
+        "Kubernetes Engine": {"importance": "High", "min_proficiency": 3},
+        "Cloud Functions": {"importance": "High", "min_proficiency": 3},
+        "Networking": {"importance": "High", "min_proficiency": 3}
+      },
+      "optional_skills": {
+        "BigQuery": {"importance": "Medium", "min_proficiency": 2},
+        "Pub/Sub": {"importance": "Medium", "min_proficiency": 2},
+        "Terraform": {"importance": "Medium", "min_proficiency": 2}
+      }
+    },
+    {
+      "role_name": "Data Scientist",
+      "category": "Data & Analytics",
+      "experience_level": "Mid",
+      "required_skills": {
+        "Python": {"importance": "Critical", "min_proficiency": 4},
+        "Machine Learning": {"importance": "Critical", "min_proficiency": 4},
+        "Statistics": {"importance": "Critical", "min_proficiency": 4},
+        "SQL": {"importance": "High", "min_proficiency": 3},
+        "Pandas": {"importance": "High", "min_proficiency": 3},
+        "NumPy": {"importance": "High", "min_proficiency": 3},
+        "Scikit-learn": {"importance": "High", "min_proficiency": 3},
+        "Data Visualization": {"importance": "High", "min_proficiency": 3}
+      },
+      "optional_skills": {
+        "TensorFlow": {"importance": "Medium", "min_proficiency": 2},
+        "Deep Learning": {"importance": "Medium", "min_proficiency": 2},
+        "Tableau": {"importance": "Medium", "min_proficiency": 2}
+      }
+    },
+    {
+      "role_name": "Data Engineer",
+      "category": "Data & Analytics",
+      "experience_level": "Mid",
+      "required_skills": {
+        "Python": {"importance": "Critical", "min_proficiency": 4},
+        "SQL": {"importance": "Critical", "min_proficiency": 4},
+        "Databases": {"importance": "High", "min_proficiency": 3},
+        "ETL": {"importance": "High", "min_proficiency": 3},
+        "Apache Spark": {"importance": "High", "min_proficiency": 3},
+        "Data Warehousing": {"importance": "High", "min_proficiency": 3},
+        "Git": {"importance": "High", "min_proficiency": 3},
+        "Big Data": {"importance": "High", "min_proficiency": 3}
+      },
+      "optional_skills": {
+        "Kafka": {"importance": "Medium", "min_proficiency": 2},
+        "Hadoop": {"importance": "Medium", "min_proficiency": 2},
+        "Airflow": {"importance": "Medium", "min_proficiency": 2}
+      }
+    },
+    {
+      "role_name": "Data Analyst",
+      "category": "Data & Analytics",
+      "experience_level": "Mid",
+      "required_skills": {
+        "SQL": {"importance": "Critical", "min_proficiency": 4},
+        "Data Visualization": {"importance": "Critical", "min_proficiency": 4},
+        "Excel": {"importance": "Critical", "min_proficiency": 4},
+        "Python": {"importance": "High", "min_proficiency": 3},
+        "Analytics": {"importance": "High", "min_proficiency": 3},
+        "Business Intelligence": {"importance": "High", "min_proficiency": 3},
+        "Statistical Analysis": {"importance": "High", "min_proficiency": 3}
+      },
+      "optional_skills": {
+        "Tableau": {"importance": "Medium", "min_proficiency": 2},
+        "Power BI": {"importance": "Medium", "min_proficiency": 2},
+        "R": {"importance": "Medium", "min_proficiency": 2}
+      }
+    },
+    {
+      "role_name": "ML Engineer",
+      "category": "AI & Machine Learning",
+      "experience_level": "Senior",
+      "required_skills": {
+        "Machine Learning": {"importance": "Critical", "min_proficiency": 5},
+        "Python": {"importance": "Critical", "min_proficiency": 4},
+        "Deep Learning": {"importance": "Critical", "min_proficiency": 4},
+        "TensorFlow": {"importance": "High", "min_proficiency": 3},
+        "PyTorch": {"importance": "High", "min_proficiency": 3},
+        "Neural Networks": {"importance": "High", "min_proficiency": 3},
+        "Statistics": {"importance": "High", "min_proficiency": 3},
+        "SQL": {"importance": "High", "min_proficiency": 3}
+      },
+      "optional_skills": {
+        "Reinforcement Learning": {"importance": "Medium", "min_proficiency": 2},
+        "MLOps": {"importance": "Medium", "min_proficiency": 2},
+        "Model Deployment": {"importance": "Medium", "min_proficiency": 2}
+      }
+    },
+    {
+      "role_name": "AI Engineer",
+      "category": "AI & Machine Learning",
+      "experience_level": "Senior",
+      "required_skills": {
+        "Machine Learning": {"importance": "Critical", "min_proficiency": 4},
+        "Python": {"importance": "Critical", "min_proficiency": 4},
+        "Large Language Models": {"importance": "High", "min_proficiency": 3},
+        "Deep Learning": {"importance": "High", "min_proficiency": 3},
+        "TensorFlow": {"importance": "High", "min_proficiency": 3},
+        "Transformers": {"importance": "High", "min_proficiency": 3},
+        "Natural Language Processing": {"importance": "High", "min_proficiency": 3}
+      },
+      "optional_skills": {
+        "Computer Vision": {"importance": "Medium", "min_proficiency": 2},
+        "Reinforcement Learning": {"importance": "Medium", "min_proficiency": 2},
+        "Prompt Engineering": {"importance": "Medium", "min_proficiency": 2}
+      }
+    },
+    {
+      "role_name": "NLP Engineer",
+      "category": "AI & Machine Learning",
+      "experience_level": "Senior",
+      "required_skills": {
+        "Natural Language Processing": {"importance": "Critical", "min_proficiency": 4},
+        "Python": {"importance": "Critical", "min_proficiency": 4},
+        "Transformers": {"importance": "High", "min_proficiency": 3},
+        "Machine Learning": {"importance": "High", "min_proficiency": 3},
+        "Deep Learning": {"importance": "High", "min_proficiency": 3},
+        "NLTK": {"importance": "High", "min_proficiency": 3},
+        "Linguistics": {"importance": "High", "min_proficiency": 3}
+      },
+      "optional_skills": {
+        "BERT": {"importance": "Medium", "min_proficiency": 2},
+        "GPT": {"importance": "Medium", "min_proficiency": 2},
+        "Named Entity Recognition": {"importance": "Medium", "min_proficiency": 2}
+      }
+    },
+    {
+      "role_name": "Computer Vision Engineer",
+      "category": "AI & Machine Learning",
+      "experience_level": "Senior",
+      "required_skills": {
+        "Computer Vision": {"importance": "Critical", "min_proficiency": 4},
+        "Python": {"importance": "Critical", "min_proficiency": 4},
+        "OpenCV": {"importance": "High", "min_proficiency": 3},
+        "Deep Learning": {"importance": "High", "min_proficiency": 3},
+        "PyTorch": {"importance": "High", "min_proficiency": 3},
+        "Convolutional Neural Networks": {"importance": "High", "min_proficiency": 3},
+        "Image Processing": {"importance": "High", "min_proficiency": 3}
+      },
+      "optional_skills": {
+        "Object Detection": {"importance": "Medium", "min_proficiency": 2},
+        "Image Segmentation": {"importance": "Medium", "min_proficiency": 2},
+        "Face Recognition": {"importance": "Medium", "min_proficiency": 2}
+      }
+    },
+    {
+      "role_name": "Security Engineer",
+      "category": "Cybersecurity",
+      "experience_level": "Senior",
+      "required_skills": {
+        "Cybersecurity": {"importance": "Critical", "min_proficiency": 4},
+        "Network Security": {"importance": "Critical", "min_proficiency": 4},
+        "Encryption": {"importance": "High", "min_proficiency": 3},
+        "Penetration Testing": {"importance": "High", "min_proficiency": 3},
+        "Firewalls": {"importance": "High", "min_proficiency": 3},
+        "Authentication": {"importance": "High", "min_proficiency": 3},
+        "Linux": {"importance": "High", "min_proficiency": 3}
+      },
+      "optional_skills": {
+        "Intrusion Detection": {"importance": "Medium", "min_proficiency": 2},
+        "Incident Response": {"importance": "Medium", "min_proficiency": 2},
+        "Vulnerability Assessment": {"importance": "Medium", "min_proficiency": 2}
+      }
+    },
+    {
+      "role_name": "Penetration Tester",
+      "category": "Cybersecurity",
+      "experience_level": "Senior",
+      "required_skills": {
+        "Penetration Testing": {"importance": "Critical", "min_proficiency": 4},
+        "Security Tools": {"importance": "Critical", "min_proficiency": 4},
+        "Network Security": {"importance": "High", "min_proficiency": 3},
+        "Python": {"importance": "High", "min_proficiency": 3},
+        "Linux": {"importance": "High", "min_proficiency": 3},
+        "Vulnerability Analysis": {"importance": "High", "min_proficiency": 3},
+        "Exploitation Techniques": {"importance": "High", "min_proficiency": 3}
+      },
+      "optional_skills": {
+        "Web Application Security": {"importance": "Medium", "min_proficiency": 2},
+        "Reverse Engineering": {"importance": "Medium", "min_proficiency": 2},
+        "Social Engineering": {"importance": "Medium", "min_proficiency": 2}
+      }
+    },
+    {
+      "role_name": "Security Architect",
+      "category": "Cybersecurity",
+      "experience_level": "Lead",
+      "required_skills": {
+        "Security Architecture": {"importance": "Critical", "min_proficiency": 5},
+        "Cybersecurity": {"importance": "Critical", "min_proficiency": 4},
+        "Enterprise Security": {"importance": "Critical", "min_proficiency": 4},
+        "Compliance": {"importance": "High", "min_proficiency": 3},
+        "Risk Management": {"importance": "High", "min_proficiency": 3},
+        "Identity Management": {"importance": "High", "min_proficiency": 3},
+        "System Design": {"importance": "High", "min_proficiency": 3}
+      },
+      "optional_skills": {
+        "Zero Trust Architecture": {"importance": "Medium", "min_proficiency": 2},
+        "Cloud Security": {"importance": "Medium", "min_proficiency": 2},
+        "Threat Modeling": {"importance": "Medium", "min_proficiency": 2}
+      }
+    },
+    {
+      "role_name": "QA Engineer",
+      "category": "Quality Assurance",
+      "experience_level": "Mid",
+      "required_skills": {
+        "Testing": {"importance": "Critical", "min_proficiency": 4},
+        "Automation Frameworks": {"importance": "High", "min_proficiency": 3},
+        "Selenium": {"importance": "High", "min_proficiency": 3},
+        "Test Planning": {"importance": "High", "min_proficiency": 3},
+        "Bug Reporting": {"importance": "High", "min_proficiency": 3},
+        "Python": {"importance": "High", "min_proficiency": 3},
+        "SQL": {"importance": "Medium", "min_proficiency": 2}
+      },
+      "optional_skills": {
+        "Jenkins": {"importance": "Medium", "min_proficiency": 2},
+        "Performance Testing": {"importance": "Medium", "min_proficiency": 2},
+        "JIRA": {"importance": "Medium", "min_proficiency": 2}
+      }
+    },
+    {
+      "role_name": "Automation Engineer",
+      "category": "Quality Assurance",
+      "experience_level": "Mid",
+      "required_skills": {
+        "Test Automation": {"importance": "Critical", "min_proficiency": 4},
+        "Selenium": {"importance": "Critical", "min_proficiency": 4},
+        "Python": {"importance": "High", "min_proficiency": 3},
+        "Java": {"importance": "High", "min_proficiency": 3},
+        "Testing Frameworks": {"importance": "High", "min_proficiency": 3},
+        "Git": {"importance": "High", "min_proficiency": 3},
+        "CI/CD": {"importance": "High", "min_proficiency": 3}
+      },
+      "optional_skills": {
+        "Cypress": {"importance": "Medium", "min_proficiency": 2},
+        "API Testing": {"importance": "Medium", "min_proficiency": 2},
+        "Performance Testing": {"importance": "Medium", "min_proficiency": 2}
+      }
+    },
+    {
+      "role_name": "Performance Engineer",
+      "category": "Quality Assurance",
+      "experience_level": "Senior",
+      "required_skills": {
+        "Performance Testing": {"importance": "Critical", "min_proficiency": 4},
+        "Load Testing": {"importance": "Critical", "min_proficiency": 4},
+        "JMeter": {"importance": "High", "min_proficiency": 3},
+        "SQL": {"importance": "High", "min_proficiency": 3},
+        "Monitoring Tools": {"importance": "High", "min_proficiency": 3},
+        "Python": {"importance": "High", "min_proficiency": 3},
+        "Database Optimization": {"importance": "High", "min_proficiency": 3}
+      },
+      "optional_skills": {
+        "Stress Testing": {"importance": "Medium", "min_proficiency": 2},
+        "Profiling": {"importance": "Medium", "min_proficiency": 2},
+        "Capacity Planning": {"importance": "Medium", "min_proficiency": 2}
+      }
+    },
+    {
+      "role_name": "UI Designer",
+      "category": "UI/UX Design",
+      "experience_level": "Mid",
+      "required_skills": {
+        "UI Design": {"importance": "Critical", "min_proficiency": 4},
+        "Figma": {"importance": "Critical", "min_proficiency": 4},
+        "Prototyping": {"importance": "High", "min_proficiency": 3},
+        "Design Systems": {"importance": "High", "min_proficiency": 3},
+        "Typography": {"importance": "High", "min_proficiency": 3},
+        "Color Theory": {"importance": "High", "min_proficiency": 3},
+        "HTML": {"importance": "Medium", "min_proficiency": 2}
+      },
+      "optional_skills": {
+        "Adobe XD": {"importance": "Medium", "min_proficiency": 2},
+        "Sketch": {"importance": "Medium", "min_proficiency": 2},
+        "CSS": {"importance": "Medium", "min_proficiency": 2}
+      }
+    },
+    {
+      "role_name": "UX Designer",
+      "category": "UI/UX Design",
+      "experience_level": "Mid",
+      "required_skills": {
+        "UX Design": {"importance": "Critical", "min_proficiency": 4},
+        "User Research": {"importance": "Critical", "min_proficiency": 4},
+        "Figma": {"importance": "High", "min_proficiency": 3},
+        "Wireframing": {"importance": "High", "min_proficiency": 3},
+        "User Testing": {"importance": "High", "min_proficiency": 3},
+        "Information Architecture": {"importance": "High", "min_proficiency": 3},
+        "Prototyping": {"importance": "High", "min_proficiency": 3}
+      },
+      "optional_skills": {
+        "Usability Testing": {"importance": "Medium", "min_proficiency": 2},
+        "Analytics": {"importance": "Medium", "min_proficiency": 2},
+        "HTML": {"importance": "Medium", "min_proficiency": 2}
+      }
+    },
+    {
+      "role_name": "Product Designer",
+      "category": "UI/UX Design",
+      "experience_level": "Senior",
+      "required_skills": {
+        "Product Design": {"importance": "Critical", "min_proficiency": 4},
+        "Figma": {"importance": "Critical", "min_proficiency": 4},
+        "User Research": {"importance": "High", "min_proficiency": 3},
+        "Design Systems": {"importance": "High", "min_proficiency": 3},
+        "Prototyping": {"importance": "High", "min_proficiency": 3},
+        "Information Architecture": {"importance": "High", "min_proficiency": 3},
+        "UI/UX Design": {"importance": "High", "min_proficiency": 3}
+      },
+      "optional_skills": {
+        "Analytics": {"importance": "Medium", "min_proficiency": 2},
+        "Interaction Design": {"importance": "Medium", "min_proficiency": 2},
+        "Motion Design": {"importance": "Medium", "min_proficiency": 2}
+      }
+    },
+    {
+      "role_name": "Product Manager",
+      "category": "Product Management",
+      "experience_level": "Senior",
+      "required_skills": {
+        "Product Management": {"importance": "Critical", "min_proficiency": 4},
+        "Roadmap Planning": {"importance": "Critical", "min_proficiency": 4},
+        "Stakeholder Communication": {"importance": "Critical", "min_proficiency": 4},
+        "Analytics": {"importance": "High", "min_proficiency": 3},
+        "Agile": {"importance": "High", "min_proficiency": 3},
+        "Market Analysis": {"importance": "High", "min_proficiency": 3},
+        "SQL": {"importance": "Medium", "min_proficiency": 2}
+      },
+      "optional_skills": {
+        "User Research": {"importance": "Medium", "min_proficiency": 2},
+        "Competitive Analysis": {"importance": "Medium", "min_proficiency": 2},
+        "Pricing Strategy": {"importance": "Medium", "min_proficiency": 2}
+      }
+    },
+    {
+      "role_name": "Technical PM",
+      "category": "Product Management",
+      "experience_level": "Senior",
+      "required_skills": {
+        "Product Management": {"importance": "Critical", "min_proficiency": 4},
+        "Technical Knowledge": {"importance": "Critical", "min_proficiency": 4},
+        "System Design": {"importance": "High", "min_proficiency": 3},
+        "Roadmap Planning": {"importance": "High", "min_proficiency": 3},
+        "Analytics": {"importance": "High", "min_proficiency": 3},
+        "SQL": {"importance": "High", "min_proficiency": 3},
+        "Agile": {"importance": "High", "min_proficiency": 3}
+      },
+      "optional_skills": {
+        "Architecture": {"importance": "Medium", "min_proficiency": 2},
+        "APIs": {"importance": "Medium", "min_proficiency": 2},
+        "Database Design": {"importance": "Medium", "min_proficiency": 2}
+      }
+    },
+    {
+      "role_name": "Scrum Master",
+      "category": "Product Management",
+      "experience_level": "Mid",
+      "required_skills": {
+        "Agile": {"importance": "Critical", "min_proficiency": 4},
+        "Scrum": {"importance": "Critical", "min_proficiency": 4},
+        "Team Leadership": {"importance": "High", "min_proficiency": 3},
+        "Communication": {"importance": "High", "min_proficiency": 3},
+        "Conflict Resolution": {"importance": "High", "min_proficiency": 3},
+        "Problem Solving": {"importance": "High", "min_proficiency": 3}
+      },
+      "optional_skills": {
+        "Kanban": {"importance": "Medium", "min_proficiency": 2},
+        "JIRA": {"importance": "Medium", "min_proficiency": 2},
+        "Leadership": {"importance": "Medium", "min_proficiency": 2}
+      }
+    },
+    {
+      "role_name": "Database Administrator",
+      "category": "Database Administration",
+      "experience_level": "Mid",
+      "required_skills": {
+        "Database Administration": {"importance": "Critical", "min_proficiency": 4},
+        "SQL": {"importance": "Critical", "min_proficiency": 4},
+        "Backup & Recovery": {"importance": "High", "min_proficiency": 3},
+        "Performance Tuning": {"importance": "High", "min_proficiency": 3},
+        "Security": {"importance": "High", "min_proficiency": 3},
+        "Monitoring": {"importance": "High", "min_proficiency": 3},
+        "Linux": {"importance": "High", "min_proficiency": 3}
+      },
+      "optional_skills": {
+        "Replication": {"importance": "Medium", "min_proficiency": 2},
+        "Partitioning": {"importance": "Medium", "min_proficiency": 2},
+        "Disaster Recovery": {"importance": "Medium", "min_proficiency": 2}
+      }
+    },
+    {
+      "role_name": "DBA (PostgreSQL/MySQL/MongoDB)",
+      "category": "Database Administration",
+      "experience_level": "Mid",
+      "required_skills": {
+        "PostgreSQL": {"importance": "High", "min_proficiency": 3},
+        "MySQL": {"importance": "High", "min_proficiency": 3},
+        "MongoDB": {"importance": "High", "min_proficiency": 3},
+        "SQL": {"importance": "Critical", "min_proficiency": 4},
+        "Database Performance": {"importance": "High", "min_proficiency": 3},
+        "Backup & Recovery": {"importance": "High", "min_proficiency": 3},
+        "Security": {"importance": "High", "min_proficiency": 3}
+      },
+      "optional_skills": {
+        "Indexing": {"importance": "Medium", "min_proficiency": 2},
+        "Query Optimization": {"importance": "Medium", "min_proficiency": 2},
+        "Replication": {"importance": "Medium", "min_proficiency": 2}
+      }
+    },
+    {
+      "role_name": "System Administrator",
+      "category": "IT Support & Administration",
+      "experience_level": "Mid",
+      "required_skills": {
+        "System Administration": {"importance": "Critical", "min_proficiency": 4},
+        "Linux": {"importance": "High", "min_proficiency": 3},
+        "Windows Server": {"importance": "High", "min_proficiency": 3},
+        "Networking": {"importance": "High", "min_proficiency": 3},
+        "Security": {"importance": "High", "min_proficiency": 3},
+        "Monitoring": {"importance": "High", "min_proficiency": 3},
+        "Troubleshooting": {"importance": "High", "min_proficiency": 3}
+      },
+      "optional_skills": {
+        "Virtualization": {"importance": "Medium", "min_proficiency": 2},
+        "Backup Solutions": {"importance": "Medium", "min_proficiency": 2},
+        "Active Directory": {"importance": "Medium", "min_proficiency": 2}
+      }
+    },
+    {
+      "role_name": "Network Engineer",
+      "category": "Network Engineering",
+      "experience_level": "Mid",
+      "required_skills": {
+        "Networking": {"importance": "Critical", "min_proficiency": 4},
+        "TCP/IP": {"importance": "Critical", "min_proficiency": 4},
+        "Routing": {"importance": "High", "min_proficiency": 3},
+        "Switching": {"importance": "High", "min_proficiency": 3},
+        "Firewalls": {"importance": "High", "min_proficiency": 3},
+        "VPN": {"importance": "High", "min_proficiency": 3},
+        "Network Security": {"importance": "High", "min_proficiency": 3}
+      },
+      "optional_skills": {
+        "BGP": {"importance": "Medium", "min_proficiency": 2},
+        "OSPF": {"importance": "Medium", "min_proficiency": 2},
+        "MPLS": {"importance": "Medium", "min_proficiency": 2}
+      }
+    },
+    {
+      "role_name": "Site Reliability Engineer",
+      "category": "DevOps & Cloud",
+      "experience_level": "Senior",
+      "required_skills": {
+        "Site Reliability Engineering": {"importance": "Critical", "min_proficiency": 4},
+        "Linux": {"importance": "High", "min_proficiency": 3},
+        "Monitoring": {"importance": "High", "min_proficiency": 3},
+        "Incident Response": {"importance": "High", "min_proficiency": 3},
+        "Automation": {"importance": "High", "min_proficiency": 3},
+        "Python": {"importance": "High", "min_proficiency": 3},
+        "Kubernetes": {"importance": "High", "min_proficiency": 3}
+      },
+      "optional_skills": {
+        "Observability": {"importance": "Medium", "min_proficiency": 2},
+        "Chaos Engineering": {"importance": "Medium", "min_proficiency": 2},
+        "Performance Analysis": {"importance": "Medium", "min_proficiency": 2}
+      }
+    },
+    {
+      "role_name": "Platform Engineer",
+      "category": "Platform Engineering",
+      "experience_level": "Senior",
+      "required_skills": {
+        "Platform Engineering": {"importance": "Critical", "min_proficiency": 4},
+        "Kubernetes": {"importance": "High", "min_proficiency": 3},
+        "Docker": {"importance": "High", "min_proficiency": 3},
+        "Infrastructure as Code": {"importance": "High", "min_proficiency": 3},
+        "DevOps": {"importance": "High", "min_proficiency": 3},
+        "Python": {"importance": "High", "min_proficiency": 3},
+        "Terraform": {"importance": "High", "min_proficiency": 3}
+      },
+      "optional_skills": {
+        "Service Mesh": {"importance": "Medium", "min_proficiency": 2},
+        "GitOps": {"importance": "Medium", "min_proficiency": 2},
+        "API Design": {"importance": "Medium", "min_proficiency": 2}
+      }
+    },
+    {
+      "role_name": "Solutions Architect",
+      "category": "Solutions Architecture",
+      "experience_level": "Lead",
+      "required_skills": {
+        "System Design": {"importance": "Critical", "min_proficiency": 4},
+        "Architecture": {"importance": "Critical", "min_proficiency": 4},
+        "Cloud": {"importance": "High", "min_proficiency": 3},
+        "AWS": {"importance": "High", "min_proficiency": 3},
+        "Stakeholder Communication": {"importance": "High", "min_proficiency": 3},
+        "Technical Leadership": {"importance": "High", "min_proficiency": 3},
+        "SQL": {"importance": "High", "min_proficiency": 3}
+      },
+      "optional_skills": {
+        "Microservices": {"importance": "Medium", "min_proficiency": 2},
+        "Security Architecture": {"importance": "Medium", "min_proficiency": 2},
+        "Cost Optimization": {"importance": "Medium", "min_proficiency": 2}
+      }
+    },
+    {
+      "role_name": "Enterprise Architect",
+      "category": "Solutions Architecture",
+      "experience_level": "Lead",
+      "required_skills": {
+        "Enterprise Architecture": {"importance": "Critical", "min_proficiency": 5},
+        "System Design": {"importance": "Critical", "min_proficiency": 4},
+        "Strategic Planning": {"importance": "Critical", "min_proficiency": 4},
+        "Leadership": {"importance": "High", "min_proficiency": 3},
+        "Cloud Architecture": {"importance": "High", "min_proficiency": 3},
+        "Security": {"importance": "High", "min_proficiency": 3},
+        "Governance": {"importance": "High", "min_proficiency": 3}
+      },
+      "optional_skills": {
+        "Digital Transformation": {"importance": "Medium", "min_proficiency": 2},
+        "Risk Management": {"importance": "Medium", "min_proficiency": 2},
+        "Compliance": {"importance": "Medium", "min_proficiency": 2}
+      }
+    }
+  ]
+}
