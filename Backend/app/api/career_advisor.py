@@ -2,7 +2,7 @@ from fastapi import APIRouter, Depends, HTTPException, Query
 from sqlalchemy.orm import Session
 from sqlalchemy.exc import SQLAlchemyError
 from sqlalchemy import select
-from app.core.database import get_db
+from app.core.database import get_sync_db
 from app.models.candidate import Candidate
 from app.models.skill import CandidateSkill, Skill
 from app.models.skill_market import SkillMarketData
@@ -313,7 +313,7 @@ class InterviewResourcesResponse(BaseModel):
 @router.get("/{candidate_id}/health", response_model=CareerHealthMetrics)
 async def get_career_health(
     candidate_id: int,
-    db: Session = Depends(get_db)
+    db: Session = Depends(get_sync_db)
 ):
     """
     Calculate career health metrics for a candidate.
@@ -447,9 +447,11 @@ async def get_career_health(
         raise
     except Exception as e:
         logger.error(f"❌ Unexpected error calculating health metrics: {str(e)}", exc_info=True)
+        # Return error with actual details for debugging
+        error_detail = str(e)[:200]  # Limit error message length
         raise HTTPException(
             status_code=500,
-            detail="An unexpected error occurred while calculating career health metrics"
+            detail=f"Error calculating career health: {error_detail}"
         )
 
 
@@ -665,7 +667,7 @@ async def get_career_recommendations(
     candidate_id: int,
     limit: int = Query(3, ge=1, le=10, description="Number of recommendations to return"),
     include_gaps: bool = Query(False, description="Include detailed skill gap analysis"),
-    db: Session = Depends(get_db)
+    db: Session = Depends(get_sync_db)
 ):
     """
     Generate personalized career recommendations based on candidate's skill profile.
@@ -1157,7 +1159,7 @@ def _estimate_job_postings(role_title: str) -> int:
 async def get_career_trajectory(
     candidate_id: int,
     quarters: int = Query(8, ge=4, le=12, description="Number of quarters to project (4-12)"),
-    db: Session = Depends(get_db)
+    db: Session = Depends(get_sync_db)
 ):
     """
     Generate career growth trajectory projections.
@@ -1662,7 +1664,7 @@ async def get_salary_trends(
     role: str = Query("Software Engineer", description="Job role title (e.g., 'Frontend Developer')"),
     currency: str = Query("INR", pattern="^(INR|USD|EUR|GBP)$", description="Currency code: INR, USD, EUR, or GBP"),
     region: str = Query("India", description="Geographic region (e.g., 'India', 'US', 'UK')"),
-    db: Session = Depends(get_db)
+    db: Session = Depends(get_sync_db)
 ):
     """
     Get salary trends by experience level for a specific role.
@@ -1988,10 +1990,10 @@ def _convert_currency(
 @router.get("/{candidate_id}/skill-journey", response_model=SkillJourneyResponse)
 async def get_skill_journey(
     candidate_id: int,
-    limit: int = Query(50, ge=10, le=200, description="Max events to return (10-200)"),
+    limit: int = Query(50, ge=1, le=200, description="Max events to return (1-200)"),
     offset: int = Query(0, ge=0, description="Pagination offset"),
     event_types: Optional[str] = Query(None, description="Filter by event types (comma-separated)"),
-    db: Session = Depends(get_db)
+    db: Session = Depends(get_sync_db)
 ):
     """
     Get skill acquisition and development timeline for a candidate.
@@ -2512,16 +2514,16 @@ OFFENSIVE_KEYWORDS = [
 ]
 
 CONTENT_FILTER_ENABLED = True
-CACHE_ENABLED = True
+CACHE_ENABLED = False  # Disable to avoid transaction issues
 MAX_RETRIES = 3
 RETRY_DELAY_BASE = 1  # seconds, exponential backoff
 SUMMARY_CACHE_HOURS = 24
 
 
-@router.post("/career-advisor/generate-summary", response_model=CareerSummaryResponse)
+@router.post("/generate-summary", response_model=CareerSummaryResponse)
 async def generate_career_summary(
     request: CareerSummaryRequest,
-    db: Session = Depends(get_db)
+    db: Session = Depends(get_sync_db)
 ) -> CareerSummaryResponse:
     """
     Generate AI-powered personalized career summary and recommendations.
@@ -2569,14 +2571,19 @@ async def generate_career_summary(
         
         # Check cache unless regenerate is requested
         if not request.regenerate and CACHE_ENABLED:
-            cached_summary = await _get_cached_summary(
-                request.candidate_id,
-                request.context,
-                db
-            )
-            if cached_summary:
-                logger.info(f"💾 Returning cached summary for candidate {request.candidate_id}")
-                return CareerSummaryResponse(**cached_summary)
+            try:
+                cached_summary = _get_cached_summary(
+                    request.candidate_id,
+                    request.context,
+                    db
+                )
+                if cached_summary:
+                    logger.info(f"Returning cached summary for candidate {request.candidate_id}")
+                    return CareerSummaryResponse(**cached_summary)
+            except Exception as cache_error:
+                logger.warning(f"Cache retrieval failed: {str(cache_error)}")
+                db.rollback()  # Recover from failed transaction
+                # Continue without cache
         
         # Fetch candidate skills
         skills = db.query(CandidateSkill).filter(
@@ -2586,7 +2593,7 @@ async def generate_career_summary(
         logger.debug(f"📊 Candidate has {len(skills)} skills")
         
         # Get career health metrics for context
-        health_metrics = await _get_health_metrics_for_summary(request.candidate_id, db)
+        health_metrics = _get_health_metrics_for_summary(request.candidate_id, db)
         
         # Generate summary (AI if available, template as fallback)
         if openai_client and len(skills) >= 3:
@@ -2618,12 +2625,17 @@ async def generate_career_summary(
         
         # Cache the summary
         if CACHE_ENABLED:
-            await _cache_summary(
-                request.candidate_id,
-                request.context,
-                summary_data,
-                db
-            )
+            try:
+                _cache_summary(
+                    request.candidate_id,
+                    request.context,
+                    summary_data,
+                    db
+                )
+            except Exception as cache_error:
+                logger.warning(f"Cache storage failed: {str(cache_error)}")
+                db.rollback()  # Recover from failed transaction
+                # Continue without caching
         
         logger.info(f"✅ Career summary generated successfully for candidate {request.candidate_id}")
         return CareerSummaryResponse(**summary_data)
@@ -2631,10 +2643,10 @@ async def generate_career_summary(
     except HTTPException:
         raise
     except Exception as e:
-        logger.error(f"❌ Error generating career summary: {str(e)}", exc_info=True)
+        logger.error(f"Error generating career summary: {str(e)}", exc_info=True)
         raise HTTPException(
             status_code=500,
-            detail="Failed to generate career summary. Please try again later."
+            detail=f"Failed to generate career summary: {str(e)[:100]}"
         )
 
 
@@ -3000,7 +3012,7 @@ def _generate_template_summary(
     }
 
 
-async def _get_health_metrics_for_summary(candidate_id: int, db: Session) -> Dict:
+def _get_health_metrics_for_summary(candidate_id: int, db: Session) -> Dict:
     """
     Get career health metrics for summary generation.
     
@@ -3036,8 +3048,8 @@ async def _get_health_metrics_for_summary(candidate_id: int, db: Session) -> Dic
         normalized_skills = [
             {
                 "proficiency": _normalize_proficiency(s.proficiency),
-                "market_demand": _normalize_market_demand(getattr(s, 'market_demand', None)),
-                "category": s.category or "Other"
+                "market_demand": _normalize_market_demand(getattr(s.skill, 'demand_score', None) if s.skill else None),
+                "category": s.skill.category if s.skill else "Other"
             }
             for s in skills
         ]
@@ -3072,7 +3084,7 @@ async def _get_health_metrics_for_summary(candidate_id: int, db: Session) -> Dic
         }
 
 
-async def _get_cached_summary(
+def _get_cached_summary(
     candidate_id: int,
     context: str,
     db: Session
@@ -3122,7 +3134,7 @@ async def _get_cached_summary(
         return None
 
 
-async def _cache_summary(
+def _cache_summary(
     candidate_id: int,
     context: str,
     summary_data: Dict,
@@ -3240,7 +3252,7 @@ async def get_networking_suggestions(
     role: Optional[str] = Query(None, max_length=100, description="Target role for networking"),
     location: str = Query("India", max_length=50, description="Geographic location"),
     limit: int = Query(10, ge=1, le=50, description="Max suggestions per category"),
-    db: Session = Depends(get_db)
+    db: Session = Depends(get_sync_db)
 ):
     """
     Get personalized networking suggestions.
@@ -3285,13 +3297,13 @@ async def get_networking_suggestions(
             role = role.strip().title()
         
         # Get networking suggestions
-        linkedin_profiles = await _get_linkedin_suggestions(role, limit, db)
+        linkedin_profiles = _get_linkedin_suggestions(role, limit, db)
         logger.info(f"✅ Found {len(linkedin_profiles)} LinkedIn profiles")
         
-        communities = await _get_community_suggestions(role, limit, db)
+        communities = _get_community_suggestions(role, limit, db)
         logger.info(f"✅ Found {len(communities)} communities")
         
-        events = await _get_event_suggestions(role, location, limit, db)
+        events = _get_event_suggestions(role, location, limit, db)
         logger.info(f"✅ Found {len(events)} events")
         
         networking_tips = _get_networking_tips(role)
@@ -3363,7 +3375,7 @@ def _infer_role_from_skills(skills: List) -> str:
     return inferred_role
 
 
-async def _get_linkedin_suggestions(
+def _get_linkedin_suggestions(
     role: str,
     limit: int,
     db: Session
@@ -3573,7 +3585,7 @@ async def _get_linkedin_suggestions(
     return limited
 
 
-async def _get_community_suggestions(
+def _get_community_suggestions(
     role: str,
     limit: int,
     db: Session
@@ -3707,7 +3719,7 @@ async def _get_community_suggestions(
     return result
 
 
-async def _get_event_suggestions(
+def _get_event_suggestions(
     role: str,
     location: str,
     limit: int,
@@ -3931,7 +3943,7 @@ async def get_interview_resources(
     category: Optional[str] = Query(None, pattern="^(technical|system_design|behavioral|coding|all)$", description="Filter by interview category"),
     difficulty: Optional[str] = Query(None, pattern="^(beginner|intermediate|advanced)$", description="Filter by difficulty level"),
     free_only: bool = Query(False, description="Show only free resources"),
-    db: Session = Depends(get_db)
+    db: Session = Depends(get_sync_db)
 ):
     """
     Get curated interview preparation resources by category.
